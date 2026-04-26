@@ -2047,3 +2047,94 @@ https://drive.google.com/file/d/1yOXBRv-EHruLhPPw6JC-LGwoGzYOZ6ED/view?usp=drive
 | 49 | US18 | Como colaborador que necesita gestionar trámites laborales de forma autónoma, quiero editar solicitudes enviadas, para corregir información antes de que sean atendidas. | 5 |
 | 50 | US04 | Como colaborador que busca gestionar su información de forma autónoma, quiero consultar mi información laboral consolidada, para que pueda gestionarla sin depender de recursos humanos. | 2 |
 
+# Capítulo IV: Product Design
+
+## 4.1. Style Guidelines
+
+### 4.1.1. General Style Guidelines
+
+#### Typography
+
+La tipografía principal seleccionada es **Inter** en sus variantes Light, Regular, Medium y Bold, las cuales se utilizan para definir la jerarquía de títulos, subtítulos, cuerpo de texto y elementos de la interfaz de usuario.
+
+Elegimos Inter debido a su estética geométrica y funcional, diseñada específicamente para optimizar la legibilidad en pantallas de alta densidad de píxeles, lo que proyecta una imagen de precisión y modernidad tecnológica. Esta fuente ofrece una apariencia profesional y sofisticada que se adapta perfectamente al entorno de una plataforma de gestión estratégica, facilitando la lectura de datos complejos y estructuras numéricas.
+
+Además, al ser una fuente open source de amplia adopción en el sector tecnológico, garantiza una visualización consistente y fluida en cualquier navegador y sistema operativo. Su excelente diseño tipográfico, la claridad de sus glifos y su equilibrio visual la convierten en la opción técnica ideal para asegurar una experiencia de usuario eficiente y de alto rendimiento en nuestra solución web.
+
+![](assets\img\font.png)
+https://ibb.co/Vp0fVJ0y
+
+---
+
+#### Fonts
+
+La arquitectura de la interfaz utiliza la familia tipográfica **Inter** para asegurar una legibilidad superior en entornos digitales. La selección de tamaños y colores facilita la navegación y reduce la fatiga visual del usuario.
+
+| Elemento | Tamaño | Color | Código |
+| :--- | :---: | :--- | :---: |
+| Título Principal | 40px | Primary | `#3f51b5` |
+| Subtítulo | 28px | Dark Primary | `#303f9f` |
+| Cuerpo de Texto (Body Text) | 16px | Primary Text | `#212121` |
+| Etiquetas y Descripciones | 12px | Secondary Text | `#757575` |
+| Líneas de División y Separadores | — | Divider | `#BDBDBD` |
+
+- **Título Principal:** Emplea Inter en 40px con el color Primary (`#3f51b5`). Esta configuración establece el nivel de importancia más alto y facilita la identificación inmediata de las secciones principales.
+- **Subtítulo:** Utiliza Inter en 28px con el color Dark Primary (`#303f9f`). El uso de un tono más profundo garantiza el contraste necesario y mantiene la sobriedad profesional de la plataforma.
+- **Cuerpo de Texto:** Se aplica Inter en 16px con el tono Primary Text (`#212121`). Este nivel de contraste asegura una lectura cómoda y accesible para bloques de información extensos y datos administrativos.
+- **Etiquetas y Descripciones:** Se presentan en Inter de 12px con el color Secondary Text (`#757575`). Esta variante resulta ideal para textos de apoyo, metadatos o información secundaria que requiere una presencia visual discreta.
+- **Líneas de División y Separadores:** Las tablas y módulos se delimitan con el color Divider (`#BDBDBD`), lo que permite una organización clara de los registros sin saturar el diseño de la interfaz.
+
+---
+
+#### Color
+
+**1. Colores de Marca (Sistema Primario)**
+
+Estos tonos definen la personalidad técnica y la jerarquía estructural de la interfaz:
+
+| Color | Código | Uso |
+| :--- | :---: | :--- |
+| Color Primario | `#3f51b5` | Elementos de acción principal y botones interactivos. |
+| Primario Oscuro | `#303f9f` | Encabezados y barras de navegación. |
+| Primario Claro | `#c5cae9` | Fondos de contenedores y estados de selección. |
+
+**2. Tipografía y Contraste**
+
+La legibilidad de los reportes de nómina y legajos depende de esta escala de grises de alta densidad:
+
+| Color | Código | Uso |
+| :--- | :---: | :--- |
+| Primary Text | `#212121` | Títulos y párrafos críticos. Contraste máximo frente a fondos claros. |
+| Secondary Text | `#757575` | Metadatos, descripciones y etiquetas de apoyo. |
+| Text / Icons | `#FFFFFF` | Textos e iconos sobre fondos oscuros. |
+
+**3. Elementos Funcionales y Estructura**
+
+Componentes que organizan la información de manera sutil pero efectiva:
+
+| Color | Código | Uso |
+| :--- | :---: | :--- |
+| Accent Color | `#9e9e9e` | Iconos secundarios y elementos de interfaz sin atención inmediata. |
+| Divider Color | `#BDBDBD` | Delimitación de filas en tablas y separación de módulos. |
+
+![](assets\img\colors.png)
+https://ibb.co/tp6DwcXw
+
+---
+
+#### Spacing
+
+La arquitectura de espaciados de la plataforma adopta una **unidad base de 8px** como núcleo del diseño visual. Todos los márgenes, rellenos (paddings) y dimensiones de los componentes se ajustan de forma estricta a múltiplos de este valor (8px, 16px, 24px, 32px, etc.) para asegurar la consistencia estética y una alineación técnica impecable.
+
+Esta metodología facilita la implementación en el desarrollo y establece un ritmo visual organizado que jerarquiza la información con claridad. La elección de este sistema técnico responde a la necesidad de flexibilidad y escalabilidad del contenido, lo cual garantiza que los elementos preserven proporciones armónicas en cualquier resolución de pantalla. El uso de la regla de los 8 píxeles representa un estándar de excelencia en el diseño de interfaces que agiliza los flujos de trabajo y consolida la coherencia integral de la aplicación.
+
+![](assets\img\spacing.png)
+https://ibb.co/MkwCss7d
+
+---
+
+#### Tone of Voice
+
+El tono de voz de **Flowboard** es el de un **Facilitador Objetivo**. Nos comunicamos con una síntesis rigurosa y transparencia total para erradicar la incertidumbre en la gestión del capital humano. Este estilo proyecta seguridad técnica y eficiencia operativa constante.
+
+Elegimos esta identidad porque los responsables de talento enfrentan una sobrecarga de tareas manuales que demanda hechos concretos, no respuestas corporativas vacías ni procesos burocráticos lentos. Al mismo tiempo, los colaboradores requieren autonomía plena y acceso inmediato a su información laboral sin depender de intermediarios que no ofrecen soluciones oportunas.
