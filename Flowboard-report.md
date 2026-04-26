@@ -2,7 +2,7 @@
 
   <img src="assets\img\UPC_logo_transparente.png" alt="UPC Logo" width="auto" height="120" style="margin-bottom: 20px;"/>
 
-  <h1 style="color: #003366; font-size: 26px; margin: 0;">Universidad Peruana de Ciencias Aplicadas</h1>
+  <h1 style="color: #bb0202; font-size: 26px; margin: 0;">Universidad Peruana de Ciencias Aplicadas</h1>
   <p style="margin: 10px 0; font-size: 18px;">
     Facultad de Ingeniería<br>
     Carrera: Ingeniería de Software
@@ -174,3 +174,16 @@
 | v1.8 | 15/04/2026 | Darío Fabián Ávila De La Cruz | Impact Mapping |
 | v1.8 | 15/04/2026 | Oscar Lizandro Vasquez Llave | General Style Guidelines |
 | v1.9 | 18/04/2026 | Oscar Lizandro Vasquez Llave | Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions, Software Deployment Configuration |
+
+## Capítulo I: Introducción
+
+### 1.1. Startup Profile
+
+#### 1.1.1. Descripción de la Startup
+
+Somos Performily, una startup que está conformada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC). Esta iniciativa surge con el propósito de desarrollar soluciones tecnológicas orientadas en facilitar los procesos de los trabajadores empresariales. 
+
+La razón de ser de nuestra startup radica en la necesidad de contar con herramientas que permitan a las personas gestionar de manera eficiente sus actividades y flujos de trabajo, lo cual favorece a la mejora del clima laboral e impulsa un entorno productivo dentro de la organización. Nuestra meta es brindar a los usuarios una herramienta que les permita tener control práctico y accesible de las gestiones de diferentes áreas empresariales mediante soluciones digitales intuitivas.
+
+* **Misión:** Crear soluciones tecnológicas innovadoras que faciliten la gestión de personas en las organizaciones y promuevan la eficiencia laboral y la sostenibilidad.
+* **Visión:** Para este 2026, consolidarnos como una startup referente en soluciones tecnológicas para la gestión de colaboradores y el impulso de la eficiencia en los procesos internos para contribuir a una sociedad con entornos laborales más profesionales y organizados.
