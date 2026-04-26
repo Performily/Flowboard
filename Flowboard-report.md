@@ -2138,3 +2138,50 @@ https://ibb.co/MkwCss7d
 El tono de voz de **Flowboard** es el de un **Facilitador Objetivo**. Nos comunicamos con una síntesis rigurosa y transparencia total para erradicar la incertidumbre en la gestión del capital humano. Este estilo proyecta seguridad técnica y eficiencia operativa constante.
 
 Elegimos esta identidad porque los responsables de talento enfrentan una sobrecarga de tareas manuales que demanda hechos concretos, no respuestas corporativas vacías ni procesos burocráticos lentos. Al mismo tiempo, los colaboradores requieren autonomía plena y acceso inmediato a su información laboral sin depender de intermediarios que no ofrecen soluciones oportunas.
+
+### 4.1.2. Web Style Guidelines
+
+En esta sección se definen los lineamientos visuales y de interacción que guían el diseño de la interfaz web de nuestro producto Flowboard, haciendo que se tenga una experiencia consistente, accesible y adaptable a distintos dispositivos.
+
+---
+
+#### Buttons
+
+Los botones de la interfaz se han diseñado para ofrecer una experiencia clara, accesible y coherente con la estética general del proyecto. Se presentan en tres variantes principales: **Regular Button**, **Hover Button** y **Outlined Button**, además de versiones de texto: **Regular Text Button** y **Hover Text Button**. Esto permite adaptarse a diferentes contextos de interacción y ayuda a mantener un equilibrio entre visibilidad, jerarquía y modernidad.
+
+| Variante | Fondo | Texto | Borde |
+| :--- | :---: | :---: | :---: |
+| Regular Button | `#3F51B5` | `#FFFFFF` | — |
+| Hover Button | `#303F9F` | `#FFFFFF` | — |
+| Outlined Button | `#FFFFFF` | `#3F51B5` | `#3F51B5` |
+| Regular Text Button | — | `#3F51B5` | — |
+| Hover Text Button | — | `#303F9F` | — |
+
+- **Regular Button:** Utiliza un relleno sólido con el color primario (`#3F51B5`) y texto en blanco (`#FFFFFF`), asegurando un alto contraste y legibilidad.
+- **Hover Button:** Emplea un tono más oscuro del color primario (`#303F9F`), lo que proporciona una clara percepción de interactividad al usuario.
+- **Outlined Button:** Mantiene un fondo blanco (`#FFFFFF`) con borde y texto en color primario (`#3F51B5`), permitiendo diferenciar acciones secundarias sin perder consistencia visual.
+- **Text Buttons:** Para acciones de menor jerarquía, mantienen la tipografía Inter en 16px, utilizando el color primario (`#3F51B5`) en estado normal y el color oscuro (`#303F9F`) en estado hover.
+
+Los botones cuentan con un `border-radius` de **20px**, lo que aporta una apariencia moderna y amigable. El padding interno se establece en **10px / 20px / 30px**, mientras que los espacios externos son de **16px / 25px / 50px**, asegurando una adecuada separación y distribución dentro de la interfaz.
+
+![Botones - Web Style Guidelines](assets\img\buttons.png)
+
+---
+
+#### Input
+
+Los campos de entrada de la interfaz han sido diseñados para ofrecer una experiencia accesible, clara y alineada con la estética general del sistema. Se presenta una variante principal denominada **Regular Input Field**, junto con estados visuales de interacción: **Focused Input** y **Error Input**. Estos estados ayudan a comunicar de manera efectiva las acciones del usuario.
+
+| Estado | Borde | Fondo | Texto |
+| :--- | :---: | :---: | :---: |
+| Regular | `#CCCCCC` (1px) | `#FFFFFF` | `#717878` |
+| Focused | `#3F51B5` (1px) | `#FFFFFF` | `#717878` |
+| Error | `#FF3333` (1px) | `#FFFFFF` | `#717878` |
+
+- **Regular Input Field:** Utiliza un borde de 1px en color gris claro (`#CCCCCC`), con fondo blanco (`#FFFFFF`) y texto en gris oscuro (`#717878`) para asegurar una buena legibilidad.
+- **Focused Input:** El borde cambia al color primario (`#3F51B5`), destacando claramente el campo activo.
+- **Error Input:** El borde se muestra en rojo (`#FF3333`), acompañado opcionalmente de un mensaje de validación en tipografía Inter de 16px.
+
+El botón interno del campo de entrada utiliza un relleno sólido en color primario (`#3F51B5`) y texto en blanco (`#FFFFFF`).
+
+![Inputs - Web Style Guidelines](assets\img\labels.png)
