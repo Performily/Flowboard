@@ -528,9 +528,11 @@ Para su elaboración, se consideran tanto características demográficas como as
 Asimismo, los User Personas sirven como una guía fundamental para la toma de decisiones durante el diseño del producto, ya que permiten enfocar la solución en necesidades reales y no en suposiciones. Cada persona representa a un segmento objetivo identificado previamente, asegurando que el desarrollo del sistema esté alineado con las expectativas y requerimientos de los usuarios finales.
 
 **Personal de Recursos Humanos:**
+![](assets\img\userperson_rrhh.png)
 * **Enlace de acceso:** https://drive.google.com/file/d/10IMOG6dgRXkJQ47uLZeLBUARjZmjumge/view?usp=sharing
 
 **Colaboradores generales:**
+![](assets\img\userperson_colaborador.png)
 * **Enlace de acceso:** https://drive.google.com/file/d/1FB_DUQAW_qgx41I8PWFnNwc9a4TOOlBc/view?usp=sharing
 
 #### 2.3.2. User Task Matrix
@@ -561,9 +563,11 @@ Para su elaboración, se toma como base cada User Persona, desarrollando un mapa
 El análisis del User Journey permite identificar momentos críticos, conocidos como *pain points*, donde el usuario experimenta frustración, retrasos o ineficiencias. Estos hallazgos resultan fundamentales para detectar oportunidades de mejora y orientar el diseño de la solución hacia una experiencia más eficiente, fluida y centrada en el usuario.
 
 **User Persona: Carlos (Personal de Recursos Humanos)**
+![](assets\img\RRHH_Journey Map.png)
 * **Enlace de acceso:** https://drive.google.com/file/d/1RJCala_lUAnsCKPE-s4Q999EzR-ar7Eg/view?usp=drive_link
 
 **User Persona: Maria (Colaboradores generales)**
+![](assets\img\Colaborador_Journey Map.png)
 * **Enlace de acceso:** https://drive.google.com/file/d/1LuTUAhUheGai-YL9YRKzBZWVdwW_b59Y/view?usp=drive_link
 
 ### 2.3.4. Empathy Mapping.
@@ -573,9 +577,11 @@ La sección de Empathy Mapping tiene como propósito profundizar en la comprensi
 A través de este mapeo, se logra una visión holística de cada segmento objetivo, asegurando que el desarrollo de la solución **Flowboard** esté fundamentado en una empatía real con las vivencias y desafíos cotidianos de los colaboradores y el personal de recursos humanos.
 
 **User Persona: Carlos (Personal de Recursos Humanos)**
+![](assets\img\Empathy_mappping_RRHH.png)
 * **Enlace de acceso:** https://drive.google.com/file/d/1GSI4nSJRTFHMLAICbBk7pzENWYN_JS-h/view?usp=sharing
 
 **User Persona: Maria (Colaboradores generales)**
+![](assets\img\Empathy_map_Colaboradores.png)
 * **Enlace de acceso:** https://drive.google.com/file/d/18XKLg_Xd6H1UXFZWWaPo6-iYscRYZfu3/view?usp=sharing
 
 
@@ -585,14 +591,17 @@ En esta sección, el equipo presenta el proceso realizado para comprender el dom
 
 Para llevar a cabo esta actividad, se utilizó la herramienta colaborativa Miro, donde inicialmente se definieron las principales funcionalidades de la aplicación web. A partir de estas funcionalidades, se inició la fase de **Unstructured Exploration**, en la cual el equipo realizó una lluvia de ideas identificando los eventos del dominio. Estos eventos fueron representados en notas adhesivas de color naranja y redactados en tiempo pasado, siguiendo la convención de Event Storming, como por ejemplo “días de descanso calculados”, “reporte gestionado” y “feedback validado”.
 
+![](assets\img\Unstructured_exploration.png)
 * **Unstructured exploration:** https://drive.google.com/file/d/15ACY9_103zd8BLJSPxp4MS9nV-IiU1JG/view?usp=drive_link
 
 Una vez completada esta etapa, se procedió a la fase de **Timelines**, donde los eventos identificados fueron organizados de manera cronológica, es decir, según el orden en el que ocurren dentro del proceso del negocio. Además, se agruparon aquellos eventos que pertenecían a un mismo flujo o contexto, permitiendo visualizar mejor las relaciones y dependencias entre ellos.
 
+![](assets\img\Timelines.png)
 * **Timelines:** https://drive.google.com/file/d/1vkGyo9LvgNvwYqx1rQXCk1uco_wdRyjR/view?usp=drive_link
 
 Finalmente, se desarrolló la etapa de **Actors and External Systems**, en la cual se identificaron los actores y sistemas externos que interactúan con los eventos. En este caso, los principales actores definidos fueron el personal de recursos humanos y los colaboradores, quienes participan directamente en los procesos modelados.
 
+![](assets\img\Actors_and_external_systems.png)
 * **Actors and externals systems:** https://drive.google.com/file/d/1i7Lxj4Kj6QexWID0qs0WPOBX4O8f6-9a/view?usp=drive_link
 
 Este proceso permitió al equipo obtener una visión general del sistema, identificar los procesos clave y comprender mejor las interacciones dentro del dominio, sirviendo como base para el diseño posterior de la solución.
@@ -2186,71 +2195,3 @@ El botón interno del campo de entrada utiliza un relleno sólido en color prima
 
 ![Inputs - Web Style Guidelines](assets\img\labels.png)
 
-## 4.2. Information Architecture
-
-### 4.2.1. Organization Systems
-
-El flujo del sistema inicia en el módulo de autenticación, donde el usuario puede iniciar sesión mediante sus credenciales, recuperar su contraseña e ingresar al apartado de términos y condiciones. Una vez autenticado, el sistema identifica el tipo de usuario y lo dirige al panel principal correspondiente, el cual funciona como un centro de navegación para acceder a las distintas funcionalidades.
-
-Para el **personal de Recursos Humanos**, desde el panel principal se puede acceder a la gestión de colaboradores, donde es posible registrar nuevos empleados, actualizar su información, dar de baja o reactivar colaboradores según corresponda. Asimismo, se cuenta con el apartado de solicitudes, que permite revisar y gestionar las solicitudes enviadas por los empleados, incluyendo su aprobación o rechazo. Además, el sistema incluye una sección de notificaciones, donde se generan alertas ante cambios relevantes dentro del sistema.
-
-Por otro lado, los **colaboradores** acceden a un panel principal enfocado en la autogestión de su información. Desde aquí pueden visualizar su dashboard, consultar su información laboral y gestionar sus datos personales. En el apartado de solicitudes, el usuario puede crear nuevas solicitudes, consultar su estado, cancelarlas si es necesario y validar su saldo de vacaciones. También dispone de funcionalidades relacionadas con la asistencia, como la justificación de inasistencias, así como el acceso a la sección de pagos, donde puede descargar sus boletas. Finalmente, el sistema permite la recepción de notificaciones sobre actualizaciones o acciones relevantes.
-
-![Organization Systems](assets\img\arquitecture.jpg)
-
----
-
-### 4.2.2. Labeling Systems
-
-El sistema de etiquetado propuesto para la solución Flowboard se fundamenta en principios de claridad, consistencia y simplicidad, con el objetivo de facilitar la comprensión de la información y reducir la carga cognitiva de los usuarios durante su interacción con la plataforma.
-
-A partir del análisis de necesidades identificado en el proceso de investigación, se reconoce que uno de los principales problemas en los entornos de gestión de recursos humanos es la ambigüedad en la denominación de procesos y datos, lo cual genera confusión y dificulta el acceso a la información. En este sentido, se plantea el uso de etiquetas concisas y descriptivas, empleando un lenguaje cercano al usuario y evitando terminología técnica innecesaria, de modo que los elementos del sistema puedan ser comprendidos de manera inmediata.
-
-Asimismo, se establece un criterio de consistencia en la denominación de secciones, funcionalidades y estados, asegurando que un mismo concepto sea representado de forma uniforme en toda la interfaz. Las etiquetas estarán orientadas a reflejar acciones y contenidos de forma directa, utilizando estructuras simples que faciliten la identificación rápida de opciones, tales como **"Solicitudes"**, **"Asistencia"**, **"Vacaciones"** o **"Boletas"**, así como estados claramente diferenciados como **"Pendiente"**, **"Aprobado"** o **"Rechazado"**.
-
-De igual manera, se considera la organización semántica de la información, de modo que las etiquetas no solo representen elementos individuales, sino también las relaciones entre ellos dentro del sistema. Este enfoque permite construir una arquitectura de información coherente y predecible, favoreciendo la navegación y el uso eficiente de la plataforma.
-
----
-
-### 4.2.3. SEO Tags and Meta Tags
-
-| Tag | Landing Page |
-| :--- | :--- |
-| **Title** | Flowboard |
-| **Description** | Descubre Flowboard, una solución diseñada para simplificar procesos y ahorrar tiempo en tu empresa. |
-| **Keywords** | RRHH, gestión de colaboradores, nómina, automatización de procesos, Flowboard, asistencia, solicitudes laborales, SaaS |
-| **Author** | Performily Team |
-| **Viewport** | width=device-width, initial-scale=1.0 |
-| **Robots** | index, follow |
-
----
-
-### 4.2.4. Searching Systems
-
-El sistema de búsqueda propuesto para la solución Flowboard se diseña con el objetivo de facilitar el acceso eficiente a la información y evitar que los usuarios se enfrenten a la desorganización y sobrecarga de datos identificadas en el análisis del problema.
-
-Se plantea la implementación de mecanismos de búsqueda que permitan localizar información de manera rápida, precisa y contextualizada dentro de la plataforma. Para ello, se incorpora una barra de búsqueda global que posibilita la consulta directa de elementos clave como colaboradores, solicitudes, registros de asistencia y documentos, reduciendo la dependencia de navegación manual.
-
-Asimismo, el sistema contempla el uso de filtros dinámicos que permiten refinar los resultados en función de criterios relevantes como estado, rango de fechas, área organizacional o tipo de solicitud. De igual manera, se consideran funcionalidades de ordenamiento de resultados, permitiendo organizar la información de acuerdo con distintos parámetros como fecha, relevancia o orden alfabético. El diseño también incluye sugerencias automáticas durante la escritura y categorización de resultados, con el fin de anticipar la intención del usuario y agilizar el proceso de búsqueda.
-
-| Opción | Descripción |
-| :--- | :--- |
-| **Búsqueda de colaboradores** | Permite localizar empleados mediante nombre u otros datos, facilitando su gestión y acceso a su información. |
-| **Búsqueda de solicitudes** | Permite encontrar solicitudes realizadas por los colaboradores según su estado o tipo. |
-| **Filtrado de registros de asistencia** | Facilita la consulta de asistencias mediante filtros como fechas o estado. |
-| **Acceso a boletas de pago** | Permite ubicar y descargar rápidamente las boletas correspondientes. |
-| **Consulta de notificaciones** | Permite visualizar alertas o cambios recientes dentro del sistema. |
-
----
-
-### 4.2.5. Navigation Systems
-
-El sistema de navegación propuesto para la solución Flowboard se fundamenta en principios de arquitectura de información y diseño centrado en el usuario, con el objetivo de garantizar una interacción eficiente, intuitiva y coherente con las necesidades identificadas durante el proceso de Needfinding.
-
-A partir del análisis realizado, se identificó que uno de los principales problemas en la gestión actual de recursos humanos radica en la dificultad de acceso a la información y la fragmentación de los procesos, por lo que la navegación se concibe como un mecanismo clave para reducir la carga cognitiva del usuario. En este sentido, se propone una **estructura de navegación global persistente** basada en un menú principal que permita el acceso directo a las secciones fundamentales del sistema, ofreciendo rutas claras y consistentes que eviten recorridos innecesarios.
-
-Asimismo, se plantea un **modelo de navegación jerárquico y secuencial** en el cual el contenido se organiza en bloques estructurados que guían al usuario de manera progresiva, priorizando los elementos más relevantes. Para orientar el comportamiento del usuario, se incorporan elementos de acción directa (**Call To Action - CTA**) diseñados bajo criterios de jerarquía visual, los cuales dirigen hacia acciones clave como el registro, acceso o exploración de funcionalidades.
-
-De igual manera, se contemplan **componentes de navegación contextual**, tales como estructuras desplegables, listas interactivas y segmentación de contenido, que permiten acceder a información específica bajo demanda. Adicionalmente, se aplican principios de consistencia, visibilidad del estado del sistema y retroalimentación, asegurando que las acciones del usuario generen respuestas claras e inmediatas.
-
-El sistema se complementa con un **pie de página estructurado** que centraliza elementos como políticas, términos y canales de contacto, reforzando la coherencia y completitud de la experiencia de navegación.
