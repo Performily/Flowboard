@@ -2397,3 +2397,476 @@ El colaborador inicia sesión en el sistema y accede al dashboard principal. Des
 https://www.figma.com/design/wB43U9QsN9RLWUJ0sKpTU8/alplicaciones_web_wireframes?node-id=466-314&t=uPbQqfT8hWHnrBDU-1
 
 ---
+
+## 4.6. Domain-Driven Software Architecture
+
+### 4.6.1. Design-Level EventStorming
+
+Tras definir los requisitos y la arquitectura de información, el equipo llevó a cabo una sesión de Design-Level EventStorming. Esta técnica de modelado colaborativo permitió profundizar en la lógica técnica del sistema Flowboard, pasando de una visión general del negocio a una estructura de software detallada. El objetivo principal fue identificar cómo interactúan los eventos de dominio, las acciones de los usuarios y las entidades de persistencia para garantizar una arquitectura limpia y escalable.
+
+La sesión se dividió en fases incrementales utilizando la herramienta Miro, siguiendo la convención de colores estándar para el modelado de dominio:
+
+| Color | Elemento | Descripción |
+| :---: | :--- | :--- |
+| 🟠 Naranja | **Domain Events** | Eventos que representan un cambio de estado significativo dentro del sistema, redactados en tiempo pasado (ej. *Empleado registrado*, *Solicitud procesada*, *Ausencia detectada*). |
+| 🔵 Azul | **Commands** | Acciones o peticiones iniciadas por los actores (Personal de RRHH o Colaboradores) que disparan la lógica que genera los eventos de dominio (ej. *Registrar empleado*, *Procesar solicitud*, *Iniciar sesión*). |
+| 🟡 Amarillo | **Aggregates** | Entidades "dueñas" de la información responsables de mantener la integridad de los datos. Los agregados clave incluyen *Empleado*, *Solicitud de trabajo*, *Cuenta de usuario* y *Captura de asistencia*. |
+| — | **Bounded Contexts** | Agrupación de elementos relacionados en contextos delimitados para definir subdominios claros. |
+
+![EventStorming - Fase 1](assets\img\DomainEvents.png)
+![EventStorming - Fase 2](assets\img\Commands.png)
+![EventStorming - Fase 3](assets/img/Aggregates.png)
+![](assets\img\BusinessProcess.png)
+![EventStorming - Bounded Contexts](assets\img\BoundedContext1.png)
+![](assets\img\BoundedContext2.png)
+
+---
+
+### 4.6.2. Software Architecture Context Diagram
+
+En esta sección se presenta el diagrama de contexto del sistema FlowBoard, el cual permite visualizar el sistema como un todo y su interacción con los actores principales y sistemas externos. Este nivel de abstracción muestra cómo los usuarios y otros sistemas se relacionan con la plataforma, sin entrar en detalles internos de implementación.
+
+El diagrama de contexto muestra a FlowBoard como el sistema central encargado de gestionar la información laboral, solicitudes, asistencia y pagos de los colaboradores. Se identifican dos tipos de usuarios principales: el **colaborador**, quien consulta su información y realiza solicitudes, y el **personal de recursos humanos**, quien administra colaboradores y procesos organizacionales.
+
+Asimismo, el sistema interactúa con tres sistemas externos:
+
+| Sistema Externo | Rol |
+| :--- | :--- |
+| **Sistema de Asistencia** | Proporciona los registros de ingreso y salida de los colaboradores. |
+| **Sistema de Planilla** | Gestiona la información de pagos y boletas. |
+| **Servicio de Correo** | Permite el envío de notificaciones a los usuarios. |
+
+![Software Architecture Context Diagram](assets\img\SystemContext.png)
+
+**Código para Structurizer:**
+
+```
+workspace "Sistema de Gestión de RRHH" {
+
+    model {
+        colaborador = person "Colaborador" {
+            description "Consulta su información laboral, gestiona solicitudes y revisa su asistencia y pagos"
+            tags "Person"
+        }
+
+        rrhh = person "Personal de RRHH" {
+            description "Administra colaboradores y procesos de recursos humanos"
+            tags "Person"
+        }
+
+        sistema = softwareSystem "Flowboard" {
+            description "Plataforma que centraliza la gestión de información laboral, asistencia, solicitudes y pagos"
+            tags "Internal System"
+        }
+
+        sistemaAsistencia = softwareSystem "Sistema de Asistencia" {
+            description "Sistema externo que registra la asistencia de los colaboradores"
+            tags "External System"
+        }
+
+        sistemaPlanilla = softwareSystem "Sistema de Planilla" {
+            description "Sistema externo que gestiona pagos y boletas"
+            tags "External System"
+        }
+
+        email = softwareSystem "Servicio de Correo" {
+            description "Servicio externo para envío de notificaciones"
+            tags "External System"
+        }
+
+        colaborador -> sistema "Gestiona su información laboral, solicitudes y pagos usando el sistema"
+        rrhh -> sistema "Gestiona colaboradores y procesos de RRHH usando el sistema"
+
+        sistema -> sistemaAsistencia "Obtiene registros de asistencia"
+        sistema -> sistemaPlanilla "Obtiene información de pagos y boletas"
+        sistema -> email "Envía notificaciones"
+    }
+
+    views {
+        systemContext sistema {
+            include *
+            autolayout lr
+        }
+
+        styles {
+
+            //Personas internas
+            element "Person" {
+                shape person
+                background #08427b
+                color #ffffff
+            }
+
+            //Personas externas
+            element "External Person" {
+                shape person
+                background #999999
+                color #ffffff
+            }
+
+            //Sistema principal
+            element "Internal System" {
+                shape roundedbox
+                background #1168bd
+                color #ffffff
+            }
+
+            //Sistemas externos
+            element "External System" {
+                shape roundedbox
+                background #999999
+                color #ffffff
+            }
+
+            //Contenedores
+            element "Container" {
+                shape roundedbox
+                background #438dd5
+                color #ffffff
+            }
+
+            //Componentes
+            element "Component" {
+                shape roundedbox
+                background #85bbf0
+                color #000000
+            }
+
+            //Base de datos
+            element "Database" {
+                shape cylinder
+                background #438dd5
+                color #ffffff
+            }
+        }
+    }
+}
+
+```
+
+### 4.6.3. Software Architecture Container Diagrams
+
+En esta sección se presenta el diagrama de contenedores de FlowBoard, el cual describe la arquitectura de alto nivel del sistema, mostrando cómo se distribuyen las responsabilidades entre los principales bloques de software y las tecnologías utilizadas.
+
+El sistema FlowBoard está compuesto por tres contenedores principales:
+
+| Contenedor | Tecnología | Descripción |
+| :--- | :---: | :--- |
+| **FlowBoard Web App** | Vue.js | Interfaz de usuario que permite a colaboradores y personal de RRHH interactuar con el sistema. |
+| **API Backend** | .NET (C#) | Centraliza la lógica de negocio, procesa operaciones y expone servicios mediante una API REST. |
+| **Base de Datos** | MySQL | Almacena información de colaboradores, solicitudes, asistencia y pagos. |
+
+La comunicación entre los contenedores se realiza mediante protocolos HTTP/HTTPS, donde el frontend consume los servicios del backend, y este a su vez gestiona el acceso a la base de datos y a los sistemas externos (Sistema de Asistencia, Sistema de Planilla y Servicio de Correo).
+
+![Software Architecture Container Diagram](assets\img\SystemContainer.png)
+
+**Código para Structurizer:**
+
+```
+workspace "FlowBoard - Sistema de Gestión de RRHH" {
+
+    model {
+        colaborador = person "Colaborador" {
+            description "Consulta su información laboral, gestiona solicitudes y revisa su asistencia y pagos"
+            tags "Person"
+        }
+
+        rrhh = person "Personal de RRHH" {
+            description "Administra colaboradores y procesos de recursos humanos"
+            tags "Person"
+        }
+
+        sistema = softwareSystem "FlowBoard" {
+            description "Plataforma que centraliza la gestión de información laboral, asistencia, solicitudes y pagos"
+            tags "Internal System"
+
+            frontend = container "FlowBoard Web App" {
+                technology "Vue.js"
+                description "Aplicación web que proporciona la interfaz de usuario para consultar información laboral y gestionar solicitudes"
+                tags "Container"
+            }
+
+            backend = container "API Backend" {
+                technology ".NET (C#)"
+                description "Gestiona la lógica de negocio, procesa solicitudes y proporciona servicios al frontend mediante API REST"
+                tags "Container"
+            }
+
+            db = container "Base de Datos" {
+                technology "MySQL"
+                description "Almacena información de colaboradores, solicitudes, asistencia, pagos y metadatos de boletas"
+                tags "Container, Database"
+            }
+        }
+
+        sistemaAsistencia = softwareSystem "Sistema de Asistencia" {
+            description "Sistema externo que registra la asistencia de los colaboradores"
+            tags "External System"
+        }
+
+        sistemaPlanilla = softwareSystem "Sistema de Planilla" {
+            description "Sistema externo que gestiona pagos y boletas"
+            tags "External System"
+        }
+
+        email = softwareSystem "Servicio de Correo" {
+            description "Servicio externo para envío de notificaciones"
+            tags "External System"
+        }
+
+        colaborador -> frontend "Usa la aplicación web"
+        rrhh -> frontend "Usa la aplicación web"
+
+        frontend -> backend "Consume API REST (JSON/HTTPS)"
+        backend -> db "Lee y escribe datos"
+
+        backend -> sistemaAsistencia "Obtiene registros de asistencia"
+        backend -> sistemaPlanilla "Obtiene información de pagos y boletas"
+        backend -> email "Envía notificaciones"
+    }
+
+    views {
+        container sistema {
+            include *
+            autolayout lr
+        }
+
+        styles {
+            element "Person" {
+                shape person
+                background #08427b
+                color #ffffff
+            }
+            element "External Person" {
+                shape person
+                background #999999
+                color #ffffff
+            }
+            element "Internal System" {
+                shape roundedbox
+                background #1168bd
+                color #ffffff
+            }
+            element "External System" {
+                shape roundedbox
+                background #999999
+                color #ffffff
+            }
+            element "Container" {
+                shape roundedbox
+                background #438dd5
+                color #ffffff
+            }
+            element "Component" {
+                shape roundedbox
+                background #85bbf0
+                color #000000
+            }
+            element "Database" {
+                shape cylinder
+                background #438dd5
+                color #ffffff
+            }
+        }
+    }
+}
+```
+
+---
+
+### 4.6.4. Software Architecture Components Diagrams
+
+En esta sección se presenta el diagrama de componentes del sistema FlowBoard, el cual describe la descomposición interna del contenedor de backend, identificando los principales módulos del sistema, sus responsabilidades y la forma en que interactúan entre sí.
+
+El backend del sistema FlowBoard se organiza en dos grupos de componentes:
+
+**Componentes de Dominio:**
+
+| Componente | Tecnología | Descripción |
+| :--- | :---: | :--- |
+| **Gestión de Personal** | Personnel Administration | Administra colaboradores, estructura organizacional y documentos. |
+| **Perfil de Colaborador** | EmployeeProfile | Proporciona acceso a la información personal y laboral del usuario. |
+| **Gestión de Solicitudes** | Request Management | Controla el ciclo de vida de solicitudes: creación, edición, cancelación y procesamiento. |
+| **Asistencia** | Time & Attendance | Consulta y presenta información de asistencia para colaboradores y RRHH. |
+| **Pagos** | Payroll Gateway | Gestiona la visualización de boletas y estado de pagos. |
+| **Autenticación y Autorización** | IAM | Gestiona acceso, roles y envío de notificaciones. |
+
+**Componentes de Integración:**
+
+| Componente | Tecnología | Descripción |
+| :--- | :---: | :--- |
+| **Integración de Asistencia** | Adapter / Integration | Consume el sistema externo de asistencia, transforma los datos y los persiste en el sistema. |
+| **Integración de Planilla** | Adapter / Integration | Consume el sistema externo de planilla, transforma datos de pagos, boletas y vacaciones, y los persiste. |
+
+Esta separación permite que los componentes del dominio trabajen únicamente con datos internos, evitando dependencias directas con sistemas externos y facilitando la evolución del sistema.
+
+![Software Architecture Components Diagram](assets\img\SystemComponent.png)
+
+**Código para Structurizer:**
+
+```
+workspace "FlowBoard - Component Diagram" {
+
+    model {
+        sistema = softwareSystem "FlowBoard" {
+            description "Plataforma que centraliza la gestión de información laboral, asistencia, solicitudes y pagos"
+            tags "Internal System"
+
+            backend = container "API Backend" {
+                technology ".NET (C#)"
+                tags "Container"
+
+                gestionPersonal = component "Gestión de Personal" {
+                    description "Administra colaboradores, estructura organizacional y documentos"
+                    technology "Personnel Administration"
+                    tags "Component"
+                }
+
+                perfil = component "Perfil de Colaborador" {
+                    description "Proporciona información personal y laboral"
+                    technology "EmployeeProfile"
+                    tags "Component"
+                }
+
+                solicitudes = component "Gestión de Solicitudes" {
+                    description "Gestiona el ciclo de vida de solicitudes"
+                    technology "Request Management"
+                    tags "Component"
+                }
+
+                asistencia = component "Asistencia" {
+                    description "Consulta y presenta información de asistencia para colaboradores y RRHH"
+                    technology "Time & Attendance"
+                    tags "Component"
+                }
+
+                pagos = component "Pagos" {
+                    description "Gestiona la visualización de boletas y estado de pagos"
+                    technology "Payroll Gateway"
+                    tags "Component"
+                }
+
+                iam = component "Autenticación y Autorización" {
+                    description "Gestiona acceso, roles y notificaciones"
+                    technology "IAM"
+                    tags "Component"
+                }
+
+                integracionAsistencia = component "Integración de Asistencia" {
+                    description "Consume el sistema externo de asistencia, transforma los datos y los persiste en el sistema"
+                    technology "Adapter / Integration"
+                    tags "Component"
+                }
+
+                integracionPlanilla = component "Integración de Planilla" {
+                    description "Consume el sistema externo de planilla, transforma datos de pagos, boletas y vacaciones, y los persiste"
+                    technology "Adapter / Integration"
+                    tags "Component"
+                }
+            }
+
+            db = container "Base de Datos" {
+                technology "MySQL"
+                description "Almacena información de colaboradores, solicitudes, asistencia, pagos y vacaciones"
+                tags "Container, Database"
+            }
+        }
+
+        sistemaAsistencia = softwareSystem "Sistema de Asistencia" {
+            tags "External System"
+        }
+
+        sistemaPlanilla = softwareSystem "Sistema de Planilla" {
+            tags "External System"
+        }
+
+        email = softwareSystem "Servicio de Correo" {
+            tags "External System"
+        }
+
+        solicitudes -> gestionPersonal "Consulta datos"
+        solicitudes -> iam "Valida permisos y notifica"
+        perfil -> gestionPersonal "Obtiene información"
+        asistencia -> db "Consulta datos de asistencia"
+        pagos -> db "Consulta datos de pagos"
+
+        integracionAsistencia -> sistemaAsistencia "Obtiene registros"
+        integracionAsistencia -> db "Guarda asistencia"
+        integracionPlanilla -> sistemaPlanilla "Obtiene boletas y vacaciones"
+        integracionPlanilla -> db "Guarda pagos y saldos"
+
+        iam -> email "Envía notificaciones"
+
+        gestionPersonal -> db "Lee/escribe"
+        solicitudes -> db "Lee/escribe"
+        perfil -> db "Lee"
+    }
+
+    views {
+        component backend {
+            include *
+            autolayout lr
+        }
+
+        styles {
+            element "Person" {
+                shape person
+                background #08427b
+                color #ffffff
+            }
+            element "External Person" {
+                shape person
+                background #999999
+                color #ffffff
+            }
+            element "Internal System" {
+                shape roundedbox
+                background #1168bd
+                color #ffffff
+            }
+            element "External System" {
+                shape roundedbox
+                background #999999
+                color #ffffff
+            }
+            element "Container" {
+                shape roundedbox
+                background #438dd5
+                color #ffffff
+            }
+            element "Component" {
+                shape roundedbox
+                background #85bbf0
+                color #000000
+            }
+            element "Database" {
+                shape cylinder
+                background #438dd5
+                color #ffffff
+            }
+        }
+    }
+}
+```
+
+---
+
+## 4.7. Software Object-Oriented Design
+
+En esta sección se presenta el diseño orientado a objetos del sistema propuesto, el cual describe en detalle la estructura interna de los componentes que conforman la solución. Este diseño tiene como objetivo representar de manera clara y organizada las entidades principales del sistema, sus responsabilidades, atributos y comportamiento, siguiendo los principios de la programación orientada a objetos.
+
+Para lograr una adecuada representación del sistema, se han considerado los distintos bounded contexts definidos previamente en la arquitectura, tales como gestión de identidad y acceso, administración de personal, perfil del colaborador, gestión de solicitudes, asistencia, pagos e integración con sistemas externos.
+
+### 4.7.1. Class Diagrams
+
+![Class Diagram](assets\img\ClassDiagram.png)
+
+---
+
+## 4.8. Database Design
+
+En esta sección se detalla el Diagrama Entidad-Relación Físico que asegura la persistencia de la información para los procesos de Flowboard. El diseño se ha normalizado para garantizar la integridad referencial y optimizar las consultas de los modelos de lectura (Queries) y escritura (Commands) definidos en la arquitectura de dominio. La estructura se divide en módulos que corresponden a los Bounded Contexts identificados durante la fase de análisis y diseño.
+
+### 4.8.1. Database Diagrams
+
+![Database Diagram](assets\img\dataBaseD.png)
