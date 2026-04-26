@@ -401,7 +401,7 @@ Este segmento está conformado por los trabajadores de la organización que requ
 * **Nombre:** Juan Fernando Caicho Olorte
 * **Edad:** 53 años
 * **Distrito:** Barranca
-* **Link de la entrevista:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQCoaZES8xugQ6v9JM3-75MDAXZJC0dgiZrI0kE1nvJcwVM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vPsroB)
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQCoaZES8xugQ6v9JM3-75MDAXZJC0dgiZrI0kE1nvJcwVM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vPsroB
 * **Timing donde inicia la entrevista:** 0:01
 * **Duración completa de la entrevista:** 47:24
 
@@ -412,7 +412,7 @@ Juan Fernando Caicho Olorte, abogado de 53 años, casado y residente en Barranca
 * **Nombre:** Pool Jordi Galvez Munibe
 * **Edad:** 38 años
 * **Distrito:** Pueblo Libre
-* **Link de la entrevista:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQDvSNB5crLVS7wWx0_E77k6AVeKxJ8dBPX4_w5_hwy_hw0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PDEaLX)
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQDvSNB5crLVS7wWx0_E77k6AVeKxJ8dBPX4_w5_hwy_hw0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PDEaLX
 * **Timing donde inicia la entrevista:** 0:07
 * **Duración completa de la entrevista:** 29:48
 
@@ -423,7 +423,7 @@ Pool Jordi Galvez Munibe, administrador de empresas de 38 años y residente en P
 * **Nombre:** Kenneth Espinosa Villalba
 * **Edad:** 31 años
 * **Distrito:** Callao
-* **Link de la entrevista:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQATLQigebr9SZaR0Td8NhXZAUM_XjsWvDUS9-V7WqS9OeM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bkRLQI)
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQATLQigebr9SZaR0Td8NhXZAUM_XjsWvDUS9-V7WqS9OeM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bkRLQI
 * **Timing donde inicia la entrevista:** 0:06
 * **Duración completa de la entrevista:** 44:08
 
@@ -436,7 +436,7 @@ Kenneth Espinosa Villalba, administrador de 31 años egresado de la Universidad 
 * **Nombre:** Henry Cabrera Barrantes
 * **Edad:** 51 años
 * **Distrito:** Cajamarca
-* **Link de la entrevista:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQAsKi64fXuhQpOhzAEu4E_jAWKCjWFtkhmuzYhtIOCR5Sk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qCHfq8)
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQAsKi64fXuhQpOhzAEu4E_jAWKCjWFtkhmuzYhtIOCR5Sk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qCHfq8
 * **Timing donde inicia la entrevista:** 0:18
 * **Duración completa de la entrevista:** 17:40
 
@@ -447,7 +447,7 @@ Henry Cabrera Barrante, de 51 años y casado, ocupa desde hace diez años el car
 * **Nombre:** María del Carmen Espichan Itán 
 * **Edad:** 24 años
 * **Distrito:** AT, Salamanca
-* **Link de la entrevista:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQAI1MjwjiYNSKtcGmHCmyVEAXFmeKgfhN36LyU_FBx4py8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qJ0veL)
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQAI1MjwjiYNSKtcGmHCmyVEAXFmeKgfhN36LyU_FBx4py8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qJ0veL
 * **Timing donde inicia la entrevista:** 0:12
 * **Duración completa de la entrevista:** 21:00
 
@@ -458,7 +458,7 @@ María del Carmen Espichan Itán, de 24 años, vive en Salamanca y trabaja como 
 * **Nombre:** Micaela Rodriguez 
 * **Edad:** 23 años
 * **Distrito:** Arequipa
-* **Link de la entrevista:** [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQCyz5NeBB3ORoOPNJX5DtEHAS993BkAiJjb--gLqvQulT8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AvdGgl)
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQCyz5NeBB3ORoOPNJX5DtEHAS993BkAiJjb--gLqvQulT8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AvdGgl
 * **Timing donde inicia la entrevista:** 0:18
 * **Duración completa de la entrevista:** 13:45 
 
@@ -516,3 +516,19 @@ Micaela Rodriguez, 23 de Arequipa. Actualmente trabaja en una empresa de atenci�
 * El **33%** señaló que la atención de recursos humanos resulta adecuada, pero insuficiente cuando se requiere resolver temas específicos o urgentes.
 * El **67%** percibe que la comunicación actual con recursos humanos es distante, lenta o poco clara, especialmente en organizaciones con áreas centralizadas.
 * El **100%** mostró una actitud positiva hacia la incorporación de tecnología, automatización o inteligencia artificial para agilizar procesos y consultas.
+
+### 2.3. Needfinding
+
+#### 2.3.1. User Personas
+
+La sección de User Personas tiene como propósito representar de manera estructurada a los usuarios principales del sistema a partir de la información recopilada durante la etapa de investigación. Estas representaciones no corresponden a personas reales, sino a arquetipos construidos en base a patrones identificados en las entrevistas realizadas y el análisis del contexto del problema.
+
+Para su elaboración, se consideran tanto características demográficas como aspectos más profundos relacionados con comportamientos, necesidades, objetivos y frustraciones de los usuarios. Esto permite comprender mejor cómo interactúan con su entorno y cuáles son los principales problemas que enfrentan en relación con el dominio del proyecto.
+
+Asimismo, los User Personas sirven como una guía fundamental para la toma de decisiones durante el diseño del producto, ya que permiten enfocar la solución en necesidades reales y no en suposiciones. Cada persona representa a un segmento objetivo identificado previamente, asegurando que el desarrollo del sistema esté alineado con las expectativas y requerimientos de los usuarios finales.
+
+**Personal de Recursos Humanos:**
+* **Enlace de acceso:** https://drive.google.com/file/d/10IMOG6dgRXkJQ47uLZeLBUARjZmjumge/view?usp=sharing
+
+**Colaboradores generales:**
+* **Enlace de acceso:** https://drive.google.com/file/d/1FB_DUQAW_qgx41I8PWFnNwc9a4TOOlBc/view?usp=sharing
