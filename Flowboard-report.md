@@ -635,3 +635,1353 @@ El Ubiquitous Language tiene como objetivo establecer un lenguaje común y consi
 | **Información demográfica** | Datos personales del colaborador como edad y estado civil. |
 | **Notificaciones** | Alertas automáticas sobre eventos importantes como vencimiento de contrato o aprobaciones. |
 | **Días acumulados** | Días que acumuló el colaborador al trabajar horas extras. |
+
+# Capítulo III: Requirements Specification
+
+## 3.1. User Stories
+
+La sección de User Stories tiene como objetivo definir los requisitos del sistema desde la perspectiva del usuario, describiendo de manera clara y estructurada las funcionalidades que la solución debe ofrecer para satisfacer sus necesidades. Estas historias permiten traducir el análisis previo en elementos concretos que guían el desarrollo del producto.
+
+Para su elaboración, se utiliza como base la información obtenida en etapas anteriores, especialmente los User Personas, el User Task Matrix y los User Journey Maps. A partir de estos artefactos, se identifican las necesidades, problemas y tareas más relevantes de los usuarios, las cuales se transforman en historias que reflejan lo que el usuario espera lograr con el sistema.
+
+Cada User Story se redacta siguiendo una estructura que incluye el rol del usuario, la acción que desea realizar y el beneficio que obtiene, lo que permite mantener el enfoque centrado en el valor que se entrega. Asimismo, cada historia incorpora criterios de aceptación que definen las condiciones necesarias para considerar que la funcionalidad ha sido correctamente implementada.
+
+El conjunto de User Stories se organiza en relación con objetivos más amplios (Epics), facilitando la priorización y planificación del desarrollo. De esta manera, esta sección establece una base clara y ordenada para la construcción del sistema, asegurando que las funcionalidades estén alineadas con las necesidades reales de los usuarios.
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US01** | EP | Crear cuenta |
+
+**Description:** Como trabajador del área de recursos humanos, quiero registrar la información de nuevos colaboradores en el sistema, para que su información laboral esté disponible para su gestión.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Registro exitoso de colaborador**
+- **Given** existe un nuevo colaborador cuyos datos no están registrados en el sistema
+- **And** no tiene una cuenta asociada
+- **When** el trabajador de recursos humanos registra la información completa y válida del colaborador
+- **Then** el sistema crea el registro del colaborador
+- **And** el sistema genera credenciales de acceso para el colaborador
+- **And** el sistema almacena la información laboral asociada
+- **And** el sistema envía las credenciales al correo del colaborador
+
+**Scenario 2: Validación de campos obligatorios**
+- **Given** el trabajador de recursos humanos intenta registrar un colaborador
+- **When** omite uno o más campos obligatorios
+- **Then** el sistema rechaza el registro
+- **And** el sistema indica que existen campos obligatorios incompletos
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US02** | EP | Generar credenciales automáticas |
+
+**Description:** Como trabajador de recursos humanos, quiero que el sistema genere automáticamente credenciales de acceso para los nuevos colaboradores, para que puedan acceder al sistema sin intervención manual.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Generación automática de credenciales**
+- **Given** existe un colaborador registrado sin credenciales de acceso
+- **When** el sistema procesa la creación de su cuenta
+- **Then** genera un identificador de usuario único
+- **And** genera una contraseña segura
+- **And** asocia las credenciales al colaborador
+
+**Scenario 2: Envío de credenciales al colaborador**
+- **Given** el sistema ha generado credenciales para un colaborador
+- **And** el colaborador tiene un correo electrónico registrado
+- **When** se completa la generación de credenciales
+- **Then** el sistema envía las credenciales al correo del colaborador
+
+**Scenario 3: Prevención de duplicidad de credenciales**
+- **Given** existe un colaborador con credenciales previamente generadas
+- **When** el sistema intenta generar nuevas credenciales para el mismo colaborador
+- **Then** el sistema evita la duplicación de credenciales
+- **And** mantiene las credenciales existentes
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US03** | EP | Iniciar sesión |
+
+**Description:** Como colaborador de la organización, quiero autenticarme en el sistema con mis credenciales, para acceder a mi información y funcionalidades disponibles.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Iniciar sesión con credenciales correctas**
+- **Given** el colaborador está registrado en el sistema
+- **And** tiene credenciales válidas
+- **When** proporciona un usuario y contraseña correctos
+- **Then** el sistema valida la autenticación
+- **And** se concede acceso al sistema
+
+**Scenario 2: Usuario inválido**
+- **Given** el colaborador intenta autenticarse
+- **When** proporciona un usuario que no existe
+- **Then** el sistema rechaza la autenticación
+- **And** se indica que el usuario no es válido
+
+**Scenario 3: Contraseña incorrecta**
+- **Given** el colaborador está registrado en el sistema
+- **When** proporciona una contraseña incorrecta
+- **Then** el sistema rechaza la autenticación
+- **And** se indica que las credenciales no son válidas
+
+**Scenario 4: Primer inicio de sesión con contraseña temporal**
+- **Given** el colaborador tiene una contraseña temporal
+- **When** se autentica correctamente
+- **Then** se requiere el cambio de contraseña antes de acceder al sistema
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US04** | EP | Visualizar información laboral |
+
+**Description:** Como colaborador que busca gestionar su información de forma autónoma, quiero consultar mi información laboral consolidada, para que pueda gestionarla sin depender de recursos humanos.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta exitosa de información laboral**
+- **Given** el colaborador está autenticado
+- **When** solicita su información laboral
+- **Then** se devuelve su información personal, de contacto y laboral
+- **And** la información corresponde únicamente al colaborador autenticado
+
+**Scenario 2: Información no disponible**
+- **Given** el colaborador está autenticado
+- **And** no existe información laboral registrada
+- **When** solicita su información laboral
+- **Then** se devuelve una respuesta sin datos
+- **And** se indica que no hay información disponible
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US05** | EP | Actualizar información de colaborador |
+
+**Description:** Como personal de RRHH que realiza el mantenimiento de registros de colaboradores, quiero actualizar la información de un colaborador, para mantener los datos correctos y actualizados.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Actualización exitosa**
+- **Given** el colaborador existe en el sistema
+- **And** el trabajador de recursos humanos tiene permisos para modificar su información
+- **When** se envía una actualización con datos válidos del colaborador
+- **Then** el sistema actualiza correctamente la información del colaborador
+- **And** los cambios quedan almacenados
+
+**Scenario 2: Colaborador no encontrado**
+- **Given** no existe un colaborador con el identificador proporcionado
+- **When** se intenta actualizar su información
+- **Then** el sistema rechaza la operación
+- **And** se indica que el colaborador no existe
+
+**Scenario 3: Datos inválidos**
+- **Given** el colaborador existe en el sistema
+- **When** se envía una actualización con datos incompletos o inválidos
+- **Then** el sistema rechaza la operación
+- **And** se indican errores de validación
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US06** | EP | Dar de baja a un colaborador |
+
+**Description:** Como personal de RRHH que realiza el proceso de cese de un colaborador, quiero registrar el cese de un colaborador, para que su estado laboral refleje su situación actual.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Registro exitoso de cese**
+- **Given** el colaborador existe en el sistema
+- **And** cumple con las condiciones necesarias para su cese
+- **When** se registra el cese con información válida
+- **Then** el sistema cambia el estado del colaborador a "Cesado"
+- **And** se almacena el motivo de baja y la información asociada
+- **And** el cambio queda persistido en el sistema
+
+**Scenario 2: Datos obligatorios incompletos**
+- **Given** el colaborador existe en el sistema
+- **When** se intenta registrar el cese con información incompleta
+- **Then** la operación es rechazada
+- **And** se indican errores de validación
+
+**Scenario 3: Colaborador no encontrado**
+- **Given** no existe un colaborador con el identificador proporcionado
+- **When** se intenta registrar el cese
+- **Then** la operación es rechazada
+- **And** se indica que el colaborador no existe
+
+**Scenario 4: Colaborador ya cesado**
+- **Given** el colaborador ya tiene estado "Cesado"
+- **When** se intenta registrar nuevamente su cese
+- **Then** el sistema rechaza la operación
+- **And** el estado permanece sin cambios
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US07** | EP | Reactivar colaborador |
+
+**Description:** Como personal de RRHH que gestiona el ciclo de vida de los colaboradores, quiero reactivar a un colaborador, para que pueda reincorporarse y retomar sus funciones en la organización.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Reactivación exitosa**
+- **Given** el colaborador existe y tiene estado "Cesado"
+- **And** el trabajador de recursos humanos tiene permisos para gestionar colaboradores
+- **When** se registra la reactivación con datos válidos de reincorporación
+- **Then** el estado del colaborador cambia a "Activo"
+- **And** se actualizan los datos laborales correspondientes (área, puesto, tipo de contrato)
+- **And** se registra la fecha de reingreso
+- **And** los cambios quedan persistidos
+
+**Scenario 2: Datos obligatorios incompletos**
+- **Given** el colaborador existe y tiene estado "Cesado"
+- **When** se intenta registrar la reactivación con información incompleta
+- **Then** la operación es rechazada
+- **And** se indican errores de validación
+
+**Scenario 3: Estado inválido para reactivación**
+- **Given** el colaborador existe
+- **And** su estado es distinto de "Cesado"
+- **When** se intenta registrar la reactivación
+- **Then** la operación es rechazada
+- **And** se indica que solo colaboradores cesados pueden ser reactivados
+
+**Scenario 4: Colaborador no encontrado**
+- **Given** no existe un colaborador con el identificador proporcionado
+- **When** se intenta registrar la reactivación
+- **Then** la operación es rechazada
+- **And** se indica que el colaborador no existe
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US08** | EP | Seguimiento de solicitudes |
+
+**Description:** Como colaborador que está preocupado por el avance de sus trámites, quiero consultar el estado de mis solicitudes, para que pueda hacer seguimiento a su progreso.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de solicitudes**
+- **Given** el colaborador está autenticado
+- **And** tiene solicitudes registradas
+- **When** solicita el listado de sus solicitudes
+- **Then** se devuelve la lista de solicitudes asociadas al colaborador
+- **And** cada solicitud incluye su tipo, fecha de registro y estado
+- **And** los estados posibles son "Pendiente", "Aprobado" o "Rechazado"
+
+**Scenario 2: Filtrado por estado**
+- **Given** el colaborador está autenticado
+- **And** tiene solicitudes registradas
+- **When** solicita sus solicitudes filtradas por un estado específico
+- **Then** se devuelve únicamente la lista de solicitudes que cumplen con ese estado
+
+**Scenario 3: Sin solicitudes registradas**
+- **Given** el colaborador está autenticado
+- **And** no tiene solicitudes registradas
+- **When** solicita el listado de solicitudes
+- **Then** se devuelve una lista vacía
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US09** | EP | Atender solicitudes |
+
+**Description:** Como jefe o personal de RRHH encargado de gestionar solicitudes de colaboradores, quiero gestionar solicitudes de colaboradores, para que pueda aprobarlas o rechazarlas según corresponda.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Aprobación exitosa**
+- **Given** existe una solicitud en estado "Pendiente"
+- **And** el usuario tiene permisos para gestionarla
+- **When** se registra la aprobación de la solicitud
+- **Then** el estado de la solicitud cambia a "Aprobado"
+- **And** el cambio queda registrado en el historial de la solicitud
+
+**Scenario 2: Rechazo exitoso**
+- **Given** existe una solicitud en estado "Pendiente"
+- **And** el usuario tiene permisos para gestionarla
+- **When** se registra el rechazo de la solicitud con un motivo válido
+- **Then** el estado de la solicitud cambia a "Rechazado"
+- **And** el motivo de rechazo queda almacenado
+- **And** el cambio queda registrado en el historial de la solicitud
+
+**Scenario 3: Rechazo sin motivo**
+- **Given** existe una solicitud en estado "Pendiente"
+- **When** se intenta registrar el rechazo sin un motivo
+- **Then** la operación es rechazada
+- **And** se indica que el motivo de rechazo es obligatorio
+
+**Scenario 4: Solicitud no encontrada**
+- **Given** no existe una solicitud con el identificador proporcionado
+- **When** se intenta gestionarla
+- **Then** la operación es rechazada
+- **And** se indica que la solicitud no existe
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US10** | EP | Ver información de área y puesto |
+
+**Description:** Como colaborador que quiere tener mayor claridad sobre su rol y entorno laboral, quiero consultar la información de mi área y puesto, para entender mi rol dentro de la organización.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de información de área y puesto**
+- **Given** el colaborador está autenticado
+- **And** tiene información laboral registrada
+- **When** solicita la información de su área y puesto
+- **Then** se devuelve la información del área, departamento, jefe inmediato, descripción del puesto y horario laboral
+- **And** la información corresponde al colaborador autenticado
+
+**Scenario 2: Información no disponible**
+- **Given** el colaborador está autenticado
+- **And** no tiene información de área o puesto registrada
+- **When** solicita su información laboral
+- **Then** se devuelve una respuesta sin datos
+- **And** se indica que no hay información disponible
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US11** | EP | Ver estructura organizacional |
+
+**Description:** Como personal de RRHH responsable de la organización interna de la empresa, quiero consultar la estructura organizacional, para gestionar las jerarquías de la empresa.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de estructura organizacional**
+- **Given** el trabajador de recursos humanos está autenticado
+- **When** solicita la estructura organizacional
+- **Then** se devuelve la jerarquía de la organización
+- **And** incluye relaciones entre áreas, direcciones, gerencias y colaboradores
+- **And** permite identificar niveles jerárquicos y dependencias
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US12** | EP | Ver resumen de asistencias por área |
+
+**Description:** Como jefe o encargado de RRHH que toma decisiones basadas en indicadores de asistencia de sus colaboradores, quiero consultar un resumen de asistencia por área, para evaluar el desempeño del personal.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Generación de resumen de asistencia**
+- **Given** el usuario tiene permisos de jefe o recursos humanos
+- **And** existen registros de asistencia en el sistema
+- **When** solicita el resumen de asistencia para un área y un rango de fechas
+- **Then** se devuelve el conteo total de asistencias, tardanzas, faltas y solicitudes
+- **And** los datos corresponden al área y periodo solicitado
+
+**Scenario 2: Área sin registros en el periodo**
+- **Given** el usuario tiene permisos
+- **And** no existen registros de asistencia para el área y rango de fechas seleccionados
+- **When** solicita el resumen de asistencia
+- **Then** se devuelve una respuesta sin datos
+- **And** se indica que no hay registros disponibles para el criterio solicitado
+
+**Scenario 3: Parámetros inválidos**
+- **Given** el usuario tiene permisos
+- **When** solicita el resumen con un rango de fechas inválido
+- **Then** la operación es rechazada
+- **And** se indican errores de validación
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US13** | EP | Ver estado de asistencia personal |
+
+**Description:** Como colaborador que se preocupa por su desempeño laboral, quiero consultar mi estado de asistencia en un periodo determinado, para identificar oportunidades de mejora en mi puntualidad y asistencia.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de estado de asistencia**
+- **Given** el colaborador está autenticado
+- **And** existen registros de asistencia asociados
+- **When** solicita su estado de asistencia para un periodo determinado
+- **Then** se devuelve el detalle de asistencia por día dentro del periodo
+- **And** cada día indica si corresponde a asistencia, tardanza o falta
+- **And** se devuelve el total de horas laboradas acumuladas en el periodo
+- **And** se devuelve el conteo total de asistencias, tardanzas y faltas
+
+**Scenario 2: Sin registros en el periodo**
+- **Given** el colaborador está autenticado
+- **And** no existen registros de asistencia en el periodo solicitado
+- **When** solicita su estado de asistencia
+- **Then** se devuelve una respuesta sin datos
+- **And** se indica que no hay registros disponibles
+
+**Scenario 3: Parámetros inválidos**
+- **Given** el colaborador está autenticado
+- **When** solicita su estado de asistencia con un periodo inválido
+- **Then** el sistema rechaza la operación
+- **And** se indican errores de validación
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US14** | EP | Ver estado de pagos |
+
+**Description:** Como colaborador del área de RRHH encargado de la administración de remuneraciones, quiero consultar el estado de pagos de los colaboradores por periodo y estado, para controlar la planilla y pagos pendientes o con observaciones.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de planilla por periodo**
+- **Given** el usuario tiene permisos para gestionar remuneraciones
+- **And** existen registros de pagos en el sistema
+- **When** solicita la planilla de un periodo específico
+- **Then** se devuelve la lista de colaboradores incluidos en ese periodo
+- **And** cada registro incluye el monto neto, estado del pago y fecha correspondiente
+
+**Scenario 2: Filtrado de pagos por estado**
+- **Given** el usuario tiene permisos
+- **And** existen registros de pagos en el periodo seleccionado
+- **When** solicita la planilla filtrada por un estado de pago
+- **Then** se devuelve únicamente la lista de colaboradores que cumplen con el estado indicado
+- **And** los resultados corresponden al periodo y filtro aplicado
+
+**Scenario 3: Consulta de detalle de pago**
+- **Given** existe un registro de pago para un colaborador en un periodo
+- **When** se solicita el detalle del pago
+- **Then** se devuelve la información de ingresos, descuentos, bonificaciones y observaciones asociadas
+
+**Scenario 4: Sin resultados**
+- **Given** el usuario tiene permisos
+- **And** no existen registros que coincidan con el periodo o estado solicitado
+- **When** realiza la consulta
+- **Then** se devuelve una respuesta sin datos
+- **And** se indica que no hay resultados disponibles
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US15** | EP | Ver disponibilidad de vacaciones por área |
+
+**Description:** Como colaborador del área de RRHH, quiero consultar la disponibilidad de vacaciones por área y periodo, para evaluar si una solicitud puede atenderse sin afectar la continuidad de las operaciones.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de disponibilidad por área y periodo**
+- **Given** el usuario tiene permisos para gestionar vacaciones
+- **And** existen colaboradores en el área consultada
+- **When** solicita la disponibilidad para un área y un rango de fechas
+- **Then** se devuelve la lista de colaboradores del área
+- **And** se indica para cada colaborador si está disponible, tiene vacaciones programadas o solicitudes pendientes en ese periodo
+
+**Scenario 2: Disponibilidad suficiente**
+- **Given** existe una solicitud de vacaciones pendiente
+- **And** se ha consultado la disponibilidad del área para el periodo solicitado
+- **When** la ausencia del colaborador no afecta la continuidad operativa del área
+- **Then** la solicitud es considerada viable
+- **And** se devuelve un resumen de disponibilidad que respalda la decisión
+
+**Scenario 3: Disponibilidad insuficiente**
+- **Given** existe una solicitud de vacaciones pendiente
+- **And** se ha consultado la disponibilidad del área para el periodo solicitado
+- **When** la ausencia del colaborador afecta la continuidad operativa del área
+- **Then** la solicitud es considerada no viable
+- **And** se devuelven las razones de la indisponibilidad
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US16** | EP | Programar vacaciones del personal por área |
+
+**Description:** Como jefe o encargado de RRHH encargado de coordinar los descansos del personal, quiero programar las vacaciones de los colaboradores de mi área, para distribuir adecuadamente la carga laboral del equipo y evitar conflictos de disponibilidad.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Registro de programación de vacaciones**
+- **Given** el colaborador existe y pertenece al área
+- **And** el usuario tiene permisos para gestionar vacaciones
+- **When** se registra una programación con un rango de fechas válido
+- **Then** la programación es almacenada
+- **And** la disponibilidad del área se recalcula para el periodo
+- **And** se actualizan los indicadores de capacidad del equipo
+
+**Scenario 2: Conflicto por superposición de vacaciones**
+- **Given** el área tiene una capacidad mínima operativa definida
+- **And** existen vacaciones programadas en el periodo
+- **When** una nueva programación reduce la disponibilidad por debajo del umbral permitido
+- **Then** la operación es rechazada
+- **And** se indica que se compromete la continuidad operativa del área
+
+**Scenario 3: Programación confirmada**
+- **Given** el área tiene una capacidad mínima operativa definida
+- **And** la nueva programación reduce la disponibilidad pero no cruza el umbral crítico
+- **When** se registra la programación
+- **Then** la programación es aceptada
+- **And** se marca como riesgo de baja disponibilidad
+
+**Scenario 4: Conflicto por superposición del colaborador**
+- **Given** el colaborador tiene vacaciones programadas
+- **When** se intenta registrar una nueva programación en fechas superpuestas
+- **Then** la operación es rechazada
+- **And** se indica el conflicto de fechas
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US17** | EP | Crear solicitud |
+
+**Description:** Como colaborador que necesita gestionar trámites laborales de forma autónoma, quiero crear solicitudes, para gestionar de forma autónoma necesidades relacionadas con asistencia, beneficios y otros trámites.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Creación de solicitud de vacaciones**
+- **Given** el colaborador está autenticado
+- **And** tiene información de saldo de vacaciones disponible
+- **When** registra una solicitud de vacaciones con fechas válidas
+- **Then** se crea la solicitud con estado "Pendiente"
+- **And** se almacena el rango de fechas, tipo de vacaciones y demás datos asociados
+
+**Scenario 2: Solicitud válida enviada**
+- **Given** el colaborador tiene saldo suficiente de días disponibles
+- **And** no existen conflictos de fechas
+- **When** registra una solicitud de vacaciones
+- **Then** la solicitud es aceptada
+- **And** queda en estado "Pendiente de aprobación"
+
+**Scenario 3: Saldo insuficiente**
+- **Given** el colaborador tiene un saldo de vacaciones menor al solicitado
+- **When** registra una solicitud que excede su saldo disponible
+- **Then** la operación es rechazada
+- **And** se indica el saldo disponible actual
+
+**Scenario 4: Fechas inválidas**
+- **Given** el colaborador registra una solicitud
+- **When** la fecha de fin es anterior a la fecha de inicio
+- **Then** la operación es rechazada
+- **And** se indica que las fechas no son válidas
+
+**Scenario 5: Conflicto por superposición de fechas**
+- **Given** el colaborador tiene una solicitud existente en estado "Pendiente" o "Aprobada"
+- **When** registra una nueva solicitud con fechas que se superponen
+- **Then** la operación es rechazada
+- **And** se indica el conflicto de fechas
+
+**Scenario 6: Guardado como borrador**
+- **Given** el colaborador registra una solicitud incompleta
+- **When** decide guardarla sin enviarla
+- **Then** la solicitud se almacena en estado "Borrador"
+- **And** puede ser completada posteriormente
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US18** | EP | Editar solicitud enviada |
+
+**Description:** Como colaborador que necesita gestionar trámites laborales de forma autónoma, quiero editar solicitudes enviadas, para corregir información antes de que sean atendidas.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Edición permitida en estado válido**
+- **Given** el colaborador está autenticado
+- **And** existe una solicitud asociada al colaborador en estado "En proceso" o "Pendiente"
+- **When** solicita actualizar la información de la solicitud
+- **Then** la solicitud puede ser modificada
+- **And** los cambios quedan almacenados correctamente
+
+**Scenario 2: Actualización de datos de solicitud**
+- **Given** existe una solicitud editable del colaborador
+- **When** se actualizan campos como fechas, tipo de solicitud, motivo u observaciones
+- **Then** la información de la solicitud se actualiza
+- **And** se mantiene el estado de la solicitud
+
+**Scenario 3: Validación de fechas**
+- **Given** el colaborador intenta modificar una solicitud
+- **When** la fecha de fin es anterior a la fecha de inicio
+- **Then** la operación es rechazada
+- **And** se indica que las fechas no son válidas
+
+**Scenario 4: Restricción por estado no editable**
+- **Given** la solicitud se encuentra en estado "Aprobado" o "Rechazado"
+- **When** el colaborador intenta modificarla
+- **Then** la operación es rechazada
+- **And** se indica que la solicitud no puede ser editada en ese estado
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US19** | EP | Acceder a página exclusiva de Términos y Condiciones |
+
+**Description:** Como parte del equipo de recursos humanos de una empresa que quiere usar la aplicación sin riesgos ni dudas legales, quiero acceder a una página exclusiva de Términos y Condiciones, para conocer las reglas de uso, las responsabilidades del usuario y del servicio, y asegurarme de que entiendo las condiciones antes de utilizar la aplicación.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Acceso al documento de Términos y Condiciones**
+- **Given** el usuario accede a la landing page
+- **When** solicita visualizar los Términos y Condiciones
+- **Then** se muestra el documento completo de Términos y Condiciones
+- **And** el contenido es accesible y legible
+
+**Scenario 2: Acceder al documento de Términos y Condiciones desde la página de registro**
+- **Given** el usuario está en la página de registro
+- **When** solicita visualizar los Términos y Condiciones
+- **Then** se redirige a una página dedicada con el documento completo
+- **And** el contenido se muestra de forma clara, legible y comprensible
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US20** | EP | Video explicativo de la aplicación |
+
+**Description:** Como parte del equipo de recursos humanos de una empresa que prefiere información visual y directa, quiero ver un video explicativo integrado en la landing page, para comprender rápidamente qué ofrece la aplicación y cómo puede ayudarme a reducir mis costos energéticos.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Disponibilidad del contenido audiovisual**
+- **Given** el usuario accede a la landing page
+- **When** solicita visualizar contenido explicativo
+- **Then** el sistema proporciona un recurso audiovisual con la descripción de las funcionalidades principales
+
+**Scenario 2: Reproducción del contenido**
+- **Given** el contenido audiovisual está disponible
+- **When** el usuario interactúa con el recurso
+- **Then** puede reproducir, pausar y continuar la visualización del contenido
+- **And** la reproducción se realiza correctamente sin interrupciones
+
+**Scenario 3: Contenido no disponible**
+- **Given** no existe contenido audiovisual configurado
+- **When** el usuario solicita visualizarlo
+- **Then** el sistema indica que el recurso no está disponible
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US21** | EP | Protección de datos y seguridad |
+
+**Description:** Como visitante del segmento de recursos humanos de una empresa que está preocupado por la seguridad de la información de su organización, quiero ver en la landing page una explicación clara sobre cómo se protege y maneja mi información, para sentir tranquilidad y confianza al usar la aplicación.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Visualizar política de privacidad**
+- **Given** un visitante se encuentra en la landing page
+- **When** requiere información detallada sobre el tratamiento de los datos personales y corporativos
+- **Then** el sistema proporciona acceso a la documentación oficial sobre privacidad y protección de la información
+- **And** el sistema presenta información comprensible sobre la recopilación, uso, seguridad y derechos del usuario respecto a sus datos
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US22** | EP | Navegación accesible en la landing page |
+
+**Description:** Como visitante del segmento de RRHH, quiero acceder a un sistema de navegación simplificado, para desplazarme entre las diferentes secciones de información del producto de forma ágil.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Navegación entre secciones informativas**
+- **Given** el visitante se encuentra en cualquier sección de la landing page
+- **When** solicita el acceso a una sección específica del contenido
+- **Then** el sistema redirige al visitante a la información correspondiente de forma inmediata
+- **And** el sistema garantiza la disponibilidad de las opciones de navegación en todo momento
+
+**Scenario 2: Retorno a la sección principal**
+- **Given** el visitante se encuentra explorando una sección secundaria del sitio
+- **When** requiere volver al inicio de la propuesta de valor
+- **Then** el sistema restablece la visualización a la sección principal de la landing page
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US23** | EP | Suscripción a novedades y actualizaciones |
+
+**Description:** Como visitante del segmento de RRHH, quiero registrar un medio de contacto electrónico en el sitio web, para recibir información actualizada y consejos sobre la gestión del capital humano.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Registro exitoso a la lista de difusión**
+- **Given** el visitante se encuentra en la landing page
+- **When** proporciona una dirección de correo electrónico válida para la recepción de novedades
+- **Then** el sistema registra el contacto en la lista de difusión de forma exitosa
+- **And** el sistema emite una confirmación de la operación al visitante
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US24** | EP | Vista previa de la aplicación |
+
+**Description:** Como visitante del segmento de RRHH, quiero acceder a la propuesta estética del producto, para validar que la plataforma cumple con los estándares de simplicidad y claridad requeridos por mi organización antes de su adquisición.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Visualización del concepto visual de la aplicación**
+- **Given** el visitante del segmento de RRHH se encuentra en la landing page
+- **When** requiere conocer el entorno visual y la organización del producto
+- **Then** el sistema presenta la identidad estética de las funcionalidades principales
+- **And** el sistema evidencia la simplicidad en la disposición de los elementos de la solución
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US25** | EP | Acceso a redes oficiales |
+
+**Description:** Como visitante del segmento de RRHH, quiero acceder a los canales oficiales de comunicación externa de la empresa desarrolladora, para realizar consultas, solicitar soporte o mantenerme informado sobre las actualizaciones de la plataforma.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Acceso a redes sociales**
+- **Given** el visitante del segmento de RRHH se encuentra en la landing page
+- **When** requiere establecer contacto o seguimiento a través de plataformas externas oficiales
+- **Then** el sistema proporciona los puntos de acceso a los perfiles institucionales validados
+- **And** el sistema asegura la persistencia de la navegación principal durante el acceso a recursos externos
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US26** | EP | Visualización de preguntas frecuentes |
+
+**Description:** Como visitante del segmento de RRHH, quiero acceder a una base de conocimientos sobre dudas comunes, para resolver inquietudes sobre el funcionamiento de la plataforma de manera autónoma y rápida.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Consulta de preguntas frecuentes**
+- **Given** el visitante se encuentra en la landing page
+- **When** solicita información sobre un proceso o funcionalidad específica del sistema
+- **Then** el sistema entrega la respuesta técnica o operativa asociada a la consulta
+- **And** el sistema garantiza que la información sea precisa y de fácil comprensión
+
+**Scenario 2: Disponibilidad de información organizada**
+- **Given** el visitante requiere asistencia informativa sobre la gestión de recursos humanos
+- **When** accede al catálogo de respuestas del sistema
+- **Then** el sistema proporciona una estructura de temas organizados por categorías de interés
+- **And** el sistema facilita la localización de la información necesaria para el visitante
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US27** | EP | Cerrar sesión |
+
+**Description:** Como colaborador, quiero finalizar mi sesión activa en el sistema, para garantizar la protección de mi información personal y los datos de la organización en dispositivos de uso compartido.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Acceder a la opción de cerrar sesión desde el menú de usuario**
+- **Given** el colaborador mantiene una sesión de usuario activa en el sistema
+- **When** requiere dar por finalizado su acceso a la plataforma
+- **Then** el sistema procesa la interrupción del vínculo de autenticación vigente
+- **And** el sistema invalida las credenciales de acceso temporal para la sesión actual
+
+**Scenario 2: Confirmación de sesión cerrada**
+- **Given** el sistema ha procesado la finalización de una sesión de usuario
+- **When** el individuo intenta acceder a recursos protegidos de la organización
+- **Then** el sistema deniega el acceso a la información privada
+- **And** el sistema presenta la instancia de autenticación requerida para un nuevo ingreso
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US28** | EP | Justificar inasistencia |
+
+**Description:** Como colaborador, quiero sustentar el motivo de una inasistencia al centro de labores, para evitar penalizaciones administrativas y mantener actualizado mi historial de cumplimiento laboral.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Registro exitoso de la justificación**
+- **Given** el colaborador cuenta con un registro de inasistencia sin sustento en el sistema
+- **When** proporciona un motivo válido y adjunta la documentación de respaldo requerida
+- **Then** el sistema vincula la justificación al evento de inasistencia correspondiente
+- **And** el sistema registra la solicitud con un estado pendiente de revisión por el área responsable
+
+**Scenario 2: Omisión de información obligatoria**
+- **Given** el colaborador intenta sustentar una falta registrada en su historial
+- **When** omite el ingreso de la descripción técnica o el motivo del evento
+- **Then** el sistema impide el registro de la solicitud de justificación
+- **And** el sistema notifica al colaborador sobre la obligatoriedad de proporcionar una explicación para el evento
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US29** | EP | Recibir notificaciones del sistema |
+
+**Description:** Como colaborador, quiero recibir alertas automáticas sobre el cambio de estado de mis solicitudes y actividades laborales, para mantener un seguimiento oportuno de mis procesos sin requerir una consulta manual reiterada.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Generación de alerta por cambio de estado**
+- **Given** el colaborador cuenta con una solicitud en curso dentro del sistema
+- **When** el responsable del proceso actualiza el estado de dicha solicitud
+- **Then** el sistema genera un registro de notificación dirigido al colaborador interesado
+- **And** el sistema garantiza que el aviso incluya el nuevo estado y el evento que lo originó
+
+**Scenario 2: Acceso al historial de avisos**
+- **Given** el sistema ha generado alertas previas para el colaborador
+- **When** el colaborador requiere revisar el histórico de sus avisos recibidos
+- **Then** el sistema proporciona el conjunto de notificaciones procesadas para su cuenta
+- **And** el sistema detalla la cronología y la naturaleza de cada evento comunicado
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US30** | EP | Enviar mensajes internos |
+
+**Description:** Como colaborador, quiero enviar mensajes dentro del sistema, para comunicarme con RRHH o mi jefe sin usar medios externos.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Envío exitoso de mensaje**
+- **Given** el colaborador está autenticado
+- **And** existe un destinatario válido en el sistema
+- **When** registra un mensaje con contenido válido
+- **Then** el mensaje es enviado
+- **And** queda almacenado en el sistema
+- **And** se asocia al remitente y destinatario
+
+**Scenario 2: Contenido vacío**
+- **Given** el colaborador está autenticado
+- **When** intenta enviar un mensaje sin contenido
+- **Then** la operación es rechazada
+- **And** se indica que el contenido es obligatorio
+
+**Scenario 3: Destinatario inválido**
+- **Given** el colaborador está autenticado
+- **When** intenta enviar un mensaje a un destinatario inexistente
+- **Then** la operación es rechazada
+- **And** se indica que el destinatario no es válido
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US31** | EP | Visualizar panel principal |
+
+**Description:** Como colaborador que ingresa al sistema, quiero consultar un resumen de mi información relevante, para acceder rápidamente a mis funciones principales.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Visualización de resumen**
+- **Given** el colaborador está autenticado
+- **When** accede al sistema
+- **Then** se devuelve un resumen con información relevante del colaborador
+- **And** incluye estado de asistencia, solicitudes recientes, información de pagos y datos del perfil
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US32** | EP | Mostrar y descargar boleta de pago |
+
+**Description:** Como colaborador que necesita acceder a sus comprobantes de pago de forma autónoma, quiero consultar y descargar mis boletas de pago, para tener respaldo de mis ingresos.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Mostrar boletas de pago**
+- **Given** el colaborador está autenticado
+- **And** existen boletas de pago registradas
+- **When** solicita sus boletas de pago
+- **Then** se devuelve la lista de boletas ordenadas por fecha descendente
+- **And** se limita a las más recientes según la configuración del sistema
+
+**Scenario 2: Descargar una boleta de pago correctamente**
+- **Given** el colaborador tiene acceso a una boleta de pago
+- **When** solicita descargar la boleta
+- **Then** el sistema proporciona el documento en formato PDF
+- **And** el archivo corresponde a la boleta seleccionada
+
+**Scenario 3: Consulta por periodo**
+- **Given** el colaborador está autenticado
+- **When** solicita sus boletas indicando un rango de fechas
+- **Then** se devuelve la lista de boletas dentro del periodo solicitado
+
+**Scenario 4: No existen boletas de pago disponibles**
+- **Given** el colaborador no tiene boletas registradas
+- **When** solicita sus boletas de pago
+- **Then** se devuelve una lista vacía
+- **And** se indica que no existen boletas disponibles
+
+**Scenario 5: Error al descargar boleta de pago**
+- **Given** el colaborador solicita descargar una boleta
+- **When** ocurre un error en la generación o entrega del archivo
+- **Then** la operación es rechazada
+- **And** se indica que no fue posible completar la descarga
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US33** | EP | Olvidar contraseña |
+
+**Description:** Como colaborador que no recuerda su contraseña, quiero restablecerla, para recuperar el acceso a mi cuenta de forma segura.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Solicitud de restablecimiento**
+- **Given** el usuario proporciona un correo electrónico registrado
+- **When** solicita el restablecimiento de contraseña
+- **Then** el sistema envía un enlace de restablecimiento al correo electrónico para restablecer la contraseña
+
+**Scenario 2: Correo no registrado**
+- **Given** el usuario proporciona un correo electrónico no registrado
+- **When** solicita el restablecimiento
+- **Then** la operación no se realiza
+- **And** se devuelve la respuesta indicando que ingrese un correo válido
+
+**Scenario 3: Restablecimiento exitoso**
+- **Given** el usuario accede con un token válido y no expirado
+- **When** registra una nueva contraseña válida
+- **Then** la contraseña se actualiza
+- **And** el token es invalidado después de su uso
+- **And** se permite el acceso con la nueva contraseña
+
+**Scenario 4: Token inválido o expirado**
+- **Given** el usuario utiliza un token inválido o expirado
+- **When** intenta restablecer la contraseña
+- **Then** la operación es rechazada
+- **And** se indica que el enlace no es válido o ha expirado
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US34** | EP | Subir documentación de colaborador |
+
+**Description:** Como personal de RRHH, quiero registrar documentos asociados a un colaborador, para mantener su información completa y organizada.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Subida exitosa**
+- **Given** el colaborador existe
+- **And** el usuario tiene permisos de RRHH
+- **When** registra un documento válido asociado al colaborador
+- **Then** el documento es almacenado correctamente
+- **And** queda asociado al perfil del colaborador
+- **And** se registra información como tipo de documento, fecha y nombre del archivo
+
+**Scenario 2: Formato no permitido**
+- **Given** el usuario intenta registrar un documento
+- **When** el archivo no cumple con los formatos permitidos
+- **Then** la operación es rechazada
+- **And** se indica que el formato no es válido
+
+**Scenario 3: Tamaño excedido**
+- **Given** el usuario intenta registrar un documento
+- **When** el archivo excede el tamaño máximo permitido
+- **Then** la operación es rechazada
+- **And** se indica que el archivo supera el límite permitido
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US35** | EP | Registrar feedback de colaborador |
+
+**Description:** Como colaborador, quiero registrar feedback sobre mi experiencia, para contribuir a la mejora del sistema.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Envío exitoso de feedback**
+- **Given** el colaborador está autenticado
+- **When** registra un comentario de feedback válido
+- **Then** el feedback es almacenado en el sistema
+- **And** queda asociado al colaborador
+- **And** se registra la fecha de envío
+
+**Scenario 2: Feedback vacío**
+- **Given** el colaborador está autenticado
+- **When** intenta registrar feedback sin contenido
+- **Then** la operación es rechazada
+- **And** se indica que el contenido es obligatorio
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US36** | EP | Previsualización de planilla |
+
+**Description:** Como personal de RRHH, quiero previsualizar la planilla, para validar antes de hacerla oficial.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Visualización de vista previa**
+- **Given** existe una planilla generada para un periodo
+- **And** los datos han sido validados correctamente
+- **When** se solicita la previsualización
+- **Then** se muestra el detalle completo de la planilla
+- **And** incluye información de ingresos, descuentos y beneficios por colaborador
+
+**Scenario 2: Confirmación de planilla**
+- **Given** la planilla ha sido previsualizada
+- **And** se encuentra en estado "Borrador"
+- **When** se confirma la planilla
+- **Then** la planilla cambia a estado "Definitiva"
+- **And** queda almacenada como versión oficial
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US37** | EP | Alertas de sobrecarga laboral |
+
+**Description:** Como analista de RRHH, quiero recibir alertas automáticas ante el exceso de horas laboradas, para mitigar riesgos de fatiga laboral y asegurar el cumplimiento de la normativa vigente.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Identificación de exceso de jornada**
+- **Given** el sistema gestiona el registro de horas laborales de los colaboradores
+- **And** un colaborador excede el límite de tiempo de trabajo establecido por la organización
+- **When** el sistema procesa los registros de asistencia y cumplimiento horario
+- **Then** el sistema genera una notificación automática por sobrecarga laboral
+- **And** el sistema vincula el evento de exceso de jornada con el registro del colaborador afectado
+
+**Scenario 2: Verificación de cumplimiento de jornada**
+- **Given** el conjunto de horas laboradas por el personal se encuentra dentro de los parámetros permitidos
+- **When** el sistema ejecuta la validación periódica de los registros de tiempo
+- **Then** el sistema omite la creación de alertas de riesgo laboral
+- **And** el sistema confirma la conformidad de los registros analizados respecto a la política horaria
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US38** | EP | Reporte histórico de solicitudes |
+
+**Description:** Como personal de RRHH, quiero consultar la información histórica de las solicitudes gestionadas, para realizar análisis de patrones y tendencias en el comportamiento organizacional.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Recuperación de datos históricos de solicitudes**
+- **Given** el sistema cuenta con registros de solicitudes procesadas en periodos anteriores
+- **When** el personal de RRHH requiere la consolidación de la información histórica
+- **Then** el sistema proporciona el conjunto de datos asociados a las solicitudes registradas
+- **And** el sistema incluye el estado final, la cronología y la identificación del colaborador para cada evento
+
+**Scenario 2: Segmentación de información por criterios específicos**
+- **Given** el personal de RRHH accede a los registros consolidados de solicitudes
+- **When** especifica criterios de búsqueda basados en rangos temporales o en la identidad del colaborador
+- **Then** el sistema entrega exclusivamente los registros que coinciden con los parámetros definidos
+- **And** el sistema garantiza la integridad de la información filtrada respecto al repositorio principal de datos
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US39** | EP | Exportación de reportes |
+
+**Description:** Como analista de RRHH, quiero exportar los resultados de los reportes generados, para compartir información técnica con otras áreas de la organización de forma externa.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Transformación exitosa a formato portable**
+- **Given** el personal de RRHH cuenta con un conjunto de datos procesados en el sistema
+- **When** solicita la conversión de la información a un formato de documento estándar como PDF o Excel
+- **Then** el sistema genera el archivo en el formato solicitado
+- **And** el sistema pone a disposición del usuario el recurso para su uso externo
+
+**Scenario 2: Restricción por ausencia de registros**
+- **Given** el personal de RRHH requiere la exportación de una consulta de datos
+- **And** el conjunto de resultados se encuentra vacío
+- **When** intenta procesar la generación del archivo portable
+- **Then** el sistema impide la ejecución de la descarga
+- **And** el sistema notifica sobre la inexistencia de información válida para el proceso de exportación
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US40** | EP | Visualización de historial de solicitudes |
+
+**Description:** Como colaborador, quiero acceder a la relación histórica de mis solicitudes personales, para mantener un control y seguimiento sobre mis trámites realizados en la plataforma.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Recuperación de registros históricos personales**
+- **Given** el colaborador cuenta con una sesión de usuario activa y posee registros de solicitudes previas
+- **When** requiere la consulta de su histórico de peticiones personales
+- **Then** el sistema entrega la relación íntegra de las solicitudes efectuadas por el colaborador
+- **And** el sistema detalla la cronología y el estado de atención para cada registro consultado
+
+**Scenario 2: Ausencia de registros de solicitudes**
+- **Given** el colaborador no presenta registros históricos de peticiones en el sistema
+- **When** solicita la recuperación de su información de solicitudes
+- **Then** el sistema confirma la inexistencia de datos vinculados a su cuenta
+- **And** el sistema garantiza que la respuesta sea coherente con el estado actual de su historial
+
+**Scenario 3: Validación de la información actualizada**
+- **Given** el personal de RRHH identifica una alerta de cambio en los datos de un colaborador
+- **When** solicita la validación de la información procesada recientemente
+- **Then** el sistema facilita el acceso a los datos actualizados para su supervisión técnica
+- **And** el sistema garantiza la coherencia entre la notificación y el estado actual del registro
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US41** | EP | Notificación de cambios en datos personales |
+
+**Description:** Como personal de RRHH, quiero recibir alertas automáticas ante cambios en la información de los colaboradores, para supervisar la integridad de los datos maestros y mantener la trazabilidad de las actualizaciones en la organización.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Generación de alerta por actualización de registros**
+- **Given** se realiza una modificación en los datos de perfil de un colaborador
+- **When** el sistema procesa el almacenamiento definitivo de los cambios
+- **Then** el sistema genera un registro de notificación de auditoría para el área de recursos humanos
+- **And** el sistema vincula el evento de cambio con el expediente del colaborador afectado
+
+**Scenario 2: Supervisión de eventos de modificación**
+- **Given** el personal de RRHH requiere la revisión de las actualizaciones recientes en el sistema
+- **When** consulta el flujo de alertas de integridad de datos
+- **Then** el sistema entrega los avisos de modificación generados cronológicamente
+- **And** el sistema detalla el tiempo transcurrido desde la ejecución de cada cambio
+
+**Scenario 3: Validación de la información actualizada**
+- **Given** el personal de RRHH identifica una alerta de cambio en los datos de un colaborador
+- **When** solicita la validación del estado actual de la información procesada
+- **Then** el sistema facilita el acceso a los datos modificados para su supervisión técnica
+- **And** el sistema garantiza la integridad entre la notificación recibida y el registro actualizado
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US42** | EP | Cancelación de solicitudes |
+
+**Description:** Como colaborador, quiero anular una solicitud con estado pendiente de revisión, para corregir errores en la información registrada o desistir del trámite por cambios de último momento.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Cancelación efectiva de una solicitud en curso**
+- **Given** el colaborador cuenta con una solicitud registrada con estado pendiente de aprobación
+- **When** solicita la anulación del trámite antes de su procesamiento por el área responsable
+- **Then** el sistema actualiza el estado del registro de la solicitud a cancelado
+- **And** el sistema invalida el flujo de aprobación previamente establecido para dicho trámite
+
+**Scenario 2: Restricción de cancelación por estado avanzado**
+- **Given** el colaborador posee una solicitud cuyo estado de atención se encuentra aprobado o finalizado
+- **When** intenta realizar la anulación del registro de dicha solicitud
+- **Then** el sistema impide la modificación del estado actual del trámite
+- **And** el sistema notifica la restricción del proceso debido a la fase actual del flujo de aprobación
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US43** | EP | Visualización de funcionalidades del sistema |
+
+**Description:** Como visitante del segmento de RRHH, quiero acceder a la descripción de las funcionalidades principales en la landing page, para comprender la propuesta de valor y las capacidades de la plataforma antes de su adquisición.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Entrega de información sobre capacidades del sistema**
+- **Given** el visitante se encuentra navegando en la landing page
+- **When** requiere conocer el alcance operativo de la solución
+- **Then** el sistema proporciona una descripción detallada de las funcionalidades principales
+- **And** el sistema destaca cómo cada característica resuelve necesidades específicas de recursos humanos
+
+**Scenario 2: Comprensión de beneficios estratégicos**
+- **Given** el visitante solicita información sobre las herramientas de gestión disponibles
+- **When** el sistema presenta el catálogo de capacidades técnicas
+- **Then** el sistema facilita la identificación de los beneficios derivados de cada funcionalidad
+- **And** el sistema asegura que la información técnica sea coherente con los objetivos del segmento
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US44** | EP | Visualización de sección "Nosotros" |
+
+**Description:** Como visitante del segmento de RRHH, quiero acceder a la información del equipo responsable del desarrollo, para establecer un vínculo de confianza y validar la experiencia técnica detrás de la solución.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Acceso a la trayectoria institucional**
+- **Given** el visitante se encuentra navegando en la landing page
+- **When** requiere validar la legitimidad y el respaldo profesional de la plataforma
+- **Then** el sistema proporciona el perfil institucional y la trayectoria del equipo desarrollador
+- **And** el sistema expone los pilares de experiencia que sustentan el producto
+
+**Scenario 2: Identificación de perfiles y roles estratégicos**
+- **Given** el visitante solicita información sobre el capital humano del proyecto
+- **When** el sistema entrega los datos del equipo de trabajo
+- **Then** el sistema detalla las áreas de especialización y los roles desempeñados por los integrantes
+- **And** el sistema garantiza la transparencia informativa sobre la autoría de la solución
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US45** | EP | Autenticación de usuario |
+
+**Description:** Como desarrollador, quiero autenticar usuarios, para que el sistema pueda validar accesos y generar tokens de sesión.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Autenticación exitosa**
+- **Given** existe un usuario registrado
+- **When** se envía una solicitud con credenciales válidas
+- **Then** la respuesta de estado es 200 OK
+- **And** se devuelve un token de autenticación
+
+**Scenario 2: Credenciales inválidas**
+- **Given** que un usuario registrado existe
+- **When** una solicitud es enviada con credenciales incorrectas
+- **Then** la respuesta de estado es 401 Unauthorized
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US46** | EP | Crear solicitud |
+
+**Description:** Como desarrollador, quiero permitir la creación de solicitudes de colaboradores, para que puedan gestionar trámites como vacaciones o permisos.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Solicitud creada correctamente**
+- **Given** existe un colaborador autenticado
+- **And** los datos de la solicitud son válidos
+- **When** se envía una solicitud
+- **Then** la respuesta es 201 Created
+- **And** la solicitud se almacena con estado "Pendiente"
+
+**Scenario 2: Saldo insuficiente**
+- **Given** el colaborador no tiene suficientes días disponibles
+- **When** se envía una solicitud
+- **Then** la respuesta es 400 Bad Request
+
+**Scenario 3: Conflicto de fechas**
+- **Given** que existen solicitudes con fechas superpuestas
+- **When** se envía una nueva solicitud
+- **Then** la respuesta es 409 Conflict
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US47** | EP | Dashboard del colaborador |
+
+**Description:** Como desarrollador, quiero obtener un resumen del colaborador, para proporcionar información agregada relevante.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Obtener resumen correctamente**
+- **Given** existe un colaborador autenticado
+- **When** se envía una solicitud
+- **Then** la respuesta es 200 OK
+- **And** se devuelve información agregada de asistencia, solicitudes, pagos y perfil
+
+**Scenario 2: Acceso no autorizado**
+- **Given** no existe autenticación válida
+- **When** se envía una solicitud
+- **Then** la respuesta es 401 Unauthorized
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US48** | EP | Validar planilla |
+
+**Description:** Como desarrollador, quiero validar los datos de la planilla, para detectar inconsistencias antes de su generación.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Validación con errores**
+- **Given** existen datos de planilla
+- **When** se envía una solicitud de validación
+- **Then** la respuesta es 200 OK
+- **And** el resultado de validación es falso
+- **And** se devuelve una lista de inconsistencias
+
+**Scenario 2: Validación exitosa**
+- **Given** los datos son consistentes
+- **When** se envía una solicitud de validación
+- **Then** la respuesta es 200 OK
+- **And** el resultado de validación es verdadero
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US49** | EP | Descargar boleta |
+
+**Description:** Como desarrollador, quiero proporcionar acceso a las boletas de pago, para que los colaboradores puedan descargarlas.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Descarga exitosa**
+- **Given** la boleta existe
+- **And** pertenece al colaborador autenticado
+- **When** se envía una solicitud de descarga
+- **Then** la respuesta es 200 OK
+- **And** se devuelve el archivo en formato PDF
+
+**Scenario 2: Boleta no encontrada**
+- **Given** la boleta no existe
+- **When** se envía una solicitud
+- **Then** la respuesta es 404 Not Found
+
+**Scenario 3: Acceso prohibido**
+- **Given** la boleta pertenece a otro usuario
+- **When** se envía una solicitud
+- **Then** la respuesta es 403 Forbidden
+
+---
+
+| User Story ID | Epic ID | Title |
+| :--- | :--- | :--- |
+| **US50** | EP | Restablecimiento de contraseña |
+
+**Description:** Como desarrollador, quiero permitir el restablecimiento de contraseña, para que los usuarios puedan recuperar el acceso a su cuenta de forma segura.
+
+**Acceptance Criteria:**
+
+**Scenario 1: Solicitud de recuperación**
+- **Given** se proporciona un correo electrónico
+- **When** se envía una solicitud de recuperación
+- **Then** la respuesta es 200 OK
+- **And** se genera un token de recuperación si el correo está registrado
+- **And** se envía un enlace de recuperación
+
+**Scenario 2: Respuesta genérica por seguridad**
+- **Given** se proporciona un correo electrónico
+- **When** se envía una solicitud de recuperación
+- **Then** la respuesta no revela si el correo existe o no
+
+**Scenario 3: Restablecimiento exitoso**
+- **Given** existe un token válido y no expirado
+- **When** se envía una nueva contraseña válida
+- **Then** la respuesta es 200 OK
+- **And** la contraseña es actualizada
+- **And** el token es invalidado
+
+**Scenario 4: Token inválido o expirado**
+- **Given** el token es inválido o ha expirado
+- **When** se envía una solicitud de restablecimiento
+- **Then** la respuesta es 400 Bad Request o 401 Unauthorized
+
+**Scenario 5: Contraseña inválida**
+- **Given** el token es válido
+- **When** la nueva contraseña no cumple las reglas de seguridad
+- **Then** la respuesta es 400 Bad Request
