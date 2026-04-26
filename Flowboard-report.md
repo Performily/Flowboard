@@ -2872,3 +2872,267 @@ En esta sección se detalla el Diagrama Entidad-Relación Físico que asegura la
 ### 4.8.1. Database Diagrams
 
 ![Database Diagram](assets\img\dataBaseD.png)
+
+# Capítulo V: Product Implementation, Validation & Deployment
+
+## 5.1. Software Configuration Management
+
+### 5.1.1. Software Development Environment Configuration
+
+Para el desarrollo de la solución, el equipo ha configurado un entorno de trabajo que integra diversas herramientas para cubrir cada etapa del ciclo de vida del producto digital:
+
+- **Gestión de Proyecto y Requisitos:** El equipo utiliza Trello como plataforma SaaS para la gestión del Product Backlog, la organización de Sprints y el seguimiento de tareas.
+- **Diseño de UX/UI:** Para la elaboración de los User Personas, Empathy Maps y Journey Maps, se emplea UXPressia. El diseño de Wireframes, Mock-ups y Prototipos interactivos se centraliza en Figma. Adicionalmente, se utiliza LucidChart para diagramas de arquitectura (C4 Model), Wireflows y diseño de base de datos.
+- **Desarrollo de la Landing Page:** El equipo utiliza Visual Studio Code como IDE para la construcción del sitio estático con HTML5, CSS3 y JavaScript.
+- **Desarrollo de la Aplicación Web (Frontend):** Se adopta WebStorm como IDE exclusivo para la aplicación web, optimizando el flujo de trabajo con el framework Vue.js.
+- **Desarrollo del Servicio Web (Backend):** El equipo emplea JetBrains Rider para la implementación de servicios web RESTful con ASP.NET Core y C#.
+- **Control de Versiones:** Se utiliza GitHub como repositorio centralizado bajo el flujo de trabajo GitFlow.
+- **Documentación de Servicios:** El equipo emplea Swagger con la especificación OpenAPI para documentar y probar los endpoints del API.
+
+| Producto | Tipo | Ruta de Referencia/Descarga |
+| :--- | :---: | :--- |
+| Visual Studio Code | Local | https://code.visualstudio.com/download |
+| GitHub | SaaS | https://github.com |
+| Trello | SaaS | https://trello.com |
+| Figma | SaaS | https://www.figma.com |
+| WebStorm | Local | https://www.jetbrains.com/webstorm |
+| JetBrains Rider | Local | https://www.jetbrains.com/rider |
+
+---
+
+### 5.1.2. Source Code Management
+
+El equipo adopta GitHub como la plataforma centralizada y el sistema de control de versiones para la administración del código fuente. Esta herramienta permite una colaboración técnica estructurada y asegura la integridad de los componentes de la solución Flowboard.
+
+**Repositorios del Proyecto:**
+
+| Componente | URL |
+| :--- | :--- |
+| Landing Page | https://github.com/Performily/Flowboard-LandingPage |
+| Web Service | https://github.com/Performily/Flowboard |
+
+**Control de Versiones: GitFlow**
+
+Para la administración de ramas, el equipo implementa el modelo GitFlow:
+
+| Rama | Nomenclatura | Descripción |
+| :--- | :--- | :--- |
+| **Principal** | `main` | Contiene exclusivamente el código estable y listo para producción. |
+| **Desarrollo** | `develop` | Eje de integración donde se consolidan las nuevas características. |
+| **Funcionalidades** | `feature/nombre-descripcion` | Rama por cada nueva tarea, en formato kebab-case. Nace de `develop` y se fusiona mediante Pull Requests. |
+| **Lanzamiento** | `release/version` | Prepara entregas de producción bajo Semantic Versioning. Se integra en `main` y `develop`. |
+| **Corrección** | `hotfix/fix-error` | Para reparaciones urgentes en `main`. Se sincroniza con ambas ramas maestras. |
+
+**Estándar de Mensajes: Conventional Commits**
+
+El formato obligatorio para cada mensaje es `<tipo>(<alcance>): <descripción>`:
+
+| Tipo | Descripción |
+| :--- | :--- |
+| `feat` | Nueva funcionalidad |
+| `fix` | Corrección de error |
+| `docs` | Documentación |
+| `style` | Formato |
+| `refactor` | Mejora de código |
+| `test` | Pruebas |
+| `chore` | Mantenimiento |
+
+El **alcance** indica la sección o componente afectado (ej. `hero`, `navbar`) y la **descripción** resume el cambio en tiempo presente imperativo (ej. `feat(hero): agregar imagen de fondo`).
+
+---
+
+### 5.1.3. Source Code Style Guide & Conventions
+
+**Estándares Generales de Programación:**
+- **Idioma de Codificación:** Todo elemento del código (variables, funciones, clases, archivos y comentarios) se redacta en inglés.
+- **Nomenclatura:** Se evitan abreviaturas ambiguas y se priorizan nombres descriptivos que revelen la intención del objeto o método.
+
+**Desarrollo Frontend (Landing Page y Aplicación Web):**
+- **HTML5 y CSS3:** Se sigue la Google HTML/CSS Style Guide y convenciones de la W3C. Minúsculas para etiquetas y atributos, comillas dobles para valores y sangría de dos espacios.
+- **JavaScript:** Se aplican la Google JavaScript Style Guide y directrices de MDN. `camelCase` para variables y funciones, `PascalCase` para clases, y uso prioritario de `const` y `let` sobre `var`.
+- **Vue.js:** Los componentes se nombran en `PascalCase` (ej. `UserProfile.vue`) y se utiliza la directiva `scoped` para evitar colisiones de estilos.
+
+**Desarrollo Backend (Web Services):**
+- **PascalCase:** Para nombres de clases, métodos, propiedades y espacios de nombres.
+- **camelCase:** Para parámetros de métodos y variables locales.
+
+---
+
+### 5.1.4. Software Deployment Configuration
+
+El proceso se fundamenta en flujos de Integración y Despliegue Continuo (CI/CD) que automatizan la publicación desde los repositorios de GitHub hacia entornos en la nube.
+
+| Componente | Plataforma | Procedimiento |
+| :--- | :---: | :--- |
+| **Landing Page** | GitHub Pages | La rama `main` activa un flujo de GitHub Actions que actualiza el sitio estático automáticamente ante cada integración de código estable. |
+| **Aplicación Web (Frontend)** | Vercel | Se vincula el repositorio con Vercel. Ante cambios en `main`, se ejecuta el build de Vue.js y se distribuyen los archivos optimizados mediante CDN. |
+| **Servicios Web (Backend)** | Azure App Service | Se emplea el beneficio educativo de Azure. La publicación se realiza mediante un pipeline de GitHub Actions o desde JetBrains Rider, compilando el código C# y verificando los endpoints. |
+
+---
+
+## 5.2. Landing Page, Services & Applications Implementation
+
+### 5.2.1. Sprint 1
+
+#### 5.2.1.1. Sprint Planning 1
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 1 |
+| **Date** | 2026-04-20 |
+| **Time** | 09:00 PM |
+| **Location** | Discord (Virtual) |
+| **Prepared By** | Vasquez Llave, Oscar Lizandro |
+| **Attendees** | Vasquez Llave, Oscar Lizandro / Galvez Meza, Salym Pool |
+| **Sprint Goal** | Our focus is on la consolidación de la identidad digital de Flowboard mediante el desarrollo de las funcionalidades principales y la implementación de su sistema visual en la Landing Page. We believe it delivers una propuesta de valor clara, profesional y confiable sobre la automatización de procesos a los dueños de pequeñas y medianas empresas y gestores de RRHH. This will be confirmed when un usuario pueda navegar por el carrusel interactivo de módulos, comprender los protocolos de seguridad y desplegar las respuestas del FAQ sin necesidad de asistencia externa. |
+| **Sprint Velocity** | 18 Story Points |
+| **Sum of Story Points** | 18 Story Points |
+
+---
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+| Team Member | GitHub Username | Features (L/C) | Styles (L/C) |
+| :--- | :--- | :---: | :---: |
+| Gálvez, Salym | SalymGalvez21 | L | C |
+| Vasquez, Oscar | oscarlizandro | C | L |
+
+---
+
+#### 5.2.1.3. Sprint Backlog 1
+
+![Trello](assets\img\trello.png)
+
+https://trello.com/invite/b/69e5a9031a5d590f2f21d1f1/ATTI1d753b0f15ea5eb550b8b54b1b312e432D9412CC/flowboard
+
+| User Story ID | Task ID | Descripción | Estimación (Horas) | Asignado a | Estado |
+| :---: | :---: | :--- | :---: | :---: | :---: |
+| US21 | T1 | Implementar navegación accesible de la landing page | 5 | Salym | Done |
+| US22 | T2 | Implementar sección de suscripción a novedades y actualizaciones | 4 | Oscar | Done |
+| US23 | T3 | Implementar vista previa de la aplicación | 4 | Salym | Done |
+| US24 | T4 | Implementar acceso a redes oficiales | 2 | Oscar | Done |
+| US25 | T5 | Implementar sección de visualización de preguntas frecuentes | 4 | Salym | Done |
+| US18 | T6 | Implementar página dedicada a Términos y Condiciones | 4 | Oscar | Done |
+| US19 | T7 | Agregar video explicativo de la plataforma | 2 | Oscar | Done |
+| US20 | T8 | Implementar página dedicada a Política de Privacidad | 4 | Oscar | Done |
+| US46 | T9 | Implementar visualización de funcionalidades del sistema | 4 | Salym | Done |
+| US47 | T10 | Implementar visualización de sección "Nosotros" | 5 | Oscar | Done |
+
+---
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante este Sprint se avanzó en la implementación progresiva de la Landing Page del sistema Flowboard. Se implementó la hero section, secciones de features, seguridad, FAQ, términos y condiciones, equipo y una sección de demostración. Asimismo, se trabajó en el header con efectos de desplazamiento, el footer, y mejoras visuales mediante estilos, gradientes e interactividad.
+
+| Repository | Branch | Commit ID | Commit Message | Date |
+| :--- | :--- | :---: | :--- | :---: |
+| Performily/Flowboard-LandingPage | feature/hero-section | 92214b8 | feat(hero): implement hero section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/software-demo-section | 10ea954 | feat(demo): implement software demo section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/header-section | 4e18255 | feat(): add header with scroll effects | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/terms-section | 6ddec55 | feat(terms): implement terms and conditions page | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/faq-section | 6a3ef7f | feat(faq): implement faq section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/team-section | b05fd60 | feat(team): implement team section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/privacy-section | e94e560 | feat(privacy): add privacy section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/security-section | 4972b39 | feat(security): add security section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/functionality-section | 24d37aa | feat(functionality): add features section | 20/04/2026 |
+| Performily/Flowboard-LandingPage | style/gradient-ui | 40c5b73 | style(ui): apply new gradient theme and hover animations | 20/04/2026 |
+| Performily/Flowboard-LandingPage | feature/hero-assets | 30c7aa5 | feat(design): add features interactivity | 21/04/2026 |
+| Performily/Flowboard-LandingPage | styles/security-section | 27142b9 | style(security): security and features sections with layout improvements | 22/04/2026 |
+| Performily/Flowboard-LandingPage | style/form-message | 64e0bd2 | style(form): add a notification | 22/04/2026 |
+| Performily/Flowboard-LandingPage | fix/features-section | ec6088d | fix(features): features section interactivity | 25/04/2026 |
+
+---
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+Durante este primer Sprint, el equipo de Performily se enfocó en la consolidación de la identidad digital de Flowboard mediante el desarrollo integral de su Landing Page. Se optó por una arquitectura de Frontend puro utilizando HTML5, CSS3 y JavaScript Vanilla, priorizando la velocidad de carga y la compatibilidad total entre navegadores. Se implementó una hoja de estilos centralizada mediante Variables CSS, manteniendo la consistencia del Design System (color índigo `#3f51b5` y tipografía Inter) en todas las secciones. El resultado es una plataforma responsiva que garantiza una experiencia de usuario fluida tanto en dispositivos de escritorio como en móviles.
+
+![](assets\img\lp-evidence-1.png)
+![](assets\img\lp-evidence-2.png)
+![](assets\img\lp-evidence-3.png)
+![](assets\img\lp-evidence-4.png)
+![](assets\img\lp-evidence-5.png)
+![](assets\img\lp-evidence-6.png)
+![](assets\img\lp-evidence-7.png)
+![](assets\img\lp-evidence-8.png)
+
+---
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+En este Sprint, el equipo adoptó un enfoque de diseño API-First, definiendo los contratos técnicos bajo el estándar OpenAPI 3.0.0.
+
+| ID | Title | Description | Acceptance Criteria |
+| :---: | :--- | :--- | :--- |
+| TS01 | Endpoint de Suscripciones | Como Developer, quiero documentar el endpoint de captación de leads de la Landing Page para asegurar el envío correcto del correo. | Given que el usuario ingresa un email válido en el Hero, When se envía un POST a `/subscriptions`, Then el sistema debe responder 201 Created y almacenar el lead. |
+| TS02 | Autenticación de Usuarios | Como Developer, quiero definir el contrato de inicio de sesión para habilitar el acceso seguro a la Web App. | Given un usuario con credenciales válidas, When realice un POST a `/auth/login`, Then el servicio debe retornar un token JWT y un 200 OK. |
+| TS03 | Consulta de Perfil de Empleado | Como Developer, quiero documentar el servicio de obtención de datos personales para alimentar la vista de perfil del colaborador. | Given un token de sesión activo, When se haga un GET a `/employees/me`, Then la API debe devolver el objeto JSON con los datos demográficos y laborales del usuario. |
+| TS04 | Creación de Solicitudes de Tiempo | Como Developer, quiero especificar el contrato para el envío de solicitudes de vacaciones o permisos. | Given un colaborador con saldo de días disponible, When envíe un POST a `/requests`, Then el sistema debe validar las fechas y crear el registro con estado "Pendiente". |
+| TS05 | Recuperación de Boletas de Pago | Como Developer, quiero definir el servicio de descarga de documentos financieros para la autogestión del colaborador. | Given la existencia de boletas en el sistema externo, When el usuario solicite un GET a `/pay-slips/{id}`, Then la API debe retornar el enlace temporal de descarga del PDF. |
+
+---
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint se realizó la implementación del proceso de Deployment para la publicación de la Landing Page del sistema Flowboard, utilizando Visual Studio Code con HTML, CSS y JavaScript. Para el despliegue se utilizó GitHub Pages, configurando la rama principal como fuente del sitio de modo que cada actualización se refleje automáticamente en la página publicada.
+
+![Repositorio del proyecto en GitHub](assets\img\repositorio-github.png)
+![Estructura de archivos del proyecto](assets\img\estructura-arrchivos.png)
+![Implementación de la Landing Page](assets\img\implementacion-lp.png)
+![Lanzamiento de Landing Page](assets\img\deployment-lp.png)
+---
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Para este primer Sprint, el equipo se enfocó en transformar los wireframes en un MVP de tipo Landing Page, siguiendo las siguientes pautas:
+
+- **Arquitectura:** Frontend puro (HTML5, CSS3 y JavaScript) para maximizar la velocidad de carga y asegurar compatibilidad total.
+- **Estándares de Diseño:** Hoja de estilos centralizada con Variables CSS para garantizar consistencia en colores institucionales (`#3f51b5`) y tipografía (Inter) en todas las secciones.
+
+![Team Collaboration Insights - Gráfico de contribuciones](assets\img\team-collaboration.png)
+
+---
+
+# Conclusiones
+
+## Conclusiones y Recomendaciones
+
+**Conclusiones:**
+
+A partir del desarrollo del presente trabajo, se concluye que la problemática identificada en la gestión de recursos humanos —caracterizada por procesos manuales, falta de centralización de información y alta carga administrativa— es una necesidad real dentro de las organizaciones. Esto se evidenció a través de las entrevistas realizadas, donde tanto el personal de RRHH como los colaboradores manifestaron dificultades en el acceso a información, errores en procesos y tiempos de respuesta elevados.
+
+En relación con los Problem Statements, se valida que la falta de herramientas digitales integradas genera ineficiencia operativa, frustración en los usuarios y limita la toma de decisiones estratégicas dentro de las organizaciones.
+
+Respecto a los assumptions, se confirma que los colaboradores valoran la posibilidad de autogestionar su información y que el personal de RRHH requiere automatizar procesos repetitivos. Sin embargo, también se identificó que algunas organizaciones ya cuentan con soluciones parciales, lo que implica que la propuesta debe diferenciarse claramente en términos de integración y facilidad de uso.
+
+En cuanto a los Hypothesis Statements, se valida parcialmente que una plataforma centralizada como Flowboard puede reducir tiempos de gestión y mejorar la transparencia de la información. No obstante, estas hipótesis requieren validación adicional mediante el desarrollo de funcionalidades completas más allá de la landing page.
+
+Finalmente, los resultados obtenidos a partir de la validación de la landing page permiten concluir que existe interés en la solución propuesta, especialmente en funcionalidades como la autogestión de información, automatización de procesos y centralización de datos, lo que indica que la propuesta de valor es comprendida y relevante para los segmentos objetivos.
+
+**Recomendaciones:**
+
+Como siguientes pasos, se recomienda avanzar en el desarrollo del producto hacia un MVP funcional, priorizando las funcionalidades más críticas identificadas en el análisis, como el módulo de autogestión del empleado, el control de asistencia automatizado y la gestión de solicitudes.
+
+Asimismo, se sugiere realizar nuevas iteraciones de validación con usuarios reales utilizando prototipos interactivos, con el fin de medir métricas más concretas como usabilidad, tiempo de ejecución de tareas y nivel de satisfacción.
+
+En relación con el roadmap del producto, se propone iniciar con el desarrollo del módulo básico de gestión de información del colaborador, seguido por la automatización de procesos clave como planillas y solicitudes, para posteriormente incorporar funcionalidades más avanzadas como analítica de datos y reportes estratégicos.
+
+Finalmente, se recomienda continuar recopilando feedback constante de los usuarios para asegurar que el producto evolucione alineado con sus necesidades reales, minimizando riesgos y asegurando la adopción de la solución en el mercado.
+
+## Bibliografía
+
+Escudero, F. (2025, enero 7). Madurez digital: ¿cuál es el panorama de las empresas en el Perú? *Www.ey.com*. https://www.ey.com/es_pe/insights/revista-execution/disrupcion/madurez-digital
+
+Gestión de recursos humanos en el sector público de América latina, 2017-2021: revisión sistemática. (2022). *2*, 6(2), 3965–4000. https://doi.org/10.37811/cl_rcm.v6i2.2141
+
+Pérez, E. (2024). Transformación digital en la gestión de recursos humanos. *REVISTA CIENTIFICA GLOBAL NEGOTIUM*, 7(1), 27–43. https://doi.org/10.53485/rgn.v7i1.423
+
+Tejada Ramos, A. A. (2025). *Análisis sistemático de la gestión del desempeño en las entidades públicas: herramientas de las oficinas de recursos humanos*. https://doi.org/10.5281/ZENODO.16933151
+
+View of analysis of the role of human resource information system (HRIS) in improving work efficiency and effectiveness in modern organizations. (s/f). *Mryformosapublisher.org*. Recuperado el 26 de abril de 2026, de https://mryformosapublisher.org/index.php/ijabm/article/view/619/1107
+
+(S/f). *Dinastipub.org*. Recuperado el 26 de abril de 2026, de https://dinastipub.org/DIJMS/article/view/6175/4115
+
+## Anexos
+
+Landing Page: https://performily.github.io/Flowboard-LandingPage/
