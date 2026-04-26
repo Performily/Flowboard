@@ -253,3 +253,16 @@ Asumimos que la carencia de un sistema integrado provoca comportamientos reactiv
 
 **¿Por qué creemos que esto es valioso para el usuario y para el negocio?**
 Asumimos que la implementación de Flowboard generará un alto valor estratégico, impactando de manera positiva y bidireccional tanto en el bienestar del capital humano como en la rentabilidad de la organización. A nivel de los usuarios, esta solución resulta sumamente valiosa para los colaboradores generales porque les devuelve la autonomía sobre su información y reduce drásticamente los tiempos de espera, mitigando la frustración y mejorando su experiencia laboral; paralelamente, es invaluable para el equipo de Recursos Humanos al eliminar la carga mental y el estrés derivados de tareas manuales, permitiéndoles evolucionar hacia un rol enfocado en la retención del talento. A nivel de negocio, consideramos que la plataforma es altamente rentable porque ataca directamente las ineficiencias operativas que generan sobrecostos. Mediante la automatización, la empresa logrará reducir los ciclos de procesamiento administrativo de 3 a 5 días a tan solo unas horas, y disminuirá la tasa de errores salariales del 15% al 20% a menos del 2%, fomentando así un entorno transparente que garantice una mayor competitividad y sostenibilidad a largo plazo.
+
+#### 1.2.2.3. Lean UX Hypothesis Statements
+
+* **Creemos que** la implementación de una plataforma centrada para los personales de recursos humanos **resultará en** una reducción drástica del reingreso manual de datos en documentos independientes. **Sabremos que hemos tenido éxito cuando** observemos una reducción del 80% en el tiempo dedicado al procesamiento de planillas y gestión de asistencia por ciclo.
+
+* **Creemos que** proporcionar un módulo de consulta directa para los empleados generales **resultará en** una mayor confianza y transparencia sobre su información laboral. **Sabremos que hemos tenido éxito cuando** obtengamos un puntaje de satisfacción superior al 70% en las encuestas acerca de transparencia de sus beneficios.
+
+* **Creemos que** la automatización de los flujos de aprobación y el cálculo de beneficios para las organizaciones con crecimiento descomunal **resultará en** una reducción de los costos derivados de errores administrativos. **Sabremos que hemos tenido éxito cuando** la tasa de error en el ingreso de datos y cálculos salariales baje del 20% a menos del 2%.
+
+* **Creemos que** sustituir las herramientas obsoletas por un panel de control en tiempo real para la toma de las decisiones **resultará en** una mayor agilidad y precisión para gestionar al personal. **Sabremos que hemos tenido éxito cuando** el tiempo de aprobación de solicitudes de licencias y permisos se reduzca de 72 horas a menos de 24 horas.
+
+* **Creemos que** enfocar nuestro producto inicial en empresas que migran de sistemas tradicionales a digitales **resultará en** una adopción más rápida de la herramienta Flowboard. **Sabremos que hemos tenido éxito cuando** logremos que el 65% de los datos históricos de estas empresas se integren con éxito en la plataforma y se elimine por completo la dependencia de archivos físicos en los primeros 3 meses de uso.
+
