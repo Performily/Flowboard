@@ -577,3 +577,22 @@ A través de este mapeo, se logra una visión holística de cada segmento objeti
 
 **User Persona: Maria (Colaboradores generales)**
 * **Enlace de acceso:** https://drive.google.com/file/d/18XKLg_Xd6H1UXFZWWaPo6-iYscRYZfu3/view?usp=sharing
+
+
+### 2.4. Big Picture EventStorming.
+
+En esta sección, el equipo presenta el proceso realizado para comprender el dominio del negocio mediante la técnica de Big Picture Event Storming, así como las evidencias visuales obtenidas durante la sesión.
+
+Para llevar a cabo esta actividad, se utilizó la herramienta colaborativa Miro, donde inicialmente se definieron las principales funcionalidades de la aplicación web. A partir de estas funcionalidades, se inició la fase de **Unstructured Exploration**, en la cual el equipo realizó una lluvia de ideas identificando los eventos del dominio. Estos eventos fueron representados en notas adhesivas de color naranja y redactados en tiempo pasado, siguiendo la convención de Event Storming, como por ejemplo “días de descanso calculados”, “reporte gestionado” y “feedback validado”.
+
+* **Unstructured exploration:** https://drive.google.com/file/d/15ACY9_103zd8BLJSPxp4MS9nV-IiU1JG/view?usp=drive_link
+
+Una vez completada esta etapa, se procedió a la fase de **Timelines**, donde los eventos identificados fueron organizados de manera cronológica, es decir, según el orden en el que ocurren dentro del proceso del negocio. Además, se agruparon aquellos eventos que pertenecían a un mismo flujo o contexto, permitiendo visualizar mejor las relaciones y dependencias entre ellos.
+
+* **Timelines:** https://drive.google.com/file/d/1vkGyo9LvgNvwYqx1rQXCk1uco_wdRyjR/view?usp=drive_link
+
+Finalmente, se desarrolló la etapa de **Actors and External Systems**, en la cual se identificaron los actores y sistemas externos que interactúan con los eventos. En este caso, los principales actores definidos fueron el personal de recursos humanos y los colaboradores, quienes participan directamente en los procesos modelados.
+
+* **Actors and externals systems:** https://drive.google.com/file/d/1i7Lxj4Kj6QexWID0qs0WPOBX4O8f6-9a/view?usp=drive_link
+
+Este proceso permitió al equipo obtener una visión general del sistema, identificar los procesos clave y comprender mejor las interacciones dentro del dominio, sirviendo como base para el diseño posterior de la solución.
