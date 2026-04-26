@@ -2396,6 +2396,8 @@ El colaborador inicia sesión en el sistema y accede al dashboard principal. Des
 
 https://www.figma.com/design/wB43U9QsN9RLWUJ0sKpTU8/alplicaciones_web_wireframes?node-id=466-314&t=uPbQqfT8hWHnrBDU-1
 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202519273_upc_edu_pe/IQBhGIEv6169RJ9jDSunQPHGAQbFILqqXKxd3FAoaJcxE2w?e=4w9BVI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
 ---
 
 ## 4.6. Domain-Driven Software Architecture
