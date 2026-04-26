@@ -1985,3 +1985,7 @@ El conjunto de User Stories se organiza en relación con objetivos más amplios 
 - **Given** el token es válido
 - **When** la nueva contraseña no cumple las reglas de seguridad
 - **Then** la respuesta es 400 Bad Request
+
+# 3.2. Impact Mapping
+
+[Ver Impact Mapping](https://drive.google.com/file/d/1yOXBRv-EHruLhPPw6JC-LGwoGzYOZ6ED/view?usp=drive_link)
