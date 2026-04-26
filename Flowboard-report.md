@@ -2263,3 +2263,41 @@ Asimismo, se plantea un **modelo de navegación jerárquico y secuencial** en el
 De igual manera, se contemplan **componentes de navegación contextual**, tales como estructuras desplegables, listas interactivas y segmentación de contenido, que permiten acceder a información específica bajo demanda. Adicionalmente, se aplican principios de consistencia, visibilidad del estado del sistema y retroalimentación, asegurando que las acciones del usuario generen respuestas claras e inmediatas.
 
 El sistema se complementa con un **pie de página estructurado** que centraliza elementos como políticas, términos y canales de contacto, reforzando la coherencia y completitud de la experiencia de navegación.
+
+## 4.3. Landing Page UI Design
+
+### 4.3.1. Landing Page Wireframe
+
+En esta sección se presentan los wireframes de baja fidelidad para la Landing Page de Flowboard, diseñados para resoluciones de Desktop Web Browser.
+
+La traducción de las decisiones de diseño y arquitectura de información se ha realizado bajo los siguientes pilares:
+
+- **Arquitectura de Información (AI):** Se ha implementado un Sistema de Organización Jerárquico, priorizando la captación de leads en el "Hero Section" y desplegando progresivamente la propuesta de valor. Las etiquetas utilizadas (Inicio, Funcionalidades, Nosotros, Contacto) siguen un Sistema de Etiquetado directo y familiar para el usuario, facilitando una navegación intuitiva.
+
+- **Jerarquía Visual y Elementos de Diseño:** Se aplica el principio de escalabilidad mediante el uso de espacios en blanco (siguiendo la regla de los 8px) para reducir la fatiga visual.
+
+- **Diseño Inclusivo y Accesibilidad:** Los wireframes consideran el diseño inclusivo al establecer áreas de interacción amplias para botones y formularios, asegurando la usabilidad tanto para usuarios con dispositivos táctiles como para aquellos que utilizan periféricos tradicionales. La tipografía Inter se ha pre-visualizado en tamaños de 16px para el cuerpo y 40px para títulos principales para garantizar legibilidad universal.
+
+![](assets/img/Wireframe-landingpage1.png)
+![](assets/img/Wireframe-landingpage2.png)
+![](assets/img/Wireframe-landingpage3.png)
+![](assets/img/Wireframe-landingpage4.png)
+![](assets/img/Wireframe-landingpage5.png)
+![](assets/img/Wireframe-landingpage6.png)
+![](assets/img/Wireframe-landingpage7.png)
+![](assets/img/Wireframe-landingpage8.png)
+
+---
+
+### 4.3.2. Landing Page Mock-up
+
+En esta sección se presentan los Mock-ups de alta fidelidad de la Landing Page para Flowboard. Estos diseños representan la evolución final desde los wireframes, mediante la integración de la identidad visual de la startup Performily.
+
+![](assets/img/Mockup-landingpage1.png)
+![](assets/img/Mockup-landingpage2.png)
+![](assets/img/Mockup-landingpage3.png)
+![](assets/img/Mockup-landingpage4.png)
+![](assets/img/Mockup-landingpage5.png)
+![](assets/img/Mockup-landingpage6.png)
+![](assets/img/Mockup-landingpage7.png)
+![](assets/img/Mockup-landingpage8.png)
