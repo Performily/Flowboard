@@ -596,3 +596,42 @@ Finalmente, se desarrolló la etapa de **Actors and External Systems**, en la cu
 * **Actors and externals systems:** https://drive.google.com/file/d/1i7Lxj4Kj6QexWID0qs0WPOBX4O8f6-9a/view?usp=drive_link
 
 Este proceso permitió al equipo obtener una visión general del sistema, identificar los procesos clave y comprender mejor las interacciones dentro del dominio, sirviendo como base para el diseño posterior de la solución.
+
+### 2.5. Ubiquitous Language.
+
+El Ubiquitous Language tiene como objetivo establecer un lenguaje común y consistente entre los actores (usuarios, desarrolladores, entrevistados, etc.) involucrados en el desarrollo del sistema. Este lenguaje compartido permite definir claramente los conceptos claves, evitando ambigüedades y asegurando una correcta comunicación durante todo el proceso de desarrollo. 
+
+| Término | Definición |
+| :--- | :--- |
+| **Colaborador** | Persona que forma parte de la organización y aporta al cumplimiento de los objetivos empresariales. |
+| **Jefe** | Responsable directo de uno o más colaboradores, encargado de aprobar solicitudes y evaluar desempeño. |
+| **Nómina** | Procesos de cálculo y gestión de remuneraciones de todos los empleados en un periodo determinado. |
+| **Área de Recursos Humanos** | Unidad encargada de gestionar procesos laborales como selección, planilla, beneficios, desempeño y relaciones laborales. |
+| **Beneficios laborales** | Compensaciones adicionales al salario, como seguros, bonos, vacaciones o gratificaciones. |
+| **Vacaciones** | Periodo de descanso remunerado al que tiene derecho el trabajador según la normativa laboral. |
+| **Permiso** | Autorización para ausentarse del trabajo por un periodo corto con o sin goce de haber. |
+| **Jornada Laboral** | Tiempo establecido que el trabajador debe cumplir en sus actividades diarias. |
+| **Horas Extras** | Tiempo trabajado adicional a la jornada laboral regular que genera una compensación extra. |
+| **Compensación de horas** | Mecanismo donde las horas extras se convierten en tiempo libre en lugar de pago. |
+| **Desempeño** | Nivel de cumplimiento de las funciones y objetivos asignados a un trabajador. |
+| **Evaluación de desempeño** | Proceso de medición del rendimiento del trabajador. |
+| **Reclutamiento** | Proceso de búsqueda y atracción de candidatos para un puesto. |
+| **Selección** | Procesos de evaluación y elección del candidato más adecuado para el puesto. |
+| **Onboarding** | Proceso de integración de un nuevo empleado a la organización. |
+| **Offboarding** | Proceso de salida de un trabajador de la empresa. |
+| **Contrato laboral** | Documento que define la relación entre el colaborador y la empresa, incluyendo condiciones y duración. |
+| **Vencimiento de contrato** | Fecha límite del contrato laboral que debe ser monitoreada para renovación o cese. |
+| **Cese** | Proceso de finalización del vínculo laboral con un colaborador. |
+| **Ausentismo** | Frecuencia de ausencias del trabajador en su jornada laboral. |
+| **Asistencia** | Registro de ingreso y salida del colaborador en su jornada laboral. |
+| **Puntualidad** | Cumplimiento del horario laboral sin retrasos. |
+| **Tardanza** | Retraso en el ingreso laboral que puede generar descuentos. |
+| **Solicitud de vacaciones** | Petición del colaborador para tomar días de descanso, sujeta a aprobación. |
+| **Flujo de aprobación** | Proceso donde una solicitud pasa por uno o más aprobadores. |
+| **Feedback** | Opinión del jefe o colaborador sobre el desempeño laboral. |
+| **Legajo del colaborador** | Conjunto de documentos e información histórica del trabajador. |
+| **Base matriz** | Base de datos central con información histórica de colaboradores. |
+| **Información laboral** | Datos relacionados a pagos, contratos, vacaciones y desempeño. |
+| **Información demográfica** | Datos personales del colaborador como edad y estado civil. |
+| **Notificaciones** | Alertas automáticas sobre eventos importantes como vencimiento de contrato o aprobaciones. |
+| **Días acumulados** | Días que acumuló el colaborador al trabajar horas extras. |
