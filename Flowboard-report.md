@@ -2185,3 +2185,72 @@ Los campos de entrada de la interfaz han sido diseñados para ofrecer una experi
 El botón interno del campo de entrada utiliza un relleno sólido en color primario (`#3F51B5`) y texto en blanco (`#FFFFFF`).
 
 ![Inputs - Web Style Guidelines](assets\img\labels.png)
+
+## 4.2. Information Architecture
+
+### 4.2.1. Organization Systems
+
+El flujo del sistema inicia en el módulo de autenticación, donde el usuario puede iniciar sesión mediante sus credenciales, recuperar su contraseña e ingresar al apartado de términos y condiciones. Una vez autenticado, el sistema identifica el tipo de usuario y lo dirige al panel principal correspondiente, el cual funciona como un centro de navegación para acceder a las distintas funcionalidades.
+
+Para el **personal de Recursos Humanos**, desde el panel principal se puede acceder a la gestión de colaboradores, donde es posible registrar nuevos empleados, actualizar su información, dar de baja o reactivar colaboradores según corresponda. Asimismo, se cuenta con el apartado de solicitudes, que permite revisar y gestionar las solicitudes enviadas por los empleados, incluyendo su aprobación o rechazo. Además, el sistema incluye una sección de notificaciones, donde se generan alertas ante cambios relevantes dentro del sistema.
+
+Por otro lado, los **colaboradores** acceden a un panel principal enfocado en la autogestión de su información. Desde aquí pueden visualizar su dashboard, consultar su información laboral y gestionar sus datos personales. En el apartado de solicitudes, el usuario puede crear nuevas solicitudes, consultar su estado, cancelarlas si es necesario y validar su saldo de vacaciones. También dispone de funcionalidades relacionadas con la asistencia, como la justificación de inasistencias, así como el acceso a la sección de pagos, donde puede descargar sus boletas. Finalmente, el sistema permite la recepción de notificaciones sobre actualizaciones o acciones relevantes.
+
+![Organization Systems](assets\img\arquitecture.jpg)
+
+---
+
+### 4.2.2. Labeling Systems
+
+El sistema de etiquetado propuesto para la solución Flowboard se fundamenta en principios de claridad, consistencia y simplicidad, con el objetivo de facilitar la comprensión de la información y reducir la carga cognitiva de los usuarios durante su interacción con la plataforma.
+
+A partir del análisis de necesidades identificado en el proceso de investigación, se reconoce que uno de los principales problemas en los entornos de gestión de recursos humanos es la ambigüedad en la denominación de procesos y datos, lo cual genera confusión y dificulta el acceso a la información. En este sentido, se plantea el uso de etiquetas concisas y descriptivas, empleando un lenguaje cercano al usuario y evitando terminología técnica innecesaria, de modo que los elementos del sistema puedan ser comprendidos de manera inmediata.
+
+Asimismo, se establece un criterio de consistencia en la denominación de secciones, funcionalidades y estados, asegurando que un mismo concepto sea representado de forma uniforme en toda la interfaz. Las etiquetas estarán orientadas a reflejar acciones y contenidos de forma directa, utilizando estructuras simples que faciliten la identificación rápida de opciones, tales como **"Solicitudes"**, **"Asistencia"**, **"Vacaciones"** o **"Boletas"**, así como estados claramente diferenciados como **"Pendiente"**, **"Aprobado"** o **"Rechazado"**.
+
+De igual manera, se considera la organización semántica de la información, de modo que las etiquetas no solo representen elementos individuales, sino también las relaciones entre ellos dentro del sistema. Este enfoque permite construir una arquitectura de información coherente y predecible, favoreciendo la navegación y el uso eficiente de la plataforma.
+
+---
+
+### 4.2.3. SEO Tags and Meta Tags
+
+| Tag | Landing Page |
+| :--- | :--- |
+| **Title** | Flowboard |
+| **Description** | Descubre Flowboard, una solución diseñada para simplificar procesos y ahorrar tiempo en tu empresa. |
+| **Keywords** | RRHH, gestión de colaboradores, nómina, automatización de procesos, Flowboard, asistencia, solicitudes laborales, SaaS |
+| **Author** | Performily Team |
+| **Viewport** | width=device-width, initial-scale=1.0 |
+| **Robots** | index, follow |
+
+---
+
+### 4.2.4. Searching Systems
+
+El sistema de búsqueda propuesto para la solución Flowboard se diseña con el objetivo de facilitar el acceso eficiente a la información y evitar que los usuarios se enfrenten a la desorganización y sobrecarga de datos identificadas en el análisis del problema.
+
+Se plantea la implementación de mecanismos de búsqueda que permitan localizar información de manera rápida, precisa y contextualizada dentro de la plataforma. Para ello, se incorpora una barra de búsqueda global que posibilita la consulta directa de elementos clave como colaboradores, solicitudes, registros de asistencia y documentos, reduciendo la dependencia de navegación manual.
+
+Asimismo, el sistema contempla el uso de filtros dinámicos que permiten refinar los resultados en función de criterios relevantes como estado, rango de fechas, área organizacional o tipo de solicitud. De igual manera, se consideran funcionalidades de ordenamiento de resultados, permitiendo organizar la información de acuerdo con distintos parámetros como fecha, relevancia o orden alfabético. El diseño también incluye sugerencias automáticas durante la escritura y categorización de resultados, con el fin de anticipar la intención del usuario y agilizar el proceso de búsqueda.
+
+| Opción | Descripción |
+| :--- | :--- |
+| **Búsqueda de colaboradores** | Permite localizar empleados mediante nombre u otros datos, facilitando su gestión y acceso a su información. |
+| **Búsqueda de solicitudes** | Permite encontrar solicitudes realizadas por los colaboradores según su estado o tipo. |
+| **Filtrado de registros de asistencia** | Facilita la consulta de asistencias mediante filtros como fechas o estado. |
+| **Acceso a boletas de pago** | Permite ubicar y descargar rápidamente las boletas correspondientes. |
+| **Consulta de notificaciones** | Permite visualizar alertas o cambios recientes dentro del sistema. |
+
+---
+
+### 4.2.5. Navigation Systems
+
+El sistema de navegación propuesto para la solución Flowboard se fundamenta en principios de arquitectura de información y diseño centrado en el usuario, con el objetivo de garantizar una interacción eficiente, intuitiva y coherente con las necesidades identificadas durante el proceso de Needfinding.
+
+A partir del análisis realizado, se identificó que uno de los principales problemas en la gestión actual de recursos humanos radica en la dificultad de acceso a la información y la fragmentación de los procesos, por lo que la navegación se concibe como un mecanismo clave para reducir la carga cognitiva del usuario. En este sentido, se propone una **estructura de navegación global persistente** basada en un menú principal que permita el acceso directo a las secciones fundamentales del sistema, ofreciendo rutas claras y consistentes que eviten recorridos innecesarios.
+
+Asimismo, se plantea un **modelo de navegación jerárquico y secuencial** en el cual el contenido se organiza en bloques estructurados que guían al usuario de manera progresiva, priorizando los elementos más relevantes. Para orientar el comportamiento del usuario, se incorporan elementos de acción directa (**Call To Action - CTA**) diseñados bajo criterios de jerarquía visual, los cuales dirigen hacia acciones clave como el registro, acceso o exploración de funcionalidades.
+
+De igual manera, se contemplan **componentes de navegación contextual**, tales como estructuras desplegables, listas interactivas y segmentación de contenido, que permiten acceder a información específica bajo demanda. Adicionalmente, se aplican principios de consistencia, visibilidad del estado del sistema y retroalimentación, asegurando que las acciones del usuario generen respuestas claras e inmediatas.
+
+El sistema se complementa con un **pie de página estructurado** que centraliza elementos como políticas, términos y canales de contacto, reforzando la coherencia y completitud de la experiencia de navegación.
