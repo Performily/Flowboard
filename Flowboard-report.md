@@ -551,3 +551,17 @@ El análisis de esta matriz permite identificar patrones, similitudes y diferenc
 | Consolidar registros y documentos de gestión antiguos | Alta | Baja | Baja | Nula |
 | Resolver dudas y trámites de los colaboradores | Alta | Alta | Alta | Media |
 | Evaluar indicadores de desempeño y productividad | Alta | Media | Media | Baja |
+
+### 2.3.3. User Journey Mapping.
+
+La sección de User Journey Mapping tiene como finalidad representar de manera visual y secuencial la experiencia completa del usuario al interactuar con el contexto del problema, desde el inicio hasta el logro de su objetivo. Este recorrido permite comprender cómo los usuarios llevan a cabo sus procesos actualmente (As-Is), sin la intervención de la solución propuesta.
+
+Para su elaboración, se toma como base cada User Persona, desarrollando un mapa individual que describe las etapas, acciones, pensamientos y emociones que experimenta el usuario a lo largo de su recorrido. Esto incluye los puntos de contacto, las decisiones que debe tomar y las dificultades que enfrenta en cada fase del proceso.
+
+El análisis del User Journey permite identificar momentos críticos, conocidos como *pain points*, donde el usuario experimenta frustración, retrasos o ineficiencias. Estos hallazgos resultan fundamentales para detectar oportunidades de mejora y orientar el diseño de la solución hacia una experiencia más eficiente, fluida y centrada en el usuario.
+
+**User Persona: Carlos (Personal de Recursos Humanos)**
+* **Enlace de acceso:** [Documento Google Drive - Journey Map Carlos](https://drive.google.com/file/d/1RJCala_lUAnsCKPE-s4Q999EzR-ar7Eg/view?usp=drive_link)
+
+**User Persona: Maria (Colaboradores generales)**
+* **Enlace de acceso:** [Documento Google Drive - Journey Map Maria](https://drive.google.com/file/d/1LuTUAhUheGai-YL9YRKzBZWVdwW_b59Y/view?usp=drive_link)
