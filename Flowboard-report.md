@@ -2339,3 +2339,61 @@ El colaborador inicia sesión en el sistema y accede al dashboard principal. Des
 ![Wireflow 2](assets\img\wireflow_2.png)
 
 ---
+
+### 4.4.4. Web Applications User Flow Diagrams
+
+**Personal de Recursos Humanos**
+
+| Campo | Detalle |
+| :--- | :--- |
+| **User Goal** | Como analista de RR.HH. que gestiona múltiples solicitudes manuales, quiero aprobar o rechazar solicitudes de vacaciones/licencias de forma rápida para reducir tiempos de respuesta y evitar retrasos operativos. |
+| **Link** | (https://lucid.app/lucidchart/db62f7e6-d2ac-4b5e-980c-3eaf191f3864/edit?invitationId=inv_f8d12bae-c5d8-41c1-8a3b-a825385489b1) |
+
+**Happy Paths:**
+1. Accede a la plataforma y entra al módulo de "Solicitudes".
+2. Visualiza la lista de solicitudes pendientes de vacaciones/licencias.
+3. Selecciona una solicitud y revisa el detalle del colaborador.
+4. Aprueba la solicitud y el sistema actualiza el estado automáticamente.
+5. El colaborador recibe una notificación con la respuesta.
+
+**Unhappy Paths:**
+1. La lista de solicitudes no se carga correctamente por error del sistema.
+2. La información de la solicitud está incompleta o desactualizada.
+3. Rechaza la solicitud pero no ingresa un motivo, impidiendo completar la acción.
+4. El sistema no envía la notificación al colaborador tras la decisión.
+5. Ocurre un error al actualizar el estado de la solicitud.
+
+![User Flow - Personal de RRHH](assets/img/userflow1.png)
+
+---
+
+**Colaboradores Generales**
+
+| Campo | Detalle                                                                                                                                                                                                   |
+| :--- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **User Goal** | Como colaboradora que necesita acceder a su información laboral sin depender de RRHH, quiero visualizar mis datos, boletas y vacaciones en un solo lugar para tener autonomía y evitar tiempos de espera. |
+| **Link** | https://lucid.app/lucidchart/5cb632a7-ebfa-4468-8f2d-0dddc3803e6d/edit?viewport_loc=-520%2C-1534%2C8013%2C3906%2C0_0&invitationId=inv_88ca2a31-ac55-45e0-8b80-740a7ba412a2                                |
+
+**Happy Paths:**
+1. Accede a la plataforma e inicia sesión con sus credenciales.
+2. Ingresa al dashboard y visualiza el resumen de su información laboral.
+3. Navega a la sección de "Boletas" y revisa su historial de pagos.
+4. Descarga su boleta de pago correctamente.
+5. Consulta su saldo de vacaciones y estado de solicitudes.
+
+**Unhappy Paths:**
+1. No puede iniciar sesión por error en las credenciales.
+2. La información de boletas o vacaciones no se carga correctamente.
+3. Intenta descargar una boleta y el archivo presenta un error.
+4. La información mostrada está desactualizada o incompleta.
+5. No encuentra fácilmente la sección que desea consultar dentro del sistema.
+
+![User Flow - Colaboradores](assets/img/userflow2.png)
+
+---
+
+## 4.5. Web Applications Prototyping
+
+https://www.figma.com/design/wB43U9QsN9RLWUJ0sKpTU8/alplicaciones_web_wireframes?node-id=466-314&t=uPbQqfT8hWHnrBDU-1
+
+---
