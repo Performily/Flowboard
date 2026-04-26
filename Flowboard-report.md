@@ -320,3 +320,75 @@ Este segmento está conformado por los trabajadores de la organización que requ
 | **Debilidades y Oportunidades (DO)** | Reducir la percepción de complejidad y posicionar la marca mediante educación al cliente y generación de confianza en un mercado en crecimiento digital. | Desarrollar contenido educativo (tutoriales, webinars, demos guiadas) sobre digitalización de RR.HH., uso de BI y automatización, acompañado de campañas en redes que expliquen paso a paso cómo implementar el sistema sin dificultad. |
 | **Fortalezas y Amenazas (FA)** | Establecer una diferenciación competitiva basada en la arquitectura web de la plataforma, la cual elimina la necesidad de instalaciones complejas o hardware adicional. | Difundir demostraciones funcionales del módulo de autogestión en canales digitales. Subrayar el acceso remoto a la información laboral sin requerir la descarga de aplicaciones nativas por parte del personal. |
 | **Debilidades y Amenazas (DA)** | Minimizar el impacto de recursos limitados y complejidad del sistema frente a competidores consolidados, mejorando la experiencia inicial del usuario y el soporte. | Implementar un proceso de onboarding simplificado, asistencia personalizada durante la implementación y mejoras en el soporte técnico para poder priorizar tiempos de respuesta y resolución de problemas complejos. |
+
+### 2.2. Entrevistas
+
+#### 2.2.1. Diseño de entrevistas
+
+**Preguntas de introducción**
+* ¿Cómo te llamas?
+* ¿Cuántos años tienes?
+* ¿En qué distrito vives?
+* ¿Estado civil?
+* ¿Cuál es tu ocupación actual?
+
+**Preguntas sobre su ocupación actual**
+* ¿Cuántos años vienes desempeñando tú función actual?
+* ¿Cuáles son las funciones de tu puesto?
+* ¿Cómo es el flujo de trabajo en tu área, qué papel cumples dentro de ese flujo?
+* ¿Cómo describirías tu día a día en el trabajo? (Productivo-Cansado-Estresado-Agotador)
+
+**Segmento 1: Personal de Recursos Humanos**
+* ¿Cuáles son tus principales responsabilidades dentro del área de RRHH?
+* ¿Qué es lo más importante que buscas lograr en tu trabajo día a día?
+* ¿Qué indicadores utilizas para evaluar el desempeño de los trabajadores?
+* ¿Qué tan importante es para ti contar con información actualizada de los empleados? (Muy importante, importante, neutro, no tan importante, nada importante)
+* ¿Qué procesos consideras críticos dentro de tu área (planilla, asistencia, licencias, etc.)?
+* ¿Cómo gestionan actualmente la información de los empleados? (Excel, sistemas, documentos físicos, otros)
+* ¿Cómo es el proceso para calcular la planilla?
+* ¿Cómo gestionan las solicitudes de vacaciones, licencias o permisos?
+* ¿Existe un flujo definido de aprobación o depende de cada caso?
+* ¿Cómo realizan el control de asistencia y puntualidad?
+* ¿Qué es lo que más te toma tiempo en tu trabajo diario?
+* ¿Qué tareas sientes que son repetitivas o innecesarias?
+* ¿Con qué frecuencia ocurren errores en planillas o registros?
+* ¿Qué tipo de errores son los más comunes?
+* ¿Qué es lo que más te frustra del proceso actual de gestión de RRHH?
+* ¿Sientes que tienes sobrecarga de trabajo? ¿Por qué?
+* ¿Con qué frecuencia los empleados te consultan sobre su información?
+* ¿Qué tipo de consultas son las más repetitivas?
+* ¿Te resulta fácil encontrar la información que necesitas de un empleado?
+* ¿Has tenido problemas por información incompleta o desactualizada?
+* ¿Qué herramienta o sistema te gustaría tener para facilitar tu trabajo?
+* Si pudieras automatizar un proceso, ¿cuál sería y por qué?
+* ¿Qué tan importante sería para ti tener una plataforma centralizada?
+* ¿Cómo crees que mejoraría tu trabajo si los empleados pudieran autogestionar su información?
+* Si pudieras cambiar una sola cosa del sistema actual de RRHH, ¿qué cambiarías?
+
+**Segmento 2: Colaboradores generales**
+* ¿Quién se encarga de evaluar tu desempeño laboral?
+* ¿Sabes qué indicadores evalúan para determinar tu desempeño laboral?
+* ¿Qué indicadores consideras que son importantes a la hora de evaluar tu desempeño?
+* ¿Qué es lo más importante que buscas lograr en tu trabajo?
+* ¿Qué te hace sentir que estás haciendo bien tu trabajo?
+* Cuando hay una observación o reconocimiento sobre tu trabajo, ¿Quién se comunica contigo?
+* ¿Qué medios utilizan para comunicarse contigo? (correo, WhatsApp, reuniones, otros)
+* ¿Te gustaría recibir ese tipo de información de otra forma? ¿Cómo?
+* ¿Tienes acceso directo a tu información laboral (beneficios, pagos, vacaciones, otros)?
+* ¿Te encuentras en alguna plataforma web que contenga toda tu información como empleado?
+* ¿Qué tan fácil es para ti acceder a esa información? 
+* ¿Qué tipo de información consultas con más frecuencia? 
+* Cuando necesitas información (vacaciones, pagos, estado de solicitudes), ¿qué haces normalmente? ¿A quién recurres primero?
+* ¿Cuánto tiempo suele tomarte obtener esa información? 
+* ¿Con qué frecuencia realizas este tipo de consultas?
+* ¿Has tenido problemas con recursos humanos respecto a tu información o estado laboral?
+* ¿Conoces casos donde se hayan olvidado de entregar algún beneficio?
+* ¿Tus pagos siempre han sido puntuales o han presentado dificultades?
+* ¿Te han dado vacaciones o sabes cuántos días te corresponden?
+* ¿Qué es lo que más te incomoda del proceso actual para obtener información? 
+* ¿Alguna vez te has sentido frustrado con RRHH? ¿Por qué? 
+* ¿Qué te gustaría mejorar del sistema actual de gestión de empleados?
+* ¿Te gustaría poder gestionar tú mismo tus solicitudes (vacaciones, permisos, otros)?
+* ¿Qué tan importante sería para ti tener acceso inmediato a tu información? (escala muy importante, importante ….)
+* ¿Qué funcionalidades te gustaría que tenga una plataforma ideal para empleados?
+* Si pudieras cambiar una sola cosa en la forma en que gestionan tu información laboral, ¿qué cambiarías?
