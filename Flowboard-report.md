@@ -1988,4 +1988,62 @@ El conjunto de User Stories se organiza en relación con objetivos más amplios 
 
 # 3.2. Impact Mapping
 
-[Ver Impact Mapping](https://drive.google.com/file/d/1yOXBRv-EHruLhPPw6JC-LGwoGzYOZ6ED/view?usp=drive_link)
+https://drive.google.com/file/d/1yOXBRv-EHruLhPPw6JC-LGwoGzYOZ6ED/view?usp=drive_link
+
+---
+
+# 3.3. Product Backlog
+
+| # | User Story ID | Descripción | Story Points |
+| :---: | :---: | :--- | :---: |
+| 1 | US36 | Como personal de RRHH, quiero previsualizar la planilla, para validar antes de hacerla oficial. | 8 |
+| 2 | US48 | Como desarrollador, quiero validar los datos de la planilla, para detectar inconsistencias antes de su generación. | 8 |
+| 3 | US01 | Como trabajador del área de recursos humanos, quiero registrar la información de nuevos colaboradores en el sistema, para que su información laboral esté disponible para su gestión. | 8 |
+| 4 | US32 | Como colaborador que necesita acceder a sus comprobantes de pago de forma autónoma, quiero consultar y descargar mis boletas de pago, para tener respaldo de mis ingresos. | 5 |
+| 5 | US16 | Como jefe o encargado de RRHH encargado de coordinar los descansos del personal, quiero programar las vacaciones de los colaboradores de mi área, para distribuir adecuadamente la carga laboral del equipo y evitar conflictos de disponibilidad. | 8 |
+| 6 | US17 | Como colaborador que necesita gestionar trámites laborales de forma autónoma, quiero crear solicitudes, para gestionar de forma autónoma necesidades relacionadas con asistencia, beneficios y otros trámites. | 5 |
+| 7 | US37 | Como analista de RRHH, quiero recibir alertas automáticas ante el exceso de horas laboradas, para mitigar riesgos de fatiga laboral y asegurar el cumplimiento de la normativa vigente. | 5 |
+| 8 | US09 | Como jefe o personal de RRHH encargado de gestionar solicitudes de colaboradores, quiero gestionar solicitudes de colaboradores, para que pueda aprobarlas o rechazarlas según corresponda. | 5 |
+| 9 | US14 | Como colaborador del área de RRHH encargado de la administración de remuneraciones, quiero consultar el estado de pagos de los colaboradores por periodo y estado, para controlar la planilla y pagos pendientes o con observaciones. | 8 |
+| 10 | US12 | Como jefe o encargado de RRHH que toma decisiones basadas en indicadores de asistencia de sus colaboradores, quiero consultar un resumen de asistencia por área, para evaluar el desempeño del personal. | 8 |
+| 11 | US28 | Como colaborador, quiero sustentar el motivo de una inasistencia al centro de labores, para evitar penalizaciones administrativas y mantener actualizado mi historial de cumplimiento laboral. | 5 |
+| 12 | US31 | Como colaborador que ingresa al sistema, quiero consultar un resumen de mi información relevante, para acceder rápidamente a mis funciones principales. | 2 |
+| 13 | US15 | Como colaborador del área de RRHH, quiero consultar la disponibilidad de vacaciones por área y periodo, para evaluar si una solicitud puede atenderse sin afectar la continuidad de las operaciones. | 5 |
+| 14 | US41 | Como personal de RRHH, quiero recibir alertas automáticas ante cambios en la información de los colaboradores, para supervisar la integridad de los datos maestros y mantener la trazabilidad de las actualizaciones en la organización. | 2 |
+| 15 | US02 | Como trabajador de recursos humanos, quiero que el sistema genere automáticamente credenciales de acceso para los nuevos colaboradores, para que puedan acceder al sistema sin intervención manual. | 3 |
+| 16 | US45 | Como desarrollador, quiero autenticar usuarios, para que el sistema pueda validar accesos y generar tokens de sesión. | 5 |
+| 17 | US21 | Como visitante del segmento de recursos humanos de una empresa que está preocupado por la seguridad de la información de su organización, quiero ver en la landing page una explicación clara sobre cómo se protege y maneja mi información, para sentir tranquilidad y confianza al usar la aplicación. | 2 |
+| 18 | US43 | Como visitante del segmento de RRHH, quiero acceder a la descripción de las funcionalidades principales en la landing page, para comprender la propuesta de valor y las capacidades de la plataforma antes de su adquisición. | 3 |
+| 19 | US38 | Como personal de RRHH, quiero consultar la información histórica de las solicitudes gestionadas, para realizar análisis de patrones y tendencias en el comportamiento organizacional. | 5 |
+| 20 | US39 | Como analista de RRHH, quiero exportar los resultados de los reportes generados, para compartir información técnica con otras áreas de la organización de forma externa. | 5 |
+| 21 | US05 | Como personal de RRHH que realiza el mantenimiento de registros de colaboradores, quiero actualizar la información de un colaborador, para mantener los datos correctos y actualizados. | 2 |
+| 22 | US33 | Como colaborador que no recuerda su contraseña, quiero restablecerla, para recuperar el acceso a mi cuenta de forma segura. | 3 |
+| 23 | US06 | Como personal de RRHH que realiza el proceso de cese de un colaborador, quiero registrar el cese de un colaborador, para que su estado laboral refleje su situación actual. | 5 |
+| 24 | US07 | Como personal de RRHH que gestiona el ciclo de vida de los colaboradores, quiero reactivar a un colaborador, para que pueda reincorporarse y retomar sus funciones en la organización. | 3 |
+| 25 | US11 | Como personal de RRHH responsable de la organización interna de la empresa, quiero consultar la estructura organizacional, para gestionar las jerarquías de la empresa. | 5 |
+| 26 | US29 | Como colaborador, quiero recibir alertas automáticas sobre el cambio de estado de mis solicitudes y actividades laborales, para mantener un seguimiento oportuno de mis procesos sin requerir una consulta manual reiterada. | 5 |
+| 27 | US08 | Como colaborador que está preocupado por el avance de sus trámites, quiero consultar el estado de mis solicitudes, para que pueda hacer seguimiento a su progreso. | 2 |
+| 28 | US42 | Como colaborador, quiero anular una solicitud con estado pendiente de revisión, para corregir errores en la información registrada o desistir del trámite por cambios de último momento. | 3 |
+| 29 | US13 | Como colaborador que se preocupa por su desempeño laboral, quiero consultar mi estado de asistencia en un periodo determinado, para identificar oportunidades de mejora en mi puntualidad y asistencia. | 5 |
+| 30 | US10 | Como colaborador que quiere tener mayor claridad sobre su rol y entorno laboral, quiero consultar la información de mi área y puesto, para entender mi rol dentro de la organización. | 2 |
+| 31 | US34 | Como personal de RRHH, quiero registrar documentos asociados a un colaborador, para mantener su información completa y organizada. | 5 |
+| 32 | US30 | Como colaborador, quiero enviar mensajes dentro del sistema, para comunicarme con RRHH o mi jefe sin usar medios externos. | 1 |
+| 33 | US35 | Como colaborador, quiero registrar feedback sobre mi experiencia, para contribuir a la mejora del sistema. | 3 |
+| 34 | US26 | Como visitante del segmento de RRHH, quiero acceder a una base de conocimientos sobre dudas comunes, para resolver inquietudes sobre el funcionamiento de la plataforma de manera autónoma y rápida. | 3 |
+| 35 | US20 | Como parte del equipo de recursos humanos de una empresa que prefiere información visual y directa, quiero ver un video explicativo integrado en la landing page, para comprender rápidamente qué ofrece la aplicación y cómo puede ayudarme a reducir mis costos energéticos. | 1 |
+| 36 | US24 | Como visitante del segmento de RRHH, quiero acceder a la propuesta estética del producto, para validar que la plataforma cumple con los estándares de simplicidad y claridad requeridos por mi organización antes de su adquisición. | 2 |
+| 37 | US44 | Como visitante del segmento de RRHH, quiero acceder a la información del equipo responsable del desarrollo, para establecer un vínculo de confianza y validar la experiencia técnica detrás de la solución. | 1 |
+| 38 | US19 | Como parte del equipo de recursos humanos de una empresa que quiere usar la aplicación sin riesgos ni dudas legales, quiero acceder a una página exclusiva de Términos y Condiciones, para conocer las reglas de uso, las responsabilidades del usuario y del servicio, y asegurarme de que entiendo las condiciones antes de utilizar la aplicación. | 2 |
+| 39 | US22 | Como visitante del segmento de RRHH, quiero acceder a un sistema de navegación simplificado, para desplazarme entre las diferentes secciones de información del producto de forma ágil. | 2 |
+| 40 | US23 | Como visitante del segmento de RRHH, quiero registrar un medio de contacto electrónico en el sitio web, para recibir información actualizada y consejos sobre la gestión del capital humano. | 1 |
+| 41 | US25 | Como visitante del segmento de RRHH, quiero acceder a los canales oficiales de comunicación externa de la empresa desarrolladora, para realizar consultas, solicitar soporte o mantenerme informado sobre las actualizaciones de la plataforma. | 1 |
+| 42 | US27 | Como colaborador, quiero finalizar mi sesión activa en el sistema, para garantizar la protección de mi información personal y los datos de la organización en dispositivos de uso compartido. | 1 |
+| 43 | US03 | Como colaborador de la organización, quiero autenticarme en el sistema con mis credenciales, para acceder a mi información y funcionalidades disponibles. | 3 |
+| 44 | US50 | Como desarrollador, quiero permitir el restablecimiento de contraseña, para que los usuarios puedan recuperar el acceso a su cuenta de forma segura. | 5 |
+| 45 | US47 | Como desarrollador, quiero obtener un resumen del colaborador, para proporcionar información agregada relevante. | 5 |
+| 46 | US46 | Como desarrollador, quiero permitir la creación de solicitudes de colaboradores, para que puedan gestionar trámites como vacaciones o permisos. | 5 |
+| 47 | US49 | Como desarrollador, quiero proporcionar acceso a las boletas de pago, para que los colaboradores puedan descargarlas. | 3 |
+| 48 | US40 | Como colaborador, quiero acceder a la relación histórica de mis solicitudes personales, para mantener un control y seguimiento sobre mis trámites realizados en la plataforma. | 3 |
+| 49 | US18 | Como colaborador que necesita gestionar trámites laborales de forma autónoma, quiero editar solicitudes enviadas, para corregir información antes de que sean atendidas. | 5 |
+| 50 | US04 | Como colaborador que busca gestionar su información de forma autónoma, quiero consultar mi información laboral consolidada, para que pueda gestionarla sin depender de recursos humanos. | 2 |
+
