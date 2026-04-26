@@ -2301,3 +2301,41 @@ En esta sección se presentan los Mock-ups de alta fidelidad de la Landing Page 
 ![](assets/img/Mockup-landingpage6.png)
 ![](assets/img/Mockup-landingpage7.png)
 ![](assets/img/Mockup-landingpage8.png)
+
+## 4.4. Web Applications UX/UI Design
+
+### 4.4.1. Web Applications Wireframes
+
+https://www.figma.com/design/wB43U9QsN9RLWUJ0sKpTU8/alplicaciones_web_wireframes?node-id=0-1&t=K6t2Zxt5JXHe30Ha-1
+
+---
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+**Wireflow 1: Agilizar la atención de trámites**
+
+| Campo | Detalle |
+| :--- | :--- |
+| **User Goal** | Reducir el tiempo de respuesta y aprobación de solicitudes de licencias y vacaciones a menos de 24 horas. |
+| **User Persona** | Personal del área de Recursos Humanos. |
+
+**Happy Path:**
+El usuario inicia sesión en el sistema, accede a la sección de solicitudes y registra una nueva solicitud de licencia o vacaciones completando correctamente el formulario. El sistema valida la información y envía la solicitud. Posteriormente, el personal de RRHH recibe la notificación, revisa la solicitud y la aprueba. Finalmente, el sistema actualiza el estado y notifica al colaborador sobre la aprobación en un tiempo menor a 24 horas.
+
+![Wireflow 1](assets\img\wireflow1.png)
+
+---
+
+**Wireflow 2: Autogestionar información laboral**
+
+| Campo | Detalle |
+| :--- | :--- |
+| **User Goal** | Visualizar información laboral (datos, boletas y vacaciones) en un solo lugar para tener autonomía y evitar tiempos de espera. |
+| **User Persona** | Colaboradora de la empresa. |
+
+**Happy Path:**
+El colaborador inicia sesión en el sistema y accede al dashboard principal. Desde ahí, navega hacia las diferentes secciones disponibles, como información laboral, pagos o vacaciones. El sistema le permite visualizar sus datos personales y laborales, consultar sus boletas de pago y revisar su saldo de vacaciones de forma clara y organizada. En caso de requerirlo, puede descargar sus boletas o consultar el historial sin necesidad de intervención del área de RRHH.
+
+![Wireflow 2](assets\img\wireflow_2.png)
+
+---
