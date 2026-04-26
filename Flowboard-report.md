@@ -532,3 +532,22 @@ Asimismo, los User Personas sirven como una guía fundamental para la toma de de
 
 **Colaboradores generales:**
 * **Enlace de acceso:** https://drive.google.com/file/d/1FB_DUQAW_qgx41I8PWFnNwc9a4TOOlBc/view?usp=sharing
+
+#### 2.3.2. User Task Matrix
+
+La sección de User Task Matrix tiene como objetivo identificar y organizar las principales tareas que realizan los usuarios en su contexto cotidiano para cumplir sus objetivos, independientemente de la existencia de la solución propuesta. A diferencia de las funcionalidades del sistema, estas tareas representan acciones reales que los usuarios ya llevan a cabo dentro del dominio del problema.
+
+Para su construcción, se toman como base los User Personas definidos previamente, considerando las actividades más relevantes que cada segmento realiza. Cada tarea es evaluada en función de dos criterios principales: la frecuencia, que indica qué tan seguido se realiza, y la importancia, que refleja el nivel de impacto que tiene para el usuario. Esto permite priorizar aquellas tareas que resultan más críticas dentro del proceso.
+
+El análisis de esta matriz permite identificar patrones, similitudes y diferencias entre los distintos tipos de usuarios, lo cual es fundamental para orientar el diseño de la solución. De esta manera, se asegura que el sistema responda a las necesidades más relevantes, enfocándose en optimizar aquellas tareas que generan mayor valor o presentan mayores dificultades en la actualidad.
+
+| Descripción de la Tarea | Importancia (Carlos - RRHH) | Frecuencia (Carlos - RRHH) | Importancia (María - Colaborador) | Frecuencia (María - Colaborador) |
+| :--- | :--- | :--- | :--- | :--- |
+| Realizar el cierre de nómina y beneficios de ley | Alta | Media | Baja | Nula |
+| Consultar boletas de pago y detalles de remuneración | Media | Baja | Alta | Media |
+| Gestionar solicitudes de vacaciones y licencias | Alta | Alta | Alta | Media |
+| Mantener actualizados los legajos y datos del personal | Alta | Media | Alta | Baja |
+| Monitorear la asistencia y puntualidad de los equipos | Alta | Alta | Media | Alta |
+| Consolidar registros y documentos de gestión antiguos | Alta | Baja | Baja | Nula |
+| Resolver dudas y trámites de los colaboradores | Alta | Alta | Alta | Media |
+| Evaluar indicadores de desempeño y productividad | Alta | Media | Media | Baja |
