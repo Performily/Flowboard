@@ -561,7 +561,19 @@ Para su elaboración, se toma como base cada User Persona, desarrollando un mapa
 El análisis del User Journey permite identificar momentos críticos, conocidos como *pain points*, donde el usuario experimenta frustración, retrasos o ineficiencias. Estos hallazgos resultan fundamentales para detectar oportunidades de mejora y orientar el diseño de la solución hacia una experiencia más eficiente, fluida y centrada en el usuario.
 
 **User Persona: Carlos (Personal de Recursos Humanos)**
-* **Enlace de acceso:** [Documento Google Drive - Journey Map Carlos](https://drive.google.com/file/d/1RJCala_lUAnsCKPE-s4Q999EzR-ar7Eg/view?usp=drive_link)
+* **Enlace de acceso:** https://drive.google.com/file/d/1RJCala_lUAnsCKPE-s4Q999EzR-ar7Eg/view?usp=drive_link
 
 **User Persona: Maria (Colaboradores generales)**
-* **Enlace de acceso:** [Documento Google Drive - Journey Map Maria](https://drive.google.com/file/d/1LuTUAhUheGai-YL9YRKzBZWVdwW_b59Y/view?usp=drive_link)
+* **Enlace de acceso:** https://drive.google.com/file/d/1LuTUAhUheGai-YL9YRKzBZWVdwW_b59Y/view?usp=drive_link
+
+### 2.3.4. Empathy Mapping.
+
+La sección de Empathy Mapping tiene como propósito profundizar en la comprensión de los usuarios al sintetizar lo que estos dicen, hacen, piensan y sienten en relación con la problemática identificada en la gestión de capital humano. Este análisis permite al equipo de **Performily** ponerse en el lugar de los usuarios finales para identificar necesidades latentes y puntos de dolor que no siempre son evidentes en una primera observación.
+
+A través de este mapeo, se logra una visión holística de cada segmento objetivo, asegurando que el desarrollo de la solución **Flowboard** esté fundamentado en una empatía real con las vivencias y desafíos cotidianos de los colaboradores y el personal de recursos humanos.
+
+**User Persona: Carlos (Personal de Recursos Humanos)**
+* **Enlace de acceso:** https://drive.google.com/file/d/1GSI4nSJRTFHMLAICbBk7pzENWYN_JS-h/view?usp=sharing
+
+**User Persona: Maria (Colaboradores generales)**
+* **Enlace de acceso:** https://drive.google.com/file/d/18XKLg_Xd6H1UXFZWWaPo6-iYscRYZfu3/view?usp=sharing
