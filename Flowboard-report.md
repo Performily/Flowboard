@@ -17,7 +17,7 @@
     <p style="margin: 8px 0;"><strong>Docente:</strong> Oscar Ivan Villafuerte Bazan</p>
   </div>
 
-  <h2 style="font-size: 32px; text-transform: uppercase; margin: 40px 0;">"Informe del AV1"</h2>
+  <h2 style="font-size: 32px; text-transform: uppercase; margin: 40px 0;">"Informe del TB1"</h2>
 
   <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #eee; width: 85%;">
     <p style="font-size: 18px; margin: 5px 0;"><strong>Nombre del Startup:</strong> Performily</p>
@@ -32,20 +32,36 @@
     <thead>
       <tr style="background-color: #f2f2f2; text-align: left;">
         <th style="padding: 12px; border-bottom: 2px solid #ddd;">Nombres y Apellidos</th>
+        <th style="padding: 12px; border-bottom: 2px solid #ddd;">Código</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #eee;">Darío Fabián Ávila De La Cruz</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #eee;">Diego Alonso Diaz Villalba</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #eee;">Salym Pool Galvez Meza</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #eee;">Oscar Lizandro Vasquez Llave</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #eee;">Josué Francisco Carpio Peña</td></tr>
+      <tr>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">Darío Fabián Ávila De La Cruz</td>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">u202412270</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">Diego Alonso Diaz Villalba</td>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">u202412663</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">Salym Pool Galvez Meza</td>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">u202419655</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">Oscar Lizandro Vasquez Llave</td>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">u202410478</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">Josué Francisco Carpio Peña</td>
+        <td style="padding: 10px; border-bottom: 1px solid #eee;">u202519273</td>
+      </tr>
     </tbody>
   </table>
 
   <br><br>
 
-  <h3 style="color: #666;">Abril, 2026</h3>
+  <h3 style="color: #666;">Mayo, 2026</h3>
 
 </div>
 
@@ -129,16 +145,27 @@
   * 5.1.3. Source Code Style Guide & Conventions
   * 5.1.4. Software Deployment Configuration
 * **5.2. Landing Page, Services & Applications Implementation**
-  * 5.2.X. Sprint 1
-    * 5.2.X.1. Sprint Planning 1
-    * 5.2.X.2. Aspect Leaders and Collaborators
-    * 5.2.X.3. Sprint Backlog n
-    * 5.2.X.4. Development Evidence for Sprint Review
-    * 5.2.X.5. Execution Evidence for Sprint Review
-    * 5.2.X.6. Services Documentation Evidence for Sprint Review
-    * 5.2.X.7. Software Deployment Evidence for Sprint Review
-    * 5.2.X.8. Team Collaboration Insights during Sprint
-* **5.4. Video About-the-Product**
+  * 5.2.1. Sprint 1
+    * 5.2.1.1. Sprint Planning 1
+    * 5.2.1.2. Aspect Leaders and Collaborators
+    * 5.2.1.3. Sprint Backlog 1
+    * 5.2.1.4. Development Evidence for Sprint Review
+    * 5.2.1.5. Execution Evidence for Sprint Review
+    * 5.2.1.6. Services Documentation Evidence for Sprint Review
+    * 5.2.1.7. Software Deployment Evidence for Sprint Review
+    * 5.2.1.8. Team Collaboration Insights during Sprint
+  * 5.2.1. Sprint 2
+    * 5.2.1.1. Sprint Planning 2
+    * 5.2.1.2. Aspect Leaders and Collaborators
+    * 5.2.1.3. Sprint Backlog 2
+    * 5.2.1.4. Development Evidence for Sprint Review
+    * 5.2.1.5. Execution Evidence for Sprint Review
+    * 5.2.1.6. Services Documentation Evidence for Sprint Review
+    * 5.2.1.7. Software Deployment Evidence for Sprint Review
+    * 5.2.1.8. Team Collaboration Insights during Sprint
+
+
+
 
 ### Conclusiones
 * **Conclusiones y recomendaciones**
@@ -174,6 +201,77 @@
 | v1.8 | 15/04/2026 | Darío Fabián Ávila De La Cruz | Impact Mapping |
 | v1.8 | 15/04/2026 | Oscar Lizandro Vasquez Llave | General Style Guidelines |
 | v1.9 | 18/04/2026 | Oscar Lizandro Vasquez Llave | Software Development Environment Configuration, Source Code Management, Source Code Style Guide & Conventions, Software Deployment Configuration |
+| v2.0 | 19/04/2026 | Oscar Lizandro Vasquez Llave | Sprint Planning 1, Aspect Leaders and Collaborators, Sprint Backlog 1,  Execution Evidence for Sprint Review, Services Documentation Evidence for Sprint Review, Software Deployment Evidence for Sprint Review, Team Collaboration Insights during Sprint |
+| v2.0 | 19/04/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
+| v2.1 | 14/05/2026 | Oscar Lizandro Vasquez Llave | Aspect Leaders and Collaborators, Sprint Backlog 2, Services Documentation Evidence for Sprint Review, Team Collaboration Insights during Sprint |
+| v2.2 | 14/05/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
+
+<div style="page-break-before: always;"></div>
+
+## Student Outcome
+
+### Criterio 2.c1
+**Diseñar soluciones en ingeniería de software (productos, procesos y/o servicios) que satisfagan necesidades específicas considerando el impacto en salud pública, seguridad, bienestar, así como factores globales, culturales, sociales, ambientales y económicos.**
+
+#### Acciones realizadas por los integrantes
+
+**Salym Pool Galvez Meza:**
+* **AV1:** Durante el AV1 participé en el análisis y diseño de la solución Flowboard para optimizar la gestión de recursos humanos mediante la digitalización y automatización de procesos administrativos. Colaboré en Lean UX Assumptions y Development Evidence for Sprint Review, identificando problemas como errores manuales, sobrecarga laboral y falta de transparencia. La solución propuesta incluyó módulos de autogestión y automatización de solicitudes, considerando factores organizacionales y sociales para mejorar la eficiencia y el bienestar laboral.
+* **TB1:** Durante el TB1 participé en el diseño de los bounded contexts “Requests” y “Vacations” utilizando Domain-Driven Design (DDD), permitiendo estructurar correctamente los procesos de solicitudes y vacaciones. Además, colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo a la definición de flujos automatizados orientados a mejorar la gestión administrativa y la experiencia del usuario.
+
+**Oscar Lizandro Vasquez Llave:**
+* **AV1:** Durante el AV1 diseñé soluciones de software orientadas a las necesidades del usuario mediante la definición de Lean UX Problem Statements y el Lean UX Canvas, lo que permitió establecer estrategias y tácticas frente a competidores. Participé en el proceso de investigación y diseño a través del registro de entrevistas, la creación de User Personas y la User Task Matrix, asegurando la coherencia visual con las General Style Guidelines. Asimismo, colaboré en la gestión y ejecución técnica mediante el Sprint Planning 1, la definición de Aspect Leaders and Collaborators y el Sprint Backlog 1. Finalmente, validé la solución entregando la Execution Evidence, Services Documentation, Software Deployment Evidence y los Team Collaboration Insights durante el Sprint Review, garantizando un producto funcional, documentado y alineado con los objetivos del negocio.
+* **TB1:** Durante la TB1, diseñé soluciones de ingeniería de software orientadas a optimizar la gestión de capital humano mediante la estructuración del Sprint Backlog 2, priorizando funcionalidades que impactan directamente en el bienestar organizacional y la eficiencia operativa. Lideré la definición de roles en Aspect Leaders and Collaborators, asegurando una distribución de tareas que considera factores sociales y de bienestar del equipo de trabajo. Asimismo, validé la solución mediante la Services Documentation Evidence, detallando los contratos de interfaz (API) que garantizan la seguridad y confiabilidad del intercambio de datos. Finalmente, sinteticé los Team Collaboration Insights para mejorar los procesos globales de desarrollo, asegurando que el producto final satisfaga necesidades específicas de digitalización bajo estándares técnicos y éticos profesionales.
+
+**Diaz Villalba, Diego Alonso:**
+* **AV1:** Durante el AV1 participé en la elaboración de User Stories, diseño de entrevistas, Product Backlog y Segmentos Objetivos, contribuyendo a identificar las necesidades reales de los usuarios y definir los requerimientos del sistema. Además, colaboré en el Big Picture EventStorming y en los diagramas de arquitectura de software (Context, Container y Component Diagrams), permitiendo estructurar una solución organizada, escalable y alineada a los procesos de gestión de recursos humanos.
+* **TB1:** Durante el TB1 participé en el desarrollo del módulo “Attendance (Time & Attendance)”, encargado del control de asistencia, registro de entrada y salida, puntualidad y justificación de inasistencias. Asimismo, colaboré activamente en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo al diseño e implementación de componentes backend y frontend orientados a mejorar la automatización y eficiencia de la gestión laboral.
+
+**Ávila de la Cruz, Darío Fabián:**
+* **AV1:** Durante el AV1 participé en la elaboración de Impact Mapping, User Journey Mapping y Lean UX Canvas, contribuyendo a identificar las necesidades y objetivos de los usuarios dentro de la plataforma. Asimismo, colaboré en el diseño de Wireframes, User Flow Diagrams, Navigation Systems y Labeling Systems, permitiendo estructurar una interfaz clara e intuitiva. También participé en la elaboración de Class Diagrams, análisis de entrevistas y conclusiones del proyecto, aportando a la definición de una solución funcional y alineada a los procesos de recursos humanos.
+* **TB1:** Durante el TB1 participé en el desarrollo del módulo “Payroll (Pay Slips and Finance)”, encargado de la visualización, consulta y descarga de boletas de pago y estados de remuneración. Además, colaboré activamente en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo a la implementación de componentes frontend y backend orientados a mejorar la gestión financiera y el acceso a la información laboral de los usuarios.
+
+**Carpio Peña, Josué Francisco:**
+* **AV1:** Durante el AV1 participé en la elaboración del Ubiquitous Language, Web Style Guidelines y en el registro de entrevistas, contribuyendo a definir una comunicación clara y consistente dentro del proyecto. Asimismo, colaboré en el diseño de Mock-ups y Prototyping de la aplicación web, permitiendo estructurar una interfaz intuitiva y alineada a las necesidades de los usuarios. También participé en la elaboración del Video About-the-Team como parte de la presentación y comunicación de la propuesta del sistema.
+* **TB1:** Durante el TB1 participé en el desarrollo del módulo “Employees (Personnel Management)”, encargado de la gestión de legajos, perfiles de colaboradores, departamentos y puestos laborales. Además, colaboré activamente en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo a la implementación de componentes frontend y backend orientados a mejorar la organización y administración de la información del personal.
+
+#### Conclusiones del Equipo (2.c1)
+* **AV1:** Durante el AV1 se desarrolló una etapa fundamental de análisis, investigación y diseño de la solución Flowboard, enfocada en optimizar la gestión de recursos humanos mediante herramientas digitales. A través de actividades como entrevistas, Lean UX, User Stories, Impact Mapping, EventStorming, User Journey Mapping y análisis de segmentos objetivos, se logró identificar las principales problemáticas presentes en las organizaciones, especialmente relacionadas con la sobrecarga administrativa, el uso excesivo de procesos manuales, la duplicidad de información y la falta de transparencia para los trabajadores. Asimismo, se elaboraron diagramas arquitectónicos, diagramas de clases, wireframes, mock-ups, prototipos y flujos de navegación que permitieron estructurar una solución organizada, intuitiva y alineada a las necesidades reales de los usuarios. Gracias a este proceso, se consiguió diseñar una plataforma escalable y funcional capaz de automatizar procesos críticos de RR.HH., mejorar la experiencia de uso y contribuir a una gestión más eficiente y moderna dentro de las empresas. 
+* **TB1:** Durante el TB1 se consolidó el desarrollo técnico y funcional de la solución mediante la implementación de módulos clave como asistencia, planillas, gestión de empleados, solicitudes y vacaciones. Cada módulo fue desarrollado utilizando estructuras organizadas y arquitecturas escalables, aplicando conceptos como Domain-Driven Design y separación por capas para asegurar mantenibilidad y crecimiento futuro del sistema. Además, el trabajo realizado en Sprint Backlog 2 y Development Evidence for Sprint Review permitió coordinar, documentar y validar el progreso del proyecto de manera continua. Las funcionalidades implementadas lograron automatizar procesos administrativos relacionados con control de asistencia, visualización de boletas de pago, gestión de colaboradores y flujos de solicitudes, mejorando significativamente la eficiencia operativa y la experiencia del usuario. Como resultado, se obtuvo una solución de software más robusta, integrada y alineada con los objetivos organizacionales planteados desde las primeras etapas del proyecto. 
+
+---
+
+### Criterio 2.c2
+**Validar que el diseño de la solución de software considere aspectos en salud pública, seguridad, bienestar, así como factores globales, culturales, sociales, ambientales y económicos.**
+
+#### Acciones realizadas por los integrantes
+
+**Salym Pool Galvez Meza:**
+* **AV1:** Durante el AV1 participé en la validación de la solución mediante entrevistas, hipótesis Lean UX y análisis de requerimientos funcionales. Esto permitió comprobar que la plataforma respondía a problemas reales relacionados con procesos burocráticos, errores administrativos y acceso limitado a la información. También se validó que las funcionalidades propuestas favorecieran la transparencia y el bienestar laboral.
+* **TB1:** Durante el TB1 participé en la validación de los bounded contexts “Requests” y “Vacations”, asegurando que los procesos diseñados respondieran a las necesidades de los usuarios y objetivos organizacionales. Asimismo, colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, verificando la coherencia de las funcionalidades implementadas con los requerimientos definidos del sistema.
+
+**Oscar Lizandro Vasquez Llave:**
+* **AV1:** Durante la AV1, diseñé la solución integral Performily fundamentada en el Lean UX Canvas y Problem Statements, lo que permitió alinear el producto con necesidades reales de bienestar laboral y eficiencia económica tras un riguroso análisis competitivo y registro de entrevistas. El diseño se centró en la creación de User Personas y una User Task Matrix que respetan factores culturales y sociales, garantizando una interfaz inclusiva bajo las General Style Guidelines. En la fase técnica, configuré el entorno de desarrollo, la gestión de código fuente y el despliegue, asegurando la seguridad y estabilidad del servicio. Finalmente, mediante el Sprint Planning 1, el Sprint Backlog 1 y la Services Documentation, validé una arquitectura de software que satisface factores globales y ambientales al digitalizar procesos, presentando evidencias de ejecución y colaboración en equipo que confirman un impacto positivo en la salud organizacional y el bienestar del usuario.
+* **TB1:** Durante la TB1, diseñé soluciones de ingeniería de software mediante la estructuración del Sprint Backlog 2, priorizando funcionalidades que optimizan la gestión de procesos y mejoran el bienestar organizacional. Lideré la organización del equipo en Aspect Leaders and Collaborators, considerando factores sociales para asegurar una distribución de tareas equitativa y eficiente. Asimismo, validé la robustez de la solución a través de la Services Documentation Evidence, garantizando la seguridad en el intercambio de datos, y aporté Team Collaboration Insights para optimizar la colaboración global, asegurando que el producto final satisfaga necesidades específicas bajo estándares técnicos y profesionales.
+
+**Diaz Villalba, Diego Alonso:**
+* **AV1:** Durante el AV1 participé en la validación de la solución mediante el diseño de entrevistas, definición de User Stories y análisis de segmentos objetivos, asegurando que la plataforma respondiera a las necesidades reales de trabajadores y personal de RR.HH. Además, los diagramas de arquitectura y el EventStorming permitieron verificar la correcta organización de procesos y funcionalidades del sistema.
+* **TB1:** Durante el TB1 participé en la validación del módulo “Attendance”, verificando que las funcionalidades de asistencia y justificación de inasistencias respondieran adecuadamente a los requerimientos del sistema y a las necesidades organizacionales. También colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, asegurando coherencia entre la implementación desarrollada y los objetivos funcionales del proyecto.
+
+**Ávila de la Cruz, Darío Fabián:**
+* **AV1:** Durante el AV1 participé en la validación de la solución mediante el análisis de entrevistas, User Journey Mapping y Lean UX Hypothesis Statements, asegurando que la plataforma respondiera a necesidades reales de trabajadores y personal de RR.HH. Además, el diseño de flujos de navegación, wireframes y diagramas permitió verificar la usabilidad y organización adecuada de las funcionalidades del sistema.
+* **TB1:** Durante el TB1 participé en la validación del módulo “Payroll”, verificando que las funcionalidades de consulta y descarga de boletas de pago respondieran correctamente a los requerimientos funcionales y a las necesidades de los usuarios. Asimismo, colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, asegurando coherencia entre el diseño planteado y la implementación desarrollada del sistema.
+
+**Carpio Peña, Josué Francisco:**
+* **AV1:** Durante el AV1 participé en la validación de la solución mediante el registro y análisis de entrevistas, asegurando que la plataforma respondiera a las necesidades reales de los usuarios. Asimismo, los mock-ups, prototipos y lineamientos de diseño web permitieron verificar la usabilidad, accesibilidad y coherencia visual de la solución propuesta.
+* **TB1:** Durante el TB1 participé en la validación del módulo “Employees”, verificando que las funcionalidades de gestión de colaboradores y departamentos respondieran correctamente a los requerimientos del sistema y a las necesidades organizacionales. También colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, asegurando coherencia entre el diseño planteado y la implementación desarrollada.
+
+#### Conclusiones del Equipo (2.c2)
+* **AV1:** Durante el AV1 se realizaron diversas actividades orientadas a validar que la solución Flowboard respondiera adecuadamente a las necesidades reales de trabajadores y personal de recursos humanos. Mediante entrevistas, análisis de usuarios, Lean UX Hypothesis Statements y revisión de problemáticas organizacionales, se logró comprobar que los principales inconvenientes estaban relacionados con la burocracia, los retrasos en procesos administrativos, la falta de acceso rápido a información laboral y los errores generados por procesos manuales. Asimismo, los prototipos, diagramas y flujos diseñados permitieron validar aspectos de usabilidad, accesibilidad y organización de la plataforma antes de su implementación. Esto garantizó que la solución no solo cumpliera funciones técnicas, sino que también aportara al bienestar laboral, la transparencia organizacional y la mejora de la comunicación entre empleados y el área de RR.HH. 
+* **TB1:** Durante el TB1 se validó que los módulos implementados respondieran correctamente a los requerimientos funcionales y necesidades organizacionales identificadas durante el análisis previo del proyecto. A través del desarrollo de funcionalidades relacionadas con asistencia, remuneraciones, gestión de empleados, solicitudes y vacaciones, se comprobó que la plataforma era capaz de automatizar procesos críticos y reducir tareas repetitivas dentro de las organizaciones. Además, mediante la participación activa en Sprint Backlog 2 y Development Evidence for Sprint Review, se verificó continuamente la coherencia entre el diseño planteado y la implementación desarrollada, asegurando una correcta integración de componentes frontend y backend. Como resultado, se consolidó una solución centralizada, eficiente y orientada a mejorar la experiencia de los usuarios, facilitando el acceso a información laboral, reduciendo tiempos administrativos y fortaleciendo la transparencia y organización dentro de la gestión de recursos humanos.
+
+<div style="page-break-before: always;"></div>
+<hr>
 
 ## Capítulo I: Introducción
 
@@ -286,6 +384,9 @@ Este segmento incluye a los profesionales responsables de la gestión operativa 
 
 #### Segmento 2: Colaboradores generales (empleados)
 Este segmento está conformado por los trabajadores de la organización que requieren acceder a su información laboral de manera constante, incluyendo datos personales, beneficios, estado de solicitudes y registros de asistencia. El principal problema para los colaboradores generales consiste en la inaccesibilidad de acceso directo a esta información, lo que los obliga a depender de procesos burocráticos y consultas manuales con supervisores o el área de recursos humanos. Esta situación genera una experiencia ineficiente, caracterizada por tiempos de espera prolongados y desconfianza hacia la organización. Como consecuencia, los empleados desarrollan comportamientos reactivos, lo que recurre a canales informales para obtener información sobre vacaciones, licencias o pagos.
+
+<div style="page-break-before: always;"></div>
+<hr>
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
@@ -644,6 +745,9 @@ El Ubiquitous Language tiene como objetivo establecer un lenguaje común y consi
 | **Información demográfica** | Datos personales del colaborador como edad y estado civil. |
 | **Notificaciones** | Alertas automáticas sobre eventos importantes como vencimiento de contrato o aprobaciones. |
 | **Días acumulados** | Días que acumuló el colaborador al trabajar horas extras. |
+
+<div style="page-break-before: always;"></div>
+<hr>
 
 # Capítulo III: Requirements Specification
 
@@ -2056,6 +2160,9 @@ https://drive.google.com/file/d/1yOXBRv-EHruLhPPw6JC-LGwoGzYOZ6ED/view?usp=drive
 | 49 | US18 | Como colaborador que necesita gestionar trámites laborales de forma autónoma, quiero editar solicitudes enviadas, para corregir información antes de que sean atendidas. | 5 |
 | 50 | US04 | Como colaborador que busca gestionar su información de forma autónoma, quiero consultar mi información laboral consolidada, para que pueda gestionarla sin depender de recursos humanos. | 2 |
 
+<div style="page-break-before: always;"></div>
+<hr>
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -2873,6 +2980,9 @@ En esta sección se detalla el Diagrama Entidad-Relación Físico que asegura la
 
 ![Database Diagram](assets\img\dataBaseD.png)
 
+<div style="page-break-before: always;"></div>
+<hr>
+
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
@@ -3091,7 +3201,102 @@ Para este primer Sprint, el equipo se enfocó en transformar los wireframes en u
 
 ![Team Collaboration Insights - Gráfico de contribuciones](assets\img\team-collaboration.png)
 
+### 5.2.1. Sprint 2
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+| Team Member (Last Name, First Name) | GitHub Username |Features Leader (L) / Collaborator (C) | Styles Leader (L) / Collaborator (C) |
+| :--- | :--- | :--- | :--- |
+| Galvez, Salym | SalymGalvez21 | C | C |
+| Vasquez, Oscar | oscarlizandro | L | L |
+| Avila, Dario | Darioout | C | C |
+| Carpio, Josue | josf17 | C | C |
+| Diaz, Diego | Niomsk | C | C |
+
+#### 5.2.2.3. Sprint Backlog 2.
+
+| User Story ID  | Id | Description | Estimation (Hours) | Assigned To | Status (To-do / InProcess / To-Review / Done) |
+| :--- | :--- | :--- | :--- |  :--- |  :--- |
+| US32 | T1 | Definir las reglas y la estructura de la entidad principal de la boleta (ingresos, descuentos y totales) independiente del framework. | 3 | Oscar | Done |
+| US14 | T2 | Implementar los servicios de conexión para solicitar el historial de pagos y la descarga segura de documentos al servidor. | 5 | Oscar | Done |
+| US32 | T3 | Desarrollar el adaptador que convierte los datos puros (JSON) recibidos del backend al formato requerido por el modelo de negocio. | 3 | Oscar | Done |
+| US14 | T4 | Configurar la gestión de estado centralizada para almacenar las boletas consultadas, la boleta seleccionada y los indicadores de carga. | 5 | Oscar | Done |
+| US32 | T5 | Construir la interfaz que renderiza el historial de remuneraciones del usuario, ordenado por fecha de manera descendente. | 5 | Oscar | Done |
+| US14 | T6 | Diseñar el componente visual que despliega el desglose completo de una boleta seleccionada (bonos, retenciones, neto). | 5 | Oscar | Done |
+| US14 | T7 | Integrar controles de interfaz para que el colaborador pueda buscar pagos específicos por periodo de meses o estado. | 3 | Oscar | Done |
+| US49 | T8 | Vincular el botón de acción en la vista de detalle con el servicio de infraestructura para procesar y entregar el archivo descargable al navegador. | 3 | Oscar | Done |
+| US13 | T9 | Definir la entidad Attendance y las reglas de negocio relacionadas con asistencia, tardanza y falta. | 1 | Diego | Done |
+| US13 | T10 | Implementar el servicio API para consultar registros de asistencia filtrados por área | 2 | Diego | Done |
+| US13 | T11 | Desarrollar el AttendanceAssembler para transformar los recursos JSON del backend en entidades Attendance. | 2 | Diego | Done |
+| US13 | T12 | Configurar el AttendanceStore con manejo centralizado de registros, estados de carga y errores. | 3 | Diego | Done |
+| US12 | T13 | Implementar consultas de asistencia agrupadas por área. | 2 | Diego | Done |
+| US12 | T14 | Desarrollar métricas y resúmenes automáticos de asistencias, tardanzas y faltas por área. | 2 | Diego | Done |
+| US13 | T15 | Desarrollar componente visual de asistencia de personal según área | 5 | Diego | Done |
+| US03 | T16 | Definir e implementar las entidades, comandos y servicios de autenticación para el inicio de sesión y validación de credenciales. | 3 | Darío | Done |
+| US03 | T17 | Configurar la gestión centralizada de sesión y autenticación mediante IAM Store, manejo de token JWT y rutas protegidas. | 3 | Darío | Done |
+| US03 | T18 | Desarrollar la interfaz visual de inicio de sesión con validaciones, manejo de errores y soporte para contraseña temporal. | 3 | Darío | Done |
+| US33 | T19 | Implementar los servicios y adaptadores para recuperación y restablecimiento seguro de contraseña mediante correo electrónico y token. | 3 | Darío | Done |
+| US33 | T20 | Desarrollar las vistas y formularios de recuperación y restablecimiento de contraseña con validaciones y retroalimentación visual. | 3 | Darío | Done |
+| US17 | T21 | Desarrollar la vista principal para el registro de solicitudes de vacaciones, permisos y licencias con diseño responsive y validaciones básicas. | 3 | Salym | Done |
+| US17 | T22 | Implementar el formulario dinámico de creación de solicitudes conectado a una Fake API para simular el almacenamiento y gestión de datos del sistema. | 5 | Salym | Done |
+| US17 | T23 | Validar reglas de negocio para fechas de inicio y fin evitando inconsistencias y superposición de solicitudes. | 3 | Salym | Done |
+| US17 | T24 | Diseñar e implementar la persistencia de solicitudes en la base de datos incluyendo estados iniciales del workflow. | 5 | Salym | Done |
+| US09 | T25 | Desarrollar el módulo administrativo para visualizar solicitudes pendientes de aprobación en una tabla dinámica. | 5 | Salym | Done |
+| US09 | T26 | Implementar la funcionalidad de aprobación y rechazo de solicitudes actualizando automáticamente el estado del trámite. | 5 | Salym | Done |
+| US09 | T27 | Incorporar observaciones y comentarios administrativos dentro del flujo de aprobación de solicitudes. | 3 | Salym | Done |
+| US09 | T28 | Implementar actualización visual del workflow mostrando estados Pendiente, Aprobado y Rechazado en tiempo real. | 3 | Salym | Done |
+| US01 | T29 | Implementar la vista principal del módulo Gestión con tarjetas de navegación para registrar, actualizar, dar de baja y reactivar colaboradores | 3 | Josué | Done |
+| US01 | T30 | Crear la navegación desde el botón “Registrar nuevo colaborador” hacia el formulario de registro” hacia el formulario de registro | 2 | Josué | Done |
+| US01 | T31 | Implementar el formulario de registro de nuevo colaborador en campos personales, laborales y de contacto. | 3 | Josué | Done |
+| US01 | T32 | Agregar validaciones de campos obligatorios para evitar registros incompletos de colaboradores | 2 | Josué | Done |
+| US05 | T33 | Crear la navegación desde el botón “Actualizar Información de colaborador” hacia la vista de búsqueda y edición. | 2 | Josué | Done |
+| US05 | T34 | Implementar la vista de edición de datos del colaborador seleccionado. | 2 | Josué | Done |
+| US05 | T35 | Agregar validaciones para evitar guardar información incompleta o inválida. | 2 | Josué | Done |
+| US06 | T36 | Crear la navegación desde el botón “Dar de baja a colaborador” | 2 | Josué | Done |
+| US06 | T37 | Implementar formulario de baja con motivo, observaciones y documentación presentada. | 2 | Josué | Done |
+| US06 | T38 | Cambiar el estado del colaborador a “Cesado” y mostrar confirmación de baja exitosa | 2 | Josué | Done |
+| US07 | T39 | Crear la navegación desde el botón “Reactivar colaborador” hacia la vista de reactivación. | 2 | Josué | Done |
+| US07 | T40 | Implementar formulario de reactivación con fecha de reingreso área, puesto y tipo de contrato | 2 | Josué | Done |
+
+![Contributors](assets/img/trello-sprint2.png)
+
+Enlace de Trello:   https://trello.com/invite/b/6a03c8b0c2590abf4d54c3a9/ATTIab45abbc11e9c29777f6e5674b7d8a99BCEFE4C9/flowboard-sprint-2 
+
+#### 5.2.2.6.Services Documentation Evidence for Sprint Review.
+
+Durante el presente Sprint, se lograron avances significativos en el diseño, implementación y documentación de los servicios web (Fake API mediante json-server) que sustentan la lógica de negocio de nuestra aplicación "Performily". Se logró documentar la estructura de comunicación RESTful para los módulos clave del sistema: Gestión de Colaboradores (Management), Registro de Asistencias (Attendance), Solicitudes y Vacaciones (Requests) y Planillas (Payroll). Al tratarse de un entorno de desarrollo local con json-server, la URL local de despliegue se ha unificado en http://localhost:3000. 
+
+| Módulo | Endpoint (Ruta) | Verbo HTTP | Parámetros / Sintaxis |Respuesta (Response) y Uso en la App |
+| :--- | :--- | :--- | :--- | :--- |
+| Gestión | /employees | GET | GET /employees | 200 OK: Devuelve el array con todos los colaboradores. Se usa en el listado principal y en el dashboard de inicio. |
+| Gestión | /employees/{id} | GET | GET /employees/{id}<br><br>Path: id del empleado | 200 OK: Devuelve el JSON de un solo colaborador. Se usa para ver el perfil personal detallado. |
+| Gestión | /employees | POST | POST /employees<br><br>Body: JSON con name, code, area, etc. | 201 Created: Crea un nuevo colaborador en la base de datos y le asigna un ID. |
+| Gestión | /employees/{id} | PUT | PUT /employees/{id}<br><br>Body: JSON completo modificado. | 200 OK: Sobrescribe todos los datos personales y laborales del colaborador desde la vista de "Actualizar Información". |
+| Gestión | /employees/{id} | PATCH | PATCH /employees/{id}<br>Body: JSON parcial (status y motivos). | 200 OK: Actualiza parcialmente el registro. Se usa exclusivamente para las funciones de "Dar de baja" (cesar) y "Reactivar" empleado. |
+| Solicitudes | /requests | GET | GET /requests | 200 OK: Devuelve las solicitudes del sistema. Se usa en el Gestor de Aprobaciones y para filtrar en el módulo de Vacaciones. |
+| Solicitudes | /requests/{id} | GET | GET /requests/{id}<br><br>Path: id de la solicitud | 200 OK: Devuelve el detalle exacto de una solicitud (permiso médico, paternidad, etc.). |
+| Solicitudes | /requests | POST | POST /requests<br>Body: JSON con type, startDate, endDate, etc. | 201 Created: Registra una nueva solicitud. Se usa tanto para pedir permisos como para asignar vacaciones. |
+| Solicitudes | /requests/{id} | PATCH | PATCH /requests/{id}<br><br>Body: JSON con status y comments. | 200 OK: Actualiza el estado de la solicitud. Se dispara cuando el administrador hace clic en "Aprobar" o "Rechazar". |
+| Solicitudes | /requests/{id} | DELETE | DELETE /requests/{id}<br><br>Path: id de la solicitud | 200 OK: Elimina permanentemente una solicitud de la base de datos. |
+| Asistencia | /attendance | GET | GET /attendance | 200 OK: Devuelve la colección de registros de ingresos y salidas diarios. |
+| Asistencia | /attendance/{id} | GET | GET /attendance/{id}<br><br>Path: id de la asistencia | 200 OK: Devuelve el registro de asistencia específico de un colaborador. |
+| Planillas | /paySlips | GET | GET /paySlips | 200 OK: Obtiene el listado de boletas de pago generadas para el periodo consultado. |
+| Planillas | /paySlips/{id} | GET | GET /paySlips/{id}<br><br>Config: responseType: 'blob' | 200 OK: Este endpoint se configuró específicamente para recibir la respuesta como un archivo Blob y permitir la descarga del PDF de la boleta. |
+
+#### 5.2.2.8.Team Collaboration Insights during Sprint.
+
+Durante este Sprint, el equipo obtuvo aprendizajes clave sobre nuestra dinámica de trabajo colaborativo:
+
+Desarrollo en paralelo: Acordar previamente los "contratos" de nuestra Mock API (db.json) fue un acierto. Esto permitió al equipo avanzar con las vistas en Vue.js y las peticiones HTTP sin bloqueos.
+
+Trazabilidad en Git: Identificamos y corregimos problemas de configuración local de Git (user.email) que ocultaban las contribuciones de algunos miembros en GitHub, lo que nos enseñó a estandarizar los entornos desde el inicio.
+
+Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante ramas separadas (Feature Branches) facilitó unir el código de todos los integrantes de forma ordenada y realizar revisiones cruzadas antes de cada Merge.
+
+![Contributors](assets/img/sprint2-contributors.png)
+
 ---
+
+
+<div style="page-break-before: always;"></div>
 
 # Conclusiones
 
@@ -3119,6 +3324,9 @@ En relación con el roadmap del producto, se propone iniciar con el desarrollo d
 
 Finalmente, se recomienda continuar recopilando feedback constante de los usuarios para asegurar que el producto evolucione alineado con sus necesidades reales, minimizando riesgos y asegurando la adopción de la solución en el mercado.
 
+<div style="page-break-before: always;"></div>
+<hr>
+
 ## Bibliografía
 
 Escudero, F. (2025, enero 7). Madurez digital: ¿cuál es el panorama de las empresas en el Perú? *Www.ey.com*. https://www.ey.com/es_pe/insights/revista-execution/disrupcion/madurez-digital
@@ -3132,6 +3340,9 @@ Tejada Ramos, A. A. (2025). *Análisis sistemático de la gestión del desempeñ
 View of analysis of the role of human resource information system (HRIS) in improving work efficiency and effectiveness in modern organizations. (s/f). *Mryformosapublisher.org*. Recuperado el 26 de abril de 2026, de https://mryformosapublisher.org/index.php/ijabm/article/view/619/1107
 
 (S/f). *Dinastipub.org*. Recuperado el 26 de abril de 2026, de https://dinastipub.org/DIJMS/article/view/6175/4115
+
+<div style="page-break-before: always;"></div>
+<hr>
 
 ## Anexos
 
