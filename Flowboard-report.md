@@ -17,7 +17,7 @@
     <p style="margin: 8px 0;"><strong>Docente:</strong> Oscar Ivan Villafuerte Bazan</p>
   </div>
 
-  <h2 style="font-size: 32px; text-transform: uppercase; margin: 40px 0;">"Informe del TB1"</h2>
+  <h2 style="font-size: 24px; text-transform: uppercase; margin: 10px 0;">"Informe del TB1"</h2>
 
   <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #eee; width: 85%;">
     <p style="font-size: 18px; margin: 5px 0;"><strong>Nombre del Startup:</strong> Performily</p>
@@ -205,6 +205,23 @@
 | v2.0 | 19/04/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
 | v2.1 | 14/05/2026 | Oscar Lizandro Vasquez Llave | Aspect Leaders and Collaborators, Sprint Backlog 2, Services Documentation Evidence for Sprint Review, Team Collaboration Insights during Sprint |
 | v2.2 | 14/05/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
+
+<div style="page-break-before: always;"></div>
+
+## Project Report Collaboration Insights
+
+**Enlace del repositorio del reporte:** https://github.com/Performily/Flowboard 
+
+**AV1:** Para la elaboración de este primer avance, el desarrollo del informe se organizó de manera equitativa y dinámica. Inicialmente, se designaron secciones específicas del documento a cada miembro del equipo. La estrategia consistió en que, una vez que un integrante finalizaba la redacción de su bloque asignado, pasaba inmediatamente a desarrollar otra sección pendiente o a revisar y complementar el trabajo de sus compañeros. Esta dinámica de rotación aseguró que todos los miembros tuvieran una participación activa y transversal en la creación del documento, optimizando los tiempos de entrega.
+
+Todo el flujo de trabajo, las integraciones de cada sección y las actualizaciones continuas se encuentran reflejadas en el Registro de Versiones del Informe, manteniendo total coherencia con los commits registrados en la plataforma.
+
+**TB1:**  Para la elaboración de este segundo avance, la colaboración del equipo inició con una planificación estructurada mediante la definición y asignación de tareas en el Sprint Backlog. A partir de esta organización previa, cada compañero tuvo una parte técnica designada, lo que garantizó que todos los integrantes participaran de manera activa y equitativa en el desarrollo del código de la aplicación web y los servicios simulados.
+
+Posteriormente, la redacción y consolidación de este reporte se basó directamente en los avances reales que se lograron al final del Sprint. Cada miembro del equipo se encargó de documentar las funcionalidades, diagramas y evidencias de implementación de los módulos que tuvo a su cargo en el código, logrando así que el informe final refleje con total fidelidad el trabajo técnico y colaborativo desarrollado durante esta etapa.
+
+![Contribuidores de Reporte](assets\img\contributors-report.png)
+
 
 <div style="page-break-before: always;"></div>
 
