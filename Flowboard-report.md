@@ -3260,6 +3260,29 @@ Para este primer Sprint, el equipo se enfocó en transformar los wireframes en u
 
 Enlace de Trello:   https://trello.com/invite/b/6a03c8b0c2590abf4d54c3a9/ATTIab45abbc11e9c29777f6e5674b7d8a99BCEFE4C9/flowboard-sprint-2 
 
+#### 5.2.2.4. Development Evidence for Sprint Review
+ 
+Durante este Sprint, el equipo de desarrollo se centró en la implementación de las interfaces de usuario y la lógica de negocio para los módulos de Gestión de Colaboradores, Control de Asistencia, Gestión de Solicitudes, Vacaciones y Planillas. Se logró establecer una arquitectura sólida basada en el patrón de capas (Domain-Driven Design), separando la lógica de las entidades de la infraestructura de comunicación con la API. Los principales avances incluyen la creación de formularios dinámicos para el registro y actualización de personal, así como dashboards interactivos para la supervisión administrativa.
+ 
+| Repository | Branch | Commit ID | Commit Message | Committed on (Date) |
+| :--- | :--- | :---: | :--- | :---: |
+| [Performily/FlowboardApp](https://github.com/Performily/FlowboardApp) | feature/payroll-presentation-list | 21051f8 | feat(payroll): create pay slip list view with filters and data table | 13/05/2026 |
+| | feature/payroll-infrastructure-assembler | ec518d9 | feat(payroll): implement http service for fetching and downloading pay | 13/05/2026 |
+| | feature/payroll-domain-entity | 3e7c899 | feat(payroll): update pay-slip entity with mockup data and business rule | 13/05/2026 |
+| | feature/payroll-application-store | 96d1fb4 | feat(payroll): implement pinia composition setup store matching project | 13/05/2026 |
+| | feature/payroll-presentation-routes | aebd241 | feat(payroll): implement pay-slip detail view and download trigger | 13/05/2026 |
+| | feature/attendance | d6af4e4 | feat(attendance): add attendance entity | 14/05/2026 |
+| | feature/home | 71fb2a4 | feat(home): add home section | 14/05/2026 |
+| | feature/request-section | 7d7abb3 | feat(add requests section): implement requests module with approval and rejection workflows | 14/05/2026 |
+| | feature/iam | 0bf77e0 | feat(iam): add login and forgot your password | 14/05/2026 |
+| | fix/error-management | 59e94f0 | feat(register): add register employee | 14/05/2025 |
+| | feature/more-information-employees | fc809d5 | feat(information): add more new employees | 14/05/2026 |
+| | feature/employee-information | 206fada | feat(employee): add employee information | 14/05/2026 |
+| | feature/down-employees | abdb5e4 | feat(termination): add employee termination | 14/05/2026 |
+| | feature/vacations-section | d8d9e51 | feat(vacations): add vacations dashboard and filters | 14/05/2026 |
+| | feature/assign-vacation | d946ada | feat(vacations): build complete vacations context and UI | 14/05/2026 |
+| | feature/attendance-employee-summary | 8b1767d | feat(attendance): add employee summary | 14/05/2026 |
+
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 
 Durante el presente Sprint, se lograron avances significativos en el diseño, implementación y documentación de los servicios web (Fake API mediante json-server) que sustentan la lógica de negocio de nuestra aplicación "Performily". Se logró documentar la estructura de comunicación RESTful para los módulos clave del sistema: Gestión de Colaboradores (Management), Registro de Asistencias (Attendance), Solicitudes y Vacaciones (Requests) y Planillas (Payroll). Al tratarse de un entorno de desarrollo local con json-server, la URL local de despliegue se ha unificado en http://localhost:3000. 
