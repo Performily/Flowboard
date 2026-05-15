@@ -3219,6 +3219,20 @@ Para este primer Sprint, el equipo se enfocó en transformar los wireframes en u
 ![Team Collaboration Insights - Gráfico de contribuciones](assets\img\team-collaboration.png)
 
 ### 5.2.1. Sprint 2
+#### 5.2.2.1. Sprint Planning 2.
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Date** | 2026-05-12 |
+| **Time** | 07:00 PM |
+| **Location** | Discord (Virtual) |
+| **Prepared By** | Vasquez Llave, Oscar Lizandro |
+| **Attendees** | Vasquez Llave, Oscar Lizandro / Galvez Meza, Salym Pool / Diaz Villalba, Diego Alonso / Ávila De La Cruz, Darío Fabián / Carpio Peña, Josué Francisco |
+| **Sprint Goal** | **Our focus is on:** el desarrollo de las funcionalidades principales del frontend de Flowboard mediante la implementación de interfaces interactivas, flujos de navegación y módulos funcionales orientados tanto a colaboradores como al personal de recursos humanos.<br><br>**We believe it delivers:** una experiencia de usuario más intuitiva, eficiente y centralizada para las organizaciones que buscan optimizar sus procesos de gestión humana a través de herramientas digitales modernas.<br><br>**This will be confirmed when:** un usuario pueda acceder correctamente a los módulos principales, navegar entre las diferentes vistas sin inconvenientes y gestionar su información mediante una interfaz funcional, responsive y fácil de utilizar. |
+| **Sprint Velocity** | 39 |
+| **Sum of Story Points** | 60 |
+
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 | Team Member (Last Name, First Name) | GitHub Username |Features Leader (L) / Collaborator (C) | Styles Leader (L) / Collaborator (C) |
 | :--- | :--- | :--- | :--- |
