@@ -3314,6 +3314,33 @@ Durante este Sprint, el equipo de desarrollo se centró en la implementación de
 | | feature/assign-vacation | d946ada | feat(vacations): build complete vacations context and UI | 14/05/2026 |
 | | feature/attendance-employee-summary | 8b1767d | feat(attendance): add employee summary | 14/05/2026 |
 
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+Durante este segundo Sprint, el equipo consolidó la funcionalidad operativa de Flowboard mediante la implementación de los módulos principales del frontend y su lógica de negocio. El objetivo central fue transformar los requerimientos de gestión en una aplicación web interactiva que permite tanto la autogestión del colaborador como la supervisión administrativa de recursos humanos. Para lograr esto, se adoptó una arquitectura basada en el patrón de capas (Domain-Driven Design), lo que permitió separar estrictamente la lógica de las entidades de la infraestructura de comunicación.
+
+El desarrollo se realizó utilizando el framework Vue.js y se integró el gestor de estados Pinia, asegurando una navegación fluida y una sincronización de datos eficiente entre los diferentes módulos, como asistencia, planillas y solicitudes. Asimismo, se implementaron servicios web simulados mediante una Fake API (json-server), estableciendo contratos de comunicación RESTful que garantizan la integridad de las operaciones de registro, actualización y consulta de información laboral. El resultado es una interfaz funcional y responsive que optimiza la experiencia del usuario al centralizar procesos críticos en una plataforma moderna y escalable.
+
+| Evidencia de Implementación | Evidencia de Implementación |
+| :---: | :---: |
+| ![Imagen 1](assets\img\login.png) | ![Imagen 2](assets\img\home.png) |
+| *Interfaz de Inicio de Sesión (IAM)* | *Pestaña home* |
+| ![Imagen 3](assets\img\informacionlaboral.png) | ![Imagen 4](assets\img\directorioColaboradores.png) |
+| *Dashboard principal de Informacion laboral* | *Directorio de Colaboradores interfaz* |
+| ![Imagen 5](assets\img\SOLICITUDES1.png) | ![Imagen 6](assets\img\solicitudes.png) |
+| *Dashboard principal Solicitudes* | *Lista principal de solicitudes interfaz* |
+| ![Imagen 7](assets\img\asistencia.png) | ![Imagen 8](assets\img\registrodeAsistencia.png) |
+| *Dashboard principal de Asistencia* | *Registro de asistencias interfaz* |
+| ![Imagen 9](assets\img\resumenColaborador.png) | ![Imagen 10](assets\img\gestion.png) |
+| *Resumen de colaborador Interfaz* | *Dashboard principal Gestión* |
+| ![Imagen 11](assets\img\actualizarinformacion.png) | ![Imagen 12](assets\img\registrarColaborador.png) |
+| *Actualizar información interfaz* | *Registrar nuevo colaborador interfaz* |
+| ![Imagen 13](assets\img\darBaja.png) | ![Imagen 14](assets\img\Reactivar.png) |
+| *Dar de baja interfaz* | *Reactivar colaborador interfaz* |
+| ![Imagen 15](assets\img\listavacaciones.png) | ![Imagen 16](assets\img\asignarvacaciones.png) |
+| *Vacaciones interfaz* | *Asignar vacaciones interfaz* |
+| ![Imagen 17](assets\img\pagos1.png) | ![Imagen 18](assets\img\pagos.png) |
+| *Dashboard principal Pagos* | *Pagos interfaz* |
+
 #### 5.2.2.6.Services Documentation Evidence for Sprint Review.
 
 Durante el presente Sprint, se lograron avances significativos en el diseño, implementación y documentación de los servicios web (Fake API mediante json-server) que sustentan la lógica de negocio de nuestra aplicación "Performily". Se logró documentar la estructura de comunicación RESTful para los módulos clave del sistema: Gestión de Colaboradores (Management), Registro de Asistencias (Attendance), Solicitudes y Vacaciones (Requests) y Planillas (Payroll). Al tratarse de un entorno de desarrollo local con json-server, la URL local de despliegue se ha unificado en http://localhost:3000. 
