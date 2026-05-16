@@ -1,6 +1,6 @@
 <div align="center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.5;">
 
-  <img src="assets\img\UPC_logo_transparente.png" alt="UPC Logo" width="auto" height="120" style="margin-bottom: 20px;"/>
+  <img src="assets\img\UPC_logo_transparente.png" alt="UPC Logo" width="auto" height="120" style="margin-bottom: 5px;"/>
 
   <h1 style="color: #bb0202; font-size: 26px; margin: 0;">Universidad Peruana de Ciencias Aplicadas</h1>
   <p style="margin: 10px 0; font-size: 18px;">
@@ -8,9 +8,9 @@
     Carrera: Ingeniería de Software
   </p>
 
-  <hr style="width: 60%; border: 0; border-top: 1px solid #ccc; margin: 25px 0;">
+  <hr style="width: 60%; border: 0; border-top: 1px solid #ccc; margin: 15px 0;">
 
-  <div style="text-align: left; display: inline-block; width: 80%; margin-bottom: 30px;">
+  <div style="text-align: left; display: inline-block; width: 80%; margin-bottom: 20px;">
     <p style="margin: 8px 0;"><strong>Ciclo:</strong> Quinto</p>
     <p style="margin: 8px 0;"><strong>Curso:</strong> 1ASI0730 Aplicaciones Web</p>
     <p style="margin: 8px 0;"><strong>NRC:</strong> 12158</p>
@@ -19,13 +19,11 @@
 
   <h2 style="font-size: 24px; text-transform: uppercase; margin: 10px 0;">"Informe del TB1"</h2>
 
-  <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #eee; width: 85%;">
+  <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee; width: 85%;">
     <p style="font-size: 18px; margin: 5px 0;"><strong>Nombre del Startup:</strong> Performily</p>
     <p style="font-size: 18px; margin: 5px 0;"><strong>Nombre del Producto:</strong> Flowboard</p>
   </div>
-
-  <br>
-
+<br>
   <h3 style="text-align: left; width: 85%; border-bottom: 1px solid #003366; padding-bottom: 5px; color: #003366;">Integrantes:</h3>
   
   <table style="width: 85%; border-collapse: collapse; margin-top: 15px; border: 1px solid #ddd;">
@@ -59,16 +57,16 @@
     </tbody>
   </table>
 
-  <br><br>
+  <br>
 
   <h3 style="color: #666;">Mayo, 2026</h3>
 
 </div>
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-## Contenido
+
+
 # Tabla de contenidos
 
 * **Registro de Versiones del Informe**
@@ -176,7 +174,6 @@
 * **Anexos**
 
 <div style="page-break-after: always;"></div>
-<hr>
 
 ## Registro de Versiones del Informe
 
@@ -288,9 +285,9 @@ Posteriormente, la redacción y consolidación de este reporte se basó directam
 * **TB1:** Durante el TB1 se validó que los módulos implementados respondieran correctamente a los requerimientos funcionales y necesidades organizacionales identificadas durante el análisis previo del proyecto. A través del desarrollo de funcionalidades relacionadas con asistencia, remuneraciones, gestión de empleados, solicitudes y vacaciones, se comprobó que la plataforma era capaz de automatizar procesos críticos y reducir tareas repetitivas dentro de las organizaciones. Además, mediante la participación activa en Sprint Backlog 2 y Development Evidence for Sprint Review, se verificó continuamente la coherencia entre el diseño planteado y la implementación desarrollada, asegurando una correcta integración de componentes frontend y backend. Como resultado, se consolidó una solución centralizada, eficiente y orientada a mejorar la experiencia de los usuarios, facilitando el acceso a información laboral, reduciendo tiempos administrativos y fortaleciendo la transparencia y organización dentro de la gestión de recursos humanos.
 
 <div style="page-break-before: always;"></div>
-<hr>
 
-## Capítulo I: Introducción
+
+# Capítulo I: Introducción
 
 ### 1.1. Startup Profile
 
@@ -403,9 +400,9 @@ Este segmento incluye a los profesionales responsables de la gestión operativa 
 Este segmento está conformado por los trabajadores de la organización que requieren acceder a su información laboral de manera constante, incluyendo datos personales, beneficios, estado de solicitudes y registros de asistencia. El principal problema para los colaboradores generales consiste en la inaccesibilidad de acceso directo a esta información, lo que los obliga a depender de procesos burocráticos y consultas manuales con supervisores o el área de recursos humanos. Esta situación genera una experiencia ineficiente, caracterizada por tiempos de espera prolongados y desconfianza hacia la organización. Como consecuencia, los empleados desarrollan comportamientos reactivos, lo que recurre a canales informales para obtener información sobre vacaciones, licencias o pagos.
 
 <div style="page-break-before: always;"></div>
-<hr>
 
-## Capítulo II: Requirements Elicitation & Analysis
+
+# Capítulo II: Requirements Elicitation & Analysis
 
 ### 2.1. Competidores
 
@@ -644,13 +641,23 @@ La sección de User Personas tiene como propósito representar de manera estruct
 Para su elaboración, se consideran tanto características demográficas como aspectos más profundos relacionados con comportamientos, necesidades, objetivos y frustraciones de los usuarios. Esto permite comprender mejor cómo interactúan con su entorno y cuáles son los principales problemas que enfrentan en relación con el dominio del proyecto.
 
 Asimismo, los User Personas sirven como una guía fundamental para la toma de decisiones durante el diseño del producto, ya que permiten enfocar la solución en necesidades reales y no en suposiciones. Cada persona representa a un segmento objetivo identificado previamente, asegurando que el desarrollo del sistema esté alineado con las expectativas y requerimientos de los usuarios finales.
+<br><br><br><br>
 
 **Personal de Recursos Humanos:**
-![](assets\img\userperson_rrhh.png)
+<p align="center">
+    <img src="assets/img/userperson_rrhh.png" width="510px">
+</p>
+
 * **Enlace de acceso:** https://drive.google.com/file/d/10IMOG6dgRXkJQ47uLZeLBUARjZmjumge/view?usp=sharing
 
+<br>
+
 **Colaboradores generales:**
-![](assets\img\userperson_colaborador.png)
+
+<p align="center">
+    <img src="assets\img\userperson_colaborador.png" width="510px">
+</p>
+
 * **Enlace de acceso:** https://drive.google.com/file/d/1FB_DUQAW_qgx41I8PWFnNwc9a4TOOlBc/view?usp=sharing
 
 #### 2.3.2. User Task Matrix
@@ -764,7 +771,7 @@ El Ubiquitous Language tiene como objetivo establecer un lenguaje común y consi
 | **Días acumulados** | Días que acumuló el colaborador al trabajar horas extras. |
 
 <div style="page-break-before: always;"></div>
-<hr>
+
 
 # Capítulo III: Requirements Specification
 
@@ -2178,7 +2185,7 @@ https://drive.google.com/file/d/1yOXBRv-EHruLhPPw6JC-LGwoGzYOZ6ED/view?usp=drive
 | 50 | US04 | Como colaborador que busca gestionar su información de forma autónoma, quiero consultar mi información laboral consolidada, para que pueda gestionarla sin depender de recursos humanos. | 2 |
 
 <div style="page-break-before: always;"></div>
-<hr>
+
 
 # Capítulo IV: Product Design
 
@@ -2997,8 +3004,9 @@ En esta sección se detalla el Diagrama Entidad-Relación Físico que asegura la
 
 ![Database Diagram](assets\img\dataBaseD.png)
 
+
+
 <div style="page-break-before: always;"></div>
-<hr>
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
@@ -3319,6 +3327,7 @@ Durante este Sprint, el equipo de desarrollo se centró en la implementación de
 Durante este segundo Sprint, el equipo consolidó la funcionalidad operativa de Flowboard mediante la implementación de los módulos principales del frontend y su lógica de negocio. El objetivo central fue transformar los requerimientos de gestión en una aplicación web interactiva que permite tanto la autogestión del colaborador como la supervisión administrativa de recursos humanos. Para lograr esto, se adoptó una arquitectura basada en el patrón de capas (Domain-Driven Design), lo que permitió separar estrictamente la lógica de las entidades de la infraestructura de comunicación.
 
 El desarrollo se realizó utilizando el framework Vue.js y se integró el gestor de estados Pinia, asegurando una navegación fluida y una sincronización de datos eficiente entre los diferentes módulos, como asistencia, planillas y solicitudes. Asimismo, se implementaron servicios web simulados mediante una Fake API (json-server), estableciendo contratos de comunicación RESTful que garantizan la integridad de las operaciones de registro, actualización y consulta de información laboral. El resultado es una interfaz funcional y responsive que optimiza la experiencia del usuario al centralizar procesos críticos en una plataforma moderna y escalable.
+<br>
 
 | Evidencia de Implementación | Evidencia de Implementación |
 | :---: | :---: |
@@ -3455,3 +3464,5 @@ View of analysis of the role of human resource information system (HRIS) in impr
 ## Anexos
 
 Landing Page: https://performily.github.io/Flowboard-LandingPage/
+Web Application: https://flowboard-app-three.vercel.app/
+Web Service: https://flowboard-api-zmju.onrender.com
