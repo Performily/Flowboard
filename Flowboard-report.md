@@ -3372,7 +3372,7 @@ Trazabilidad en Git: Identificamos y corregimos problemas de configuración loca
 
 Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante ramas separadas (Feature Branches) facilitó unir el código de todos los integrantes de forma ordenada y realizar revisiones cruzadas antes de cada Merge.
 
-![Contributors](assets/img/sprint2-contributors.png)
+![Contributors](assets\img\commits.png)
 
 ---
 
