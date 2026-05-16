@@ -202,6 +202,9 @@
 | v2.0 | 19/04/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
 | v2.1 | 14/05/2026 | Oscar Lizandro Vasquez Llave | Aspect Leaders and Collaborators, Sprint Backlog 2, Services Documentation Evidence for Sprint Review, Team Collaboration Insights during Sprint |
 | v2.2 | 14/05/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
+| v2.2 | 15/05/2026 | Diego Alonso Diaz Villalba | Software Deployment Evidence for Sprint Review, Web Application Deployment |
+| v2.2 | 15/05/2026 | Darío Fabián Ávila De La Cruz | Execution Evidence for Sprint Review |
+
 
 <div style="page-break-before: always;"></div>
 
