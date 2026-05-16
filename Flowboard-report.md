@@ -3362,6 +3362,33 @@ Durante el presente Sprint, se lograron avances significativos en el diseño, im
 | Planillas | /paySlips | GET | GET /paySlips | 200 OK: Obtiene el listado de boletas de pago generadas para el periodo consultado. |
 | Planillas | /paySlips/{id} | GET | GET /paySlips/{id}<br><br>Config: responseType: 'blob' | 200 OK: Este endpoint se configuró específicamente para recibir la respuesta como un archivo Blob y permitir la descarga del PDF de la boleta. |
 
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+
+Durante este Sprint, se realizó el proceso de Software Deployment del sistema Flowboard, abarcando tanto el despliegue de la aplicación frontend como la publicación de los servicios web utilizados por el sistema.
+
+Como parte del proceso de despliegue del frontend, se utilizó la plataforma Vercel, la cual permitió publicar la aplicación desarrollada con Vue.js 3 y Vite de manera automatizada. Para la creación de la cuenta se utilizó una de las cuentas de GitHub vinculadas al proyecto; esto permitió configurar la Integración Continua, logrando que cada actualización realizada sobre la rama principal genere automáticamente un nuevo despliegue en producción.
+
+| Evidencia de Despliegue Frontend | Descripción |
+| :---: | :--- |
+| ![Archivo vercel.json](assets\img\verceldeployment.png) | Archivo vercel.json con la configuración inicial para el deployment. |
+| ![Creación del proyecto en Vercel](assets\img\vercelrepositorio.png) | Creación del proyecto en Vercel seleccionando el repositorio y configuración automática. |
+| ![Web App desplegada](assets\img\webAppDesplegada.png) | Web App desplegada correctamente y accesible mediante URL pública. |
+
+De manera complementaria, se realizó el despliegue de los servicios web utilizando la plataforma Render. Inicialmente, durante el desarrollo local, se trabajó con un servidor basado en json-server utilizando archivos db.json y routes.json para simular una API RESTful bajo el estándar /api/v1. Posteriormente, esta infraestructura fue migrada a un entorno cloud mediante Render, permitiendo exponer endpoints accesibles públicamente para la gestión de información relacionada con asistencias, solicitudes, nóminas y colaboradores.
+
+| Evidencia de Despliegue de Servicios | Descripción |
+| :---: | :--- |
+| ![Configuración package.json](assets\img\configPkgJson.png) | Creación del archivo package.json en la carpeta server para la configuración en Render. |
+| ![Web Service en Render](assets\img\newWebService.png) | Proceso de creación y configuración del Web Service en la plataforma Render. |
+| ![Web Service desplegado](assets\img\webServiceDeployment.png) | Web Service desplegado correctamente con estado "Live". |
+
+Asimismo, se configuró la comunicación entre frontend y backend utilizando URLs absolutas y protocolos HTTP seguros, permitiendo desacoplar completamente el sistema del entorno local de desarrollo. Gracias a esta integración, la aplicación desplegada en Vercel puede consumir información persistente desde la Fake API desplegada en Render.
+
+| Evidencia de Integración | Descripción |
+| :---: | :--- |
+| ![GitHub conectado a Vercel](assets\img\GithubVercel.png) | Repositorio de GitHub conectado exitosamente a la plataforma de despliegue. |
+
+
 #### 5.2.2.8.Team Collaboration Insights during Sprint.
 
 Durante este Sprint, el equipo obtuvo aprendizajes clave sobre nuestra dinámica de trabajo colaborativo:
