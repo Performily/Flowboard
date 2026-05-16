@@ -152,15 +152,15 @@
     * 5.2.1.6. Services Documentation Evidence for Sprint Review
     * 5.2.1.7. Software Deployment Evidence for Sprint Review
     * 5.2.1.8. Team Collaboration Insights during Sprint
-  * 5.2.1. Sprint 2
-    * 5.2.1.1. Sprint Planning 2
-    * 5.2.1.2. Aspect Leaders and Collaborators
-    * 5.2.1.3. Sprint Backlog 2
-    * 5.2.1.4. Development Evidence for Sprint Review
-    * 5.2.1.5. Execution Evidence for Sprint Review
-    * 5.2.1.6. Services Documentation Evidence for Sprint Review
-    * 5.2.1.7. Software Deployment Evidence for Sprint Review
-    * 5.2.1.8. Team Collaboration Insights during Sprint
+  * 5.2.2. Sprint 2
+    * 5.2.2.1. Sprint Planning 2
+    * 5.2.2.2. Aspect Leaders and Collaborators
+    * 5.2.2.3. Sprint Backlog 2
+    * 5.2.2.4. Development Evidence for Sprint Review
+    * 5.2.2.5. Execution Evidence for Sprint Review
+    * 5.2.2.6. Services Documentation Evidence for Sprint Review
+    * 5.2.2.7. Software Deployment Evidence for Sprint Review
+    * 5.2.2.8. Team Collaboration Insights during Sprint
 
 
 
@@ -308,7 +308,7 @@ La razón de ser de nuestra startup radica en la necesidad de contar con herrami
 | ![Foto Diego](assets\team\diego.png) | Diego Alonso Diaz Villalba | u202412663 | Ingeniería de software | Cuento con formación en Psicología y actualmente curso la carrera de Ingeniería de Software, lo que me permite integrar habilidades humanas con conocimientos técnicos. Tengo experiencia en la conducción de entrevistas, la identificación de necesidades mediante observación y escucha activa, así como en la toma de decisiones fundamentadas. Me interesa especialmente el diseño de software, con énfasis en el análisis de requerimientos, la experiencia de usuario (UX), la interfaz de usuario (UI) y la usabilidad de las aplicaciones. Me motiva crear soluciones tecnológicas que no solo sean funcionales, sino también intuitivas y accesibles para los usuarios. |
 | ![Foto Salym](assets\team\salym.png) | Salym Pool Galvez Meza | u202419655 | Ingeniería de Software | Soy Salym Galvez, una persona con sólidas habilidades blandas como el pensamiento crítico y la escucha activa, lo que me permite analizar situaciones para encontrar soluciones efectivas y potenciar el trabajo en equipo. Me adapto con facilidad a distintos entornos, soy proactivo, responsable y orientado a resultados. En el aspecto técnico, cuento con conocimientos en C++ enfocados en la optimización de recursos, así como en el levantamiento de bases de datos y el desarrollo de sitios web utilizando JavaScript, HTML y CSS. Busco siempre aprender cosas nuevas para crecer profesionalmente y aportar valor práctico y técnico en cada proyecto en el que participo. |
 | ![Foto Oscar](assets\team\oscar.png) | Oscar Lizandro Vasquez Llave | u202410478 | Ingeniería de Software | Soy estudiante de Ingeniería de Software con formación en desarrollo de aplicaciones y gestión de proyectos tecnológicos. Cuento con conocimientos en C++, HTML, CSS, JavaScript, diseño de interfaces de usuario con Figma y uso de herramientas de control de versiones como Git. Me destaco por mi compromiso para aprender nuevas tecnologías, además de mis habilidades para trabajar en equipo y adaptarme a diferentes entornos. Tengo capacidad para analizar y resolver problemas técnicos de forma eficiente. Poseo iniciativa para proponer mejoras, disposición para colaborar en proyectos multidisciplinarios y motivación por adquirir nuevos conocimientos que fortalezcan mi desarrollo profesional. |
-| ![Foto Josué](assets\team\josue.png) | Josué Francisco Carpio Peña | *No especificado* | Ingeniería de Software | Soy estudiante de la carrera Ingeniería de Software con experiencia en Frontend con las herramientas HTML, CSS y Javascript; tengo conocimiento en programación con los lenguajes C++ y Python. Tengo las cualidades de ser perseverante e insistentes en las cosas que quiero hacer, gusto de aprender nuevas cosas y con un gran gusto de trabajo colaborativo. |
+| ![Foto Josué](assets\team\josue.png) | Josué Francisco Carpio Peña | u202519273 | Ingeniería de Software | Soy estudiante de la carrera Ingeniería de Software con experiencia en Frontend con las herramientas HTML, CSS y Javascript; tengo conocimiento en programación con los lenguajes C++ y Python. Tengo las cualidades de ser perseverante e insistentes en las cosas que quiero hacer, gusto de aprender nuevas cosas y con un gran gusto de trabajo colaborativo. |
 
 ### 1.2. Solution Profile
 
