@@ -3723,7 +3723,7 @@ Heurística violada: Information Architecture – Is it Clear? / Usabilidad – 
 Problema:
 En la sección Inicio/Dashboard, el subtítulo indica "Este es el resumen de tu empresa al día de hoy"; sin embargo, no especifica el intervalo de tiempo al que corresponde la información mostrada en los indicadores. Esta falta de contexto puede generar dudas sobre el período considerado para los datos, dificultando su correcta interpretación por parte del usuario.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema1.png)
 
 Recomendación:
 Especificar claramente el período de tiempo al que pertenecen los datos del Dashboard, por ejemplo: "Resumen correspondiente del 01/06/2026 al 20/06/2026" o "Información actualizada al día de hoy", según corresponda.
@@ -3737,7 +3737,7 @@ Heurística violada: Usabilidad – Consistencia y estándares / Information Arc
 Problema:
 En el Dashboard existe una sección denominada "Trámites pendientes". El término "trámite" no corresponde al lenguaje utilizado en el resto de la aplicación, donde se emplean conceptos relacionados con solicitudes y procesos internos. Esta inconsistencia puede generar confusión sobre el propósito de la sección.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema2.png)
 
 Recomendación:
 Utilizar una terminología consistente con el dominio de la aplicación, reemplazando el término por uno alineado al lenguaje empleado en el resto del sistema.
@@ -3751,7 +3751,7 @@ Heurística violada: Diseño Inclusivo – Proporciona experiencias legibles / U
 Problema:
 En la sección de accesos rápidos del Dashboard, al colocar el cursor sobre algunos botones, el fondo cambia a un color oscuro mientras el texto mantiene un color que reduce significativamente el contraste. Esto dificulta la lectura del contenido del botón.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema3.png)
 
 Recomendación:
 Modificar los colores del estado hover para garantizar un contraste adecuado entre el fondo y el texto, asegurando la legibilidad del contenido.
@@ -3765,7 +3765,6 @@ Heurística violada: Usabilidad – Flexibilidad y eficiencia de uso / Informati
 Problema:
 Al seleccionar el acceso rápido "Tardanzas registradas", el sistema redirige al módulo de asistencias, pero no aplica automáticamente un filtro que muestre únicamente las tardanzas correspondientes. Como consecuencia, el usuario debe realizar la búsqueda manualmente, incrementando el tiempo y esfuerzo necesarios para completar la tarea.
 
-![Heuristica](assets\img\imagen.png)
 
 Recomendación:
 Aplicar automáticamente el filtro correspondiente al acceder desde el Dashboard, mostrando directamente la información relacionada con las tardanzas del período esperado.
@@ -3779,7 +3778,7 @@ Heurística violada: Usabilidad – Consistencia y estándares / Usabilidad – 
 Problema:
 En la sección Información laboral, el botón "Ver perfil personal" redirige al Directorio de colaboradores, en lugar de mostrar el perfil personal del usuario autenticado. Este comportamiento contradice la funcionalidad esperada y puede impedir que el usuario acceda rápidamente a su información personal.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema5.png)
 
 Recomendación:
 Modificar la navegación del botón para que redirija al perfil personal del colaborador que ha iniciado sesión.
@@ -3793,7 +3792,7 @@ Heurística violada: Information Architecture – Is it Findable? / Is it Usable
 Problema:
 La sección Información laboral no ofrece un acceso directo al Directorio de colaboradores, dificultando que los usuarios encuentren esta funcionalidad de forma rápida.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema6.png)
 
 Recomendación:
 Incorporar un botón o enlace claramente identificado que permita acceder directamente al Directorio de colaboradores.
@@ -3807,7 +3806,7 @@ Heurística violada: Usabilidad – Libertad y control del usuario / Information
 Problema:
 A diferencia del resto de módulos, la sección Solicitudes no presenta un botón de retroceso que permita regresar fácilmente a la pantalla anterior. Esto limita el control del usuario sobre la navegación y puede dificultar la exploración de la aplicación.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema7.png)
 
 Recomendación:
 Agregar un botón de retroceso consistente con el utilizado en las demás secciones para mantener una navegación uniforme.
@@ -3821,7 +3820,7 @@ Heurística violada: Usabilidad – Diseño estético y minimalista / Informatio
 Problema:
 La sección Vacaciones presenta una gran cantidad de información en una única pantalla, lo que dificulta su lectura y comprensión. Esta sobrecarga visual puede aumentar el tiempo requerido para localizar la información relevante.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema8.png)
 
 Recomendación:
 Reorganizar el contenido utilizando agrupaciones, pestañas, tarjetas o secciones desplegables que permitan mostrar únicamente la información necesaria en cada momento.
@@ -3835,7 +3834,7 @@ Heurística violada: Usabilidad – Consistencia y estándares / Diseño estéti
 Problema:
 En la sección Pagos, el botón principal presenta un tamaño considerablemente mayor al utilizado en el resto de la aplicación. Esta diferencia rompe la consistencia visual de la interfaz y puede generar una percepción de desbalance en el diseño.
 
-![Heuristica](assets\img\imagen.png)
+![Heuristica](assets\img\Problema9.png)
 
 Recomendación:
 Uniformizar el tamaño del botón de acuerdo con la guía visual utilizada en el resto de módulos.
@@ -3849,7 +3848,6 @@ Heurística violada: Usabilidad – Consistencia y estándares
 Problema:
 Los botones presentes en las diferentes secciones de la aplicación no mantienen dimensiones uniformes. Esta inconsistencia afecta la apariencia general de la interfaz y puede reducir la percepción de coherencia del sistema.
 
-![Heuristica](assets\img\imagen.png)
 
 Recomendación:
 Definir y aplicar un sistema de diseño que establezca tamaños, espaciados y estilos uniformes para todos los botones de la aplicación.
