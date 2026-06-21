@@ -3229,7 +3229,7 @@ Para este primer Sprint, el equipo se enfocó en transformar los wireframes en u
 
 ![Team Collaboration Insights - Gráfico de contribuciones](assets\img\team-collaboration.png)
 
-### 5.2.1. Sprint 2
+### 5.2.2. Sprint 2
 #### 5.2.2.1. Sprint Planning 2.
 
 | Campo | Detalle |
@@ -3412,6 +3412,32 @@ Trazabilidad en Git: Identificamos y corregimos problemas de configuración loca
 Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante ramas separadas (Feature Branches) facilitó unir el código de todos los integrantes de forma ordenada y realizar revisiones cruzadas antes de cada Merge.
 
 ![Contributors](assets\img\commits.png)
+
+### 5.2.3. Sprint 3
+#### 5.2.3.6.Services Documentation Evidence for Sprint Review.
+
+Durante el presente Sprint 3, se lograron avances significativos en la evolución de nuestra arquitectura, reemplazando el entorno de pruebas (Fake API) por el diseño, implementación y despliegue de servicios web reales mediante una API RESTful construida en .NET (C#) con Entity Framework. Se logró consolidar y documentar la estructura de comunicación para los módulos clave del sistema de "Flowboard / Performily": Gestión de Identidades y Accesos (IAM), Gestión de Colaboradores (Workspace), Registro de Asistencias (Attendance), Solicitudes (Requests) y Planillas (Payroll). Al tratarse del entorno de desarrollo local, la URL base de despliegue se ha unificado bajo el prefijo http://localhost:5046/api/v1, con su respectiva interfaz de documentación interactiva en Swagger.
+
+| Módulo | Endpoint (Ruta) | Verbo HTTP | Parámetros / Sintaxis | Respuesta (Response) y Uso en la App |
+| :--- | :--- | :--- | :--- | :--- |
+| IAM (Auth) | /auth/sign-in | POST | Body: JSON con credenciales (email, password). | 200 OK: Autentica al usuario contra la base de datos y devuelve el perfil del usuario junto con su Token JWT para proteger las rutas de la app. |
+| IAM (Auth) | /auth/users/{id} | GET | Path: id del usuario. | 200 OK: Devuelve la información de un usuario específico validado en el sistema. |
+| Gestión | /employees | POST | Body: JSON con datos personales y laborales (name, documentNumber, area, etc.). | 201 Created: Crea un nuevo colaborador en la base de datos y le asigna un ID. |
+| Gestión | /employees | GET | GET /employees | 200 OK: Devuelve el array con todos los colaboradores registrados para mostrarlos en el listado principal de Gestión. |
+| Gestión | /employees/{id} | GET | Path: id del empleado. | 200 OK: Devuelve el JSON de un solo colaborador. Se usa para la vista del Perfil Personal detallado. |
+| Planillas | /pay-slips | POST | Body: JSON con datos financieros (grossIncome, deductions, collaboratorId). | 201 Created: Genera y registra una nueva boleta de pago asociada a un colaborador específico. |
+| Planillas | /pay-slips | GET | GET /pay-slips | 200 OK: Obtiene el listado general de todas las boletas de pago generadas en el sistema. |
+| Planillas | /pay-slips/{paySlipId} | GET | Path: paySlipId | 200 OK: Devuelve el detalle de una boleta de pago específica. Se usa para permitir la previsualización y descarga del PDF. |
+| Planillas | /pay-slips/collaborators/{collaboratorId} | GET | Path: collaboratorId | 200 OK: Devuelve el historial exclusivo de boletas de pago de un solo colaborador. |
+| Planillas | /pay-slips/{paySlipId}/status | PATCH | Path: paySlipId<br>Body: JSON con el nuevo status. | 200 OK: Actualiza de forma parcial el estado de la boleta (ej. de "Pendiente" a "Pagado"). |
+| Solicitudes | /request | POST | Body: JSON con fechas, type (ej. Vacation) y employeeId. | 201 Created: Registra una nueva solicitud. Aplica el estándar de negocio para el formato de fechas y enum de tipos. |
+| Solicitudes | /request/{id} | GET | Path: id de la solicitud. | 200 OK: Devuelve el detalle exacto de una solicitud (fechas, justificación, días totales). |
+| Solicitudes | /request/employee/{employeeId} | GET | Path: employeeId | 200 OK: Lista todas las solicitudes históricas realizadas por un colaborador en particular. |
+| Solicitudes | /request/{id}/approve | POST | Path: id de la solicitud a aprobar. | 200 OK: Acción de flujo de trabajo (Workflow) que cambia el estado de la solicitud a "Aprobada". |
+| Solicitudes | /request/{id}/reject | POST | Path: id de la solicitud a rechazar. | 200 OK: Acción de flujo de trabajo (Workflow) que cambia el estado de la solicitud a "Rechazada". |
+| Asistencia | /attendance | POST | Body: JSON con registro biométrico o timestamp. | 201 Created: Registra una nueva marca de asistencia (ingreso/salida) de un colaborador. |
+| Asistencia | /attendance/{attendanceId} | GET | Path: attendanceId | 200 OK: Devuelve el registro de asistencia específico consultado. |
+
 
 ---
 
