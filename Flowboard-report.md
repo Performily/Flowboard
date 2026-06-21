@@ -3448,7 +3448,6 @@ Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante
 
 ### 5.2.3.3. Sprint Backlog 3.
 
-**Sprint #** Sprint 3
 
 | Work-Item / Task User Story ID | Id | Description | Estimation (Hours) | Assigned To | Status (To-do / InProcess / To-Review / Done) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
