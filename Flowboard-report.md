@@ -223,7 +223,9 @@ Todo el flujo de trabajo, las integraciones de cada sección y las actualizacion
 
 **TB1:**  Para la elaboración de este segundo avance, la colaboración del equipo inició con una planificación estructurada mediante la definición y asignación de tareas en el Sprint Backlog. A partir de esta organización previa, cada compañero tuvo una parte técnica designada, lo que garantizó que todos los integrantes participaran de manera activa y equitativa en el desarrollo del código de la aplicación web y los servicios simulados.
 
-Posteriormente, la redacción y consolidación de este reporte se basó directamente en los avances reales que se lograron al final del Sprint. Cada miembro del equipo se encargó de documentar las funcionalidades, diagramas y evidencias de implementación de los módulos que tuvo a su cargo en el código, logrando así que el informe final refleje con total fidelidad el trabajo técnico y colaborativo desarrollado durante esta etapa.
+**AV2:** Posteriormente, la redacción y consolidación de este reporte se basó directamente en los avances reales que se lograron al final del Sprint. Cada miembro del equipo se encargó de documentar las funcionalidades, diagramas y evidencias de implementación de los módulos que tuvo a su cargo en el código, logrando así que el informe final refleje con total fidelidad el trabajo técnico y colaborativo desarrollado durante esta etapa.
+
+Para la elaboración de este tercer avance (Sprint 3), la colaboración del equipo se centró en la estructuración e implementación de la arquitectura del lado del servidor (Backend y Web Services). Partiendo de una planificación rigurosa en el Sprint Backlog, las responsabilidades técnicas se dividieron según los módulos principales del dominio de negocio de la plataforma (IAM, Gestión, Asistencia, Solicitudes y Planillas). De esta forma, cada integrante asumió el desarrollo de su respectiva API RESTful, aplicando los principios de Diseño Guiado por el Dominio (DDD) y configurando la persistencia en la base de datos relacional. Al momento de redactar y consolidar el presente reporte, la documentación se construyó directamente sobre estos avances reales en el código. Cada miembro del equipo se encargó de detallar el diseño de su arquitectura, las evidencias de implementación local y la documentación interactiva de sus endpoints unificados a través de Swagger. Este enfoque garantizó que todos participaran equitativa y activamente tanto en la programación como en el informe, logrando un documento que refleja con fidelidad el esfuerzo colaborativo y la evolución tecnológica alcanzada en esta etapa del proyecto.
 
 ![Contribuidores de Reporte](assets\img\contributors-report.png)
 
@@ -240,26 +242,33 @@ Posteriormente, la redacción y consolidación de este reporte se basó directam
 **Salym Pool Galvez Meza:**
 * **AV1:** Durante el AV1 participé en el análisis y diseño de la solución Flowboard para optimizar la gestión de recursos humanos mediante la digitalización y automatización de procesos administrativos. Colaboré en Lean UX Assumptions y Development Evidence for Sprint Review, identificando problemas como errores manuales, sobrecarga laboral y falta de transparencia. La solución propuesta incluyó módulos de autogestión y automatización de solicitudes, considerando factores organizacionales y sociales para mejorar la eficiencia y el bienestar laboral.
 * **TB1:** Durante el TB1 participé en el diseño de los bounded contexts “Requests” y “Vacations” utilizando Domain-Driven Design (DDD), permitiendo estructurar correctamente los procesos de solicitudes y vacaciones. Además, colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo a la definición de flujos automatizados orientados a mejorar la gestión administrativa y la experiencia del usuario.
+* **AV2:** Durante el desarrollo de este avance enfocado en el backend, participé en la estructuración técnica del sistema mediante la elaboración del Services Documentation Evidence for Sprint Review. Me encargué de documentar y estandarizar las APIs RESTful de los módulos clave, definiendo claramente los endpoints, métodos, parámetros y respuestas. Esta labor es fundamental para garantizar una comunicación eficiente y segura de los datos sensibles de recursos humanos, lo cual impacta directamente en la seguridad de la información corporativa y promueve el bienestar laboral al asegurar que las gestiones de los colaboradores se procesen de manera confiable, transparente e íntegra.
+
 
 **Oscar Lizandro Vasquez Llave:**
 * **AV1:** Durante el AV1 diseñé soluciones de software orientadas a las necesidades del usuario mediante la definición de Lean UX Problem Statements y el Lean UX Canvas, lo que permitió establecer estrategias y tácticas frente a competidores. Participé en el proceso de investigación y diseño a través del registro de entrevistas, la creación de User Personas y la User Task Matrix, asegurando la coherencia visual con las General Style Guidelines. Asimismo, colaboré en la gestión y ejecución técnica mediante el Sprint Planning 1, la definición de Aspect Leaders and Collaborators y el Sprint Backlog 1. Finalmente, validé la solución entregando la Execution Evidence, Services Documentation, Software Deployment Evidence y los Team Collaboration Insights durante el Sprint Review, garantizando un producto funcional, documentado y alineado con los objetivos del negocio.
 * **TB1:** Durante la TB1, diseñé soluciones de ingeniería de software orientadas a optimizar la gestión de capital humano mediante la estructuración del Sprint Backlog 2, priorizando funcionalidades que impactan directamente en el bienestar organizacional y la eficiencia operativa. Lideré la definición de roles en Aspect Leaders and Collaborators, asegurando una distribución de tareas que considera factores sociales y de bienestar del equipo de trabajo. Asimismo, validé la solución mediante la Services Documentation Evidence, detallando los contratos de interfaz (API) que garantizan la seguridad y confiabilidad del intercambio de datos. Finalmente, sinteticé los Team Collaboration Insights para mejorar los procesos globales de desarrollo, asegurando que el producto final satisfaga necesidades específicas de digitalización bajo estándares técnicos y éticos profesionales.
+* **AV2:** Durante el desarrollo de la arquitectura backend en este sprint, participé activamente en el Sprint Planning 3, donde definimos, organizamos y estructuramos las tareas técnicas necesarias para construir una solución robusta que satisfaga las necesidades específicas de la plataforma Flowboard. Asimismo, colaboré en el Services Documentation Evidence for Sprint Review, detallando los contratos de las APIs. Esta planificación y documentación meticulosa de los servicios garantizan la seguridad de la información y la integridad de los procesos, factores globales indispensables para generar un entorno de confianza y bienestar organizacional tanto para los colaboradores como para la empresa.
 
 **Diaz Villalba, Diego Alonso:**
 * **AV1:** Durante el AV1 participé en la elaboración de User Stories, diseño de entrevistas, Product Backlog y Segmentos Objetivos, contribuyendo a identificar las necesidades reales de los usuarios y definir los requerimientos del sistema. Además, colaboré en el Big Picture EventStorming y en los diagramas de arquitectura de software (Context, Container y Component Diagrams), permitiendo estructurar una solución organizada, escalable y alineada a los procesos de gestión de recursos humanos.
 * **TB1:** Durante el TB1 participé en el desarrollo del módulo “Attendance (Time & Attendance)”, encargado del control de asistencia, registro de entrada y salida, puntualidad y justificación de inasistencias. Asimismo, colaboré activamente en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo al diseño e implementación de componentes backend y frontend orientados a mejorar la automatización y eficiencia de la gestión laboral.
+* **AV2**: Durante el desarrollo de este avance, me enfoqué en asegurar que la solución propuesta sea accesible, segura y centrada en el usuario. Participé en el Diseño de Entrevistas y las Evaluaciones según heurísticas, lo cual me permitió validar la usabilidad, la arquitectura de la información y el diseño inclusivo de la plataforma, considerando el bienestar y los factores socioculturales de los colaboradores para evitar frustraciones en su uso diario. Además, documenté el Software Deployment Evidence for Sprint Review y organicé a los Aspect Leaders and Collaborators, garantizando un proceso de entrega y despliegue seguro. De esta manera, contribuí a diseñar un servicio que no solo satisface las necesidades administrativas de la empresa, sino que también protege la integridad del sistema y asegura un impacto positivo en el entorno laboral.
 
 **Ávila de la Cruz, Darío Fabián:**
 * **AV1:** Durante el AV1 participé en la elaboración de Impact Mapping, User Journey Mapping y Lean UX Canvas, contribuyendo a identificar las necesidades y objetivos de los usuarios dentro de la plataforma. Asimismo, colaboré en el diseño de Wireframes, User Flow Diagrams, Navigation Systems y Labeling Systems, permitiendo estructurar una interfaz clara e intuitiva. También participé en la elaboración de Class Diagrams, análisis de entrevistas y conclusiones del proyecto, aportando a la definición de una solución funcional y alineada a los procesos de recursos humanos.
 * **TB1:** Durante el TB1 participé en el desarrollo del módulo “Payroll (Pay Slips and Finance)”, encargado de la visualización, consulta y descarga de boletas de pago y estados de remuneración. Además, colaboré activamente en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo a la implementación de componentes frontend y backend orientados a mejorar la gestión financiera y el acceso a la información laboral de los usuarios.
+* **AV2:** Durante el desarrollo de este avance, me enfoqué en validar y documentar la correcta implementación técnica de la arquitectura del servidor. A través del Development Evidence y el Execution Evidence for Sprint Review, garanticé que los servicios web, el despliegue local y la base de datos funcionen de manera estable y segura, lo cual es fundamental para proteger la privacidad de la información y asegurar la confiabilidad del sistema. Además, sistematicé el Registro de Entrevistas, lo que me permitió capturar las perspectivas, frustraciones y necesidades reales de los colaboradores y el personal de recursos humanos. Esta retroalimentación directa asegura que el diseño de nuestra solución considere factores sociales y organizacionales, promoviendo el bienestar y mejorando la eficiencia operativa en el entorno laboral.
 
 **Carpio Peña, Josué Francisco:**
 * **AV1:** Durante el AV1 participé en la elaboración del Ubiquitous Language, Web Style Guidelines y en el registro de entrevistas, contribuyendo a definir una comunicación clara y consistente dentro del proyecto. Asimismo, colaboré en el diseño de Mock-ups y Prototyping de la aplicación web, permitiendo estructurar una interfaz intuitiva y alineada a las necesidades de los usuarios. También participé en la elaboración del Video About-the-Team como parte de la presentación y comunicación de la propuesta del sistema.
 * **TB1:** Durante el TB1 participé en el desarrollo del módulo “Employees (Personnel Management)”, encargado de la gestión de legajos, perfiles de colaboradores, departamentos y puestos laborales. Además, colaboré activamente en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, contribuyendo a la implementación de componentes frontend y backend orientados a mejorar la organización y administración de la información del personal.
+* **AV2:** Durante este avance enfocado en la arquitectura del backend, fui responsable de elaborar y estructurar el Sprint Backlog 3. Mi labor consistió en planificar, desglosar y priorizar las historias de usuario y las tareas técnicas necesarias para la construcción de los servicios web y la base de datos de Flowboard. Esta planificación estratégica es fundamental para diseñar soluciones de software organizadas que satisfagan las necesidades específicas del cliente. Al estructurar cuidadosamente la implementación de los módulos técnicos, aseguré que el equipo abordara de manera sistemática los requerimientos de seguridad de la información y la integridad de los datos, factores esenciales para proteger la privacidad de los colaboradores y promover un entorno de bienestar y confianza a nivel organizacional.
 
 #### Conclusiones del Equipo (2.c1)
 * **AV1:** Durante el AV1 se desarrolló una etapa fundamental de análisis, investigación y diseño de la solución Flowboard, enfocada en optimizar la gestión de recursos humanos mediante herramientas digitales. A través de actividades como entrevistas, Lean UX, User Stories, Impact Mapping, EventStorming, User Journey Mapping y análisis de segmentos objetivos, se logró identificar las principales problemáticas presentes en las organizaciones, especialmente relacionadas con la sobrecarga administrativa, el uso excesivo de procesos manuales, la duplicidad de información y la falta de transparencia para los trabajadores. Asimismo, se elaboraron diagramas arquitectónicos, diagramas de clases, wireframes, mock-ups, prototipos y flujos de navegación que permitieron estructurar una solución organizada, intuitiva y alineada a las necesidades reales de los usuarios. Gracias a este proceso, se consiguió diseñar una plataforma escalable y funcional capaz de automatizar procesos críticos de RR.HH., mejorar la experiencia de uso y contribuir a una gestión más eficiente y moderna dentro de las empresas. 
 * **TB1:** Durante el TB1 se consolidó el desarrollo técnico y funcional de la solución mediante la implementación de módulos clave como asistencia, planillas, gestión de empleados, solicitudes y vacaciones. Cada módulo fue desarrollado utilizando estructuras organizadas y arquitecturas escalables, aplicando conceptos como Domain-Driven Design y separación por capas para asegurar mantenibilidad y crecimiento futuro del sistema. Además, el trabajo realizado en Sprint Backlog 2 y Development Evidence for Sprint Review permitió coordinar, documentar y validar el progreso del proyecto de manera continua. Las funcionalidades implementadas lograron automatizar procesos administrativos relacionados con control de asistencia, visualización de boletas de pago, gestión de colaboradores y flujos de solicitudes, mejorando significativamente la eficiencia operativa y la experiencia del usuario. Como resultado, se obtuvo una solución de software más robusta, integrada y alineada con los objetivos organizacionales planteados desde las primeras etapas del proyecto. 
+* **AV2:** Durante el TB2 se consolidó la arquitectura del lado del servidor (Web Services) y se validó la experiencia de usuario de la solución Flowboard. A nivel técnico, el equipo implementó un backend robusto y estructurado aplicando principios de Diseño Guiado por el Dominio (DDD) y segregación de responsabilidades (CQRS), logrando desarrollar, integrar y documentar mediante Swagger las APIs RESTful para los módulos clave: IAM, Gestión, Asistencia, Solicitudes y Planillas. De forma complementaria, se realizaron evaluaciones heurísticas y entrevistas con usuarios que permitieron medir la usabilidad, la accesibilidad y la arquitectura de la información de la aplicación web, asegurando un diseño centrado en las personas. Todo este esfuerzo estuvo respaldado por una rigurosa planificación estratégica en el Sprint Backlog 3 y la documentación detallada de las evidencias de desarrollo y despliegue. Como resultado, se obtuvo un núcleo de sistema escalable, seguro y eficiente para el manejo de datos persistentes, garantizando que la plataforma esté técnicamente preparada para su integración final y cumpla con los altos estándares de calidad exigidos para la gestión de recursos humanos.
 
 ---
 
@@ -271,26 +280,33 @@ Posteriormente, la redacción y consolidación de este reporte se basó directam
 **Salym Pool Galvez Meza:**
 * **AV1:** Durante el AV1 participé en la validación de la solución mediante entrevistas, hipótesis Lean UX y análisis de requerimientos funcionales. Esto permitió comprobar que la plataforma respondía a problemas reales relacionados con procesos burocráticos, errores administrativos y acceso limitado a la información. También se validó que las funcionalidades propuestas favorecieran la transparencia y el bienestar laboral.
 * **TB1:** Durante el TB1 participé en la validación de los bounded contexts “Requests” y “Vacations”, asegurando que los procesos diseñados respondieran a las necesidades de los usuarios y objetivos organizacionales. Asimismo, colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, verificando la coherencia de las funcionalidades implementadas con los requerimientos definidos del sistema.
+* **AV2:** Durante el TB2 participé en la validación técnica de la arquitectura del lado del servidor mediante el Services Documentation Evidence for Sprint Review. Me enfoqué en verificar que la documentación y estandarización de las APIs RESTful cumplieran con los requerimientos necesarios para un manejo íntegro de la información. Esta validación asegura una comunicación segura, confiable y transparente de los datos sensibles en procesos críticos (como planillas y asistencia), lo cual mitiga riesgos de vulneraciones (seguridad), reduce errores operativos (factor económico) y garantiza que la plataforma fomente un entorno de confianza y bienestar laboral para los colaboradores.
 
 **Oscar Lizandro Vasquez Llave:**
 * **AV1:** Durante la AV1, diseñé la solución integral Performily fundamentada en el Lean UX Canvas y Problem Statements, lo que permitió alinear el producto con necesidades reales de bienestar laboral y eficiencia económica tras un riguroso análisis competitivo y registro de entrevistas. El diseño se centró en la creación de User Personas y una User Task Matrix que respetan factores culturales y sociales, garantizando una interfaz inclusiva bajo las General Style Guidelines. En la fase técnica, configuré el entorno de desarrollo, la gestión de código fuente y el despliegue, asegurando la seguridad y estabilidad del servicio. Finalmente, mediante el Sprint Planning 1, el Sprint Backlog 1 y la Services Documentation, validé una arquitectura de software que satisface factores globales y ambientales al digitalizar procesos, presentando evidencias de ejecución y colaboración en equipo que confirman un impacto positivo en la salud organizacional y el bienestar del usuario.
 * **TB1:** Durante la TB1, diseñé soluciones de ingeniería de software mediante la estructuración del Sprint Backlog 2, priorizando funcionalidades que optimizan la gestión de procesos y mejoran el bienestar organizacional. Lideré la organización del equipo en Aspect Leaders and Collaborators, considerando factores sociales para asegurar una distribución de tareas equitativa y eficiente. Asimismo, validé la robustez de la solución a través de la Services Documentation Evidence, garantizando la seguridad en el intercambio de datos, y aporté Team Collaboration Insights para optimizar la colaboración global, asegurando que el producto final satisfaga necesidades específicas bajo estándares técnicos y profesionales.
+* **AV2:** Durante el TB2 participé en la validación de la planificación y estructuración técnica a través del Sprint Planning 3, asegurando que el desarrollo del backend estuviera alineado con los requerimientos de estabilidad y eficiencia de la plataforma. Asimismo, al colaborar en el Services Documentation Evidence for Sprint Review, validé que los contratos de las APIs se diseñaran para garantizar un intercambio de información robusto y protegido. Esta comprobación es vital para certificar que el software salvaguarde la privacidad de los datos de recursos humanos (seguridad), reduzca tiempos operativos en la organización (factor económico) y proporcione una experiencia fluida y confiable que impacte positivamente en la tranquilidad de los usuarios (bienestar laboral).
 
 **Diaz Villalba, Diego Alonso:**
 * **AV1:** Durante el AV1 participé en la validación de la solución mediante el diseño de entrevistas, definición de User Stories y análisis de segmentos objetivos, asegurando que la plataforma respondiera a las necesidades reales de trabajadores y personal de RR.HH. Además, los diagramas de arquitectura y el EventStorming permitieron verificar la correcta organización de procesos y funcionalidades del sistema.
 * **TB1:** Durante el TB1 participé en la validación del módulo “Attendance”, verificando que las funcionalidades de asistencia y justificación de inasistencias respondieran adecuadamente a los requerimientos del sistema y a las necesidades organizacionales. También colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, asegurando coherencia entre la implementación desarrollada y los objetivos funcionales del proyecto.
+* **AV2:** Durante el TB2 participé en la validación directa de la experiencia de usuario y el diseño de la solución a través de las Evaluaciones según heurísticas y el Diseño de Entrevistas. Esto me permitió comprobar empíricamente que la interfaz y la arquitectura de la información de la plataforma fueran accesibles e intuitivas, lo cual previene la frustración y garantiza el bienestar tecnológico de los usuarios, considerando factores sociales mediante un diseño inclusivo. Además, al documentar el Software Deployment Evidence for Sprint Review y gestionar a los Aspect Leaders and Collaborators, validé que el despliegue del sistema fuera estable y confiable, asegurando la protección de la información sensible (seguridad) y respaldando la continuidad operativa de la empresa (factor económico).
 
 **Ávila de la Cruz, Darío Fabián:**
 * **AV1:** Durante el AV1 participé en la validación de la solución mediante el análisis de entrevistas, User Journey Mapping y Lean UX Hypothesis Statements, asegurando que la plataforma respondiera a necesidades reales de trabajadores y personal de RR.HH. Además, el diseño de flujos de navegación, wireframes y diagramas permitió verificar la usabilidad y organización adecuada de las funcionalidades del sistema.
 * **TB1:** Durante el TB1 participé en la validación del módulo “Payroll”, verificando que las funcionalidades de consulta y descarga de boletas de pago respondieran correctamente a los requerimientos funcionales y a las necesidades de los usuarios. Asimismo, colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, asegurando coherencia entre el diseño planteado y la implementación desarrollada del sistema.
+* **AV2:** Durante el TB2 participé en la validación técnica y funcional de la arquitectura a través del Development Evidence y el Execution Evidence for Sprint Review. Estas actividades me permitieron comprobar la estabilidad, persistencia y correcta ejecución de los servicios web, garantizando así la protección y disponibilidad de la información sensible (seguridad) de los usuarios. Además, al sistematizar el Registro de Entrevistas, validé de primera mano con los usuarios finales que las soluciones propuestas realmente mitiguen sus puntos de dolor. Esta validación asegura que el sistema promueva un entorno de trabajo sin frustraciones (bienestar laboral), considere las dinámicas reales de interacción de los trabajadores (factores sociales) y optimice el tiempo de gestión corporativa (factor económico).
 
 **Carpio Peña, Josué Francisco:**
 * **AV1:** Durante el AV1 participé en la validación de la solución mediante el registro y análisis de entrevistas, asegurando que la plataforma respondiera a las necesidades reales de los usuarios. Asimismo, los mock-ups, prototipos y lineamientos de diseño web permitieron verificar la usabilidad, accesibilidad y coherencia visual de la solución propuesta.
 * **TB1:** Durante el TB1 participé en la validación del módulo “Employees”, verificando que las funcionalidades de gestión de colaboradores y departamentos respondieran correctamente a los requerimientos del sistema y a las necesidades organizacionales. También colaboré en el Sprint Backlog 2 y en el Development Evidence for Sprint Review, asegurando coherencia entre el diseño planteado y la implementación desarrollada.
+* **AV2:** Durante el TB2 participé en la validación de la planificación estratégica y técnica mediante la estructuración del Sprint Backlog 3. A través de esta actividad, me encargué de verificar que las historias de usuario y las tareas de implementación de los servicios web estuvieran correctamente priorizadas y alineadas con los objetivos centrales del proyecto. Esta validación continua del proceso de desarrollo asegura que el equipo aborde de manera sistemática los requerimientos de protección de datos (seguridad), optimice los tiempos y recursos del equipo (factor económico) y garantice la construcción de una plataforma eficiente que reduzca la carga administrativa, promoviendo un entorno de trabajo más organizado y libre de estrés (bienestar laboral).
 
 #### Conclusiones del Equipo (2.c2)
 * **AV1:** Durante el AV1 se realizaron diversas actividades orientadas a validar que la solución Flowboard respondiera adecuadamente a las necesidades reales de trabajadores y personal de recursos humanos. Mediante entrevistas, análisis de usuarios, Lean UX Hypothesis Statements y revisión de problemáticas organizacionales, se logró comprobar que los principales inconvenientes estaban relacionados con la burocracia, los retrasos en procesos administrativos, la falta de acceso rápido a información laboral y los errores generados por procesos manuales. Asimismo, los prototipos, diagramas y flujos diseñados permitieron validar aspectos de usabilidad, accesibilidad y organización de la plataforma antes de su implementación. Esto garantizó que la solución no solo cumpliera funciones técnicas, sino que también aportara al bienestar laboral, la transparencia organizacional y la mejora de la comunicación entre empleados y el área de RR.HH. 
 * **TB1:** Durante el TB1 se validó que los módulos implementados respondieran correctamente a los requerimientos funcionales y necesidades organizacionales identificadas durante el análisis previo del proyecto. A través del desarrollo de funcionalidades relacionadas con asistencia, remuneraciones, gestión de empleados, solicitudes y vacaciones, se comprobó que la plataforma era capaz de automatizar procesos críticos y reducir tareas repetitivas dentro de las organizaciones. Además, mediante la participación activa en Sprint Backlog 2 y Development Evidence for Sprint Review, se verificó continuamente la coherencia entre el diseño planteado y la implementación desarrollada, asegurando una correcta integración de componentes frontend y backend. Como resultado, se consolidó una solución centralizada, eficiente y orientada a mejorar la experiencia de los usuarios, facilitando el acceso a información laboral, reduciendo tiempos administrativos y fortaleciendo la transparencia y organización dentro de la gestión de recursos humanos.
+* **AV2:** Durante el TB2, el equipo llevó a cabo una validación integral para asegurar que tanto la arquitectura backend como el diseño de interacción de Flowboard cumplieran con altos estándares técnicos y humanos. Mediante el desarrollo, estructuración y documentación de las APIs RESTful y servicios web, se comprobó que el sistema es capaz de gestionar datos críticos de recursos humanos de forma robusta, garantizando la privacidad, la integridad y la protección de la información corporativa (seguridad). A la par, las evaluaciones heurísticas y el análisis directo mediante entrevistas permitieron validar empíricamente la usabilidad y accesibilidad de la plataforma con usuarios reales, asegurando que el diseño sea inclusivo, prevenga la frustración tecnológica y promueva un entorno de trabajo saludable (bienestar y factores sociales). Finalmente, el alineamiento en el Sprint Planning y las evidencias de despliegue confirmaron que la automatización de estos procesos administrativos optimizará significativamente los tiempos de gestión corporativa y reducirá los márgenes de error operativo (factor económico). Como resultado, se consolidó una solución segura, empática y eficiente, validada técnica y funcionalmente para impactar de manera positiva en las organizaciones.
+
 
 <div style="page-break-before: always;"></div>
 
@@ -3419,6 +3435,45 @@ Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante
 ![Contributors](assets\img\commits.png)
 
 ### 5.2.3. Sprint 3
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Features Leader (L) / Collaborator (C) | Styles Leader (L) / Collaborator (C) |
+| :--- | :--- | :--- | :--- |
+| Avila, Dario | Darioout | C | C |
+| Carpio, Josue | josf17 | C | C |
+| Diaz, Diego | Niomsk | L | L |
+| Galvez, Salym | SalymGalvez21 | C | C |
+| Vasquez, Oscar | oscarlizandro | C | C |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el desarrollo de este Sprint, el equipo concentró sus esfuerzos en la estructuración e implementación de la arquitectura base del lado del servidor (Web Services) para la plataforma Flowboard. Adoptando los principios de Diseño Guiado por el Dominio (DDD) y segregación de responsabilidades (CQRS), se unificó el núcleo de la aplicación mediante un módulo compartido capaz de canalizar interceptores de auditoría y políticas globales de persistencia relacional.
+
+| Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- |
+| https://github.com/Performily/FlowBoardWebService | feature/domain-structure | 75c14ba | feat: setup DDD architecture, employee domain and value objects | 14/06/2026 |
+|  | feature/database-infrastructure | 730c059 | feat: setup database, connection string and employee repository | 16/06/2026 |
+|  | feature/shared-module | d0c36ac | feat(shared): add clean shared module and program configuration | 17/06/2026 |
+|  | feature/attendance | 4408edc | feat(attendance): add attendance module | 17/06/2026 |
+|  | refactor/workspace-structure | 8404030 | refactor: change structure of workspace | 17/06/2026 |
+|  | feature/iam | f5c41f5 | feat(iam): add iam module | 18/06/2026 |
+|  | feature/request | 8cd8cf5 | feat: add Request section | 18/06/2026 |
+|  | feature/payroll | 00e777b | feat(payroll): add payroll module configuration and pay slip entity | 18/06/2026 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+Durante este tercer Sprint, el equipo consolidó la arquitectura y la infraestructura del lado del servidor (Web Services) de Flowboard mediante la implementación de los servicios web reales y su lógica de persistencia relacional. El objetivo central fue transformar el diseño conceptual en un backend robusto que centraliza las operaciones del sistema y asegura la integridad de los datos laborales. Se adoptó una arquitectura limpia basada en el patrón de diseño guiado por el dominio (Domain-Driven Design) y la segregación de responsabilidades de consultas y comandos (CQRS), lo que permitió separar estrictamente la lógica táctica de las entidades de la infraestructura de base de datos. Se realizó con el framework ASP.NET Core y Entity Framework Core, lo que permite el mapeo e incrustación exitosa de los aggregates y value Objects de los diferentes módulos del negocio, tales como control de asistencia, nóminas, solicitudes de permisos e identidades.
+
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+![API](assets\img\imagen.png)
+
+
 #### 5.2.3.6.Services Documentation Evidence for Sprint Review.
 
 Durante el presente Sprint 3, se lograron avances significativos en la evolución de nuestra arquitectura, reemplazando el entorno de pruebas (Fake API) por el diseño, implementación y despliegue de servicios web reales mediante una API RESTful construida en .NET (C#) con Entity Framework. Se logró consolidar y documentar la estructura de comunicación para los módulos clave del sistema de "Flowboard / Performily": Gestión de Identidades y Accesos (IAM), Gestión de Colaboradores (Workspace), Registro de Asistencias (Attendance), Solicitudes (Requests) y Planillas (Payroll). Al tratarse del entorno de desarrollo local, la URL base de despliegue se ha unificado bajo el prefijo http://localhost:5046/api/v1, con su respectiva interfaz de documentación interactiva en Swagger.
@@ -3442,6 +3497,290 @@ Durante el presente Sprint 3, se lograron avances significativos en la evolució
 | Solicitudes | /request/{id}/reject | POST | Path: id de la solicitud a rechazar. | 200 OK: Acción de flujo de trabajo (Workflow) que cambia el estado de la solicitud a "Rechazada". |
 | Asistencia | /attendance | POST | Body: JSON con registro biométrico o timestamp. | 201 Created: Registra una nueva marca de asistencia (ingreso/salida) de un colaborador. |
 | Asistencia | /attendance/{attendanceId} | GET | Path: attendanceId | 200 OK: Devuelve el registro de asistencia específico consultado. |
+
+## 5.3. Validation Interviews.
+
+#### 5.3.1. Diseño de Entrevistas
+
+**Preguntas de introducción**
+* ¿Cómo te llamas?
+* ¿Cuántos años tienes?
+* ¿En qué distrito vives?
+* ¿Estado civil?
+* ¿Cuál es tu ocupación actual?
+
+**Preguntas de integración**
+
+**Colaborador:**
+* ¿Cómo solicitas actualmente tus permisos o vacaciones en tu trabajo?
+* ¿Qué proceso sigues para revisar tus boletas de pago o tu asistencia?
+* ¿Qué es lo que más te frustra o te quita tiempo en esos procesos actuales?
+* ¿Qué características te harían confiar en una plataforma web para gestionar tus datos laborales?
+
+**RRHH**
+* ¿Cómo solicitan actualmente los permisos o vacaciones en el trabajo?
+* ¿Qué proceso sigues para revisar la asistencia de los colaboradores?
+* ¿Qué proceso sigues para revisar si se les ha pagado a los colaboradores?
+* ¿Qué es lo que más te frustra o te quita tiempo en esos procesos actuales?
+* ¿Qué características te harían confiar en una plataforma web para gestionar tus datos laborales?
+
+**Preguntas de Landing Page**
+* ¿Qué fue lo primero que entendiste al ingresar a la página de inicio?
+* ¿Te queda claro, a primera vista, qué soluciones ofrece este software para la empresa y los colaboradores?
+* ¿Hay algún término o sección en la página que te generó dudas?
+* ¿El orden o la distribución de las secciones te pareció lógico?
+* ¿Hubo algo en la navegación que te pareció innecesario o difícil de entender? ¿Por qué?
+* Si quisieras contactar a ventas o iniciar sesión en el sistema, ¿fue intuitivo encontrar dónde hacer clic?
+* ¿Te resultó cómodo leer los textos y diferenciar los botones principales?
+* ¿Qué impresión general te deja el diseño visual de la página (moderno, corporativo, confiable)?
+
+**Preguntas sobre la Aplicación Web (Frontend)**
+
+**Segmento 1: Colaboradores**
+* ¿Cómo describirías lo que puedes hacer desde tu panel principal (Dashboard)?
+* ¿Te resulta fácil ubicar tu información personal y el organigrama de tu área?
+* En el flujo de solicitar un permiso/vacaciones: ¿Fueron claros los pasos a seguir? ¿Hubo algún dato que no supiste cómo llenar?
+* ¿Entendiste fácilmente cuántos días de vacaciones u horas acumuladas tienes disponibles antes de hacer la solicitud?
+* ¿Pudiste encontrar sin problemas la sección para descargar tus boletas de pago?
+* Si la aplicación fallara o tuvieras un error en tu asistencia, ¿es evidente cómo solicitar una justificación?
+* ¿El orden o la distribución de las secciones te pareció lógico?
+* ¿Hubo algo en la navegación que te pareció innecesario o difícil de entender? ¿Por qué?
+* ¿Te resultó cómodo leer los textos (tamaño, color, contraste)? ¿Por qué?
+* ¿Crees que los íconos, botones o gráficos se entienden fácilmente sin necesidad de explicaciones?
+* ¿Consideras que cualquier persona, incluso alguien con poca experiencia tecnológica, podría usar esta web sin dificultad?
+* ¿Crees que el diseño es accesible para personas con alguna dificultad visual o motora?
+* ¿Consideras que podrías usar esta plataforma en tu día a día sin necesidad de un manual de usuario?
+
+**Segmento 2: Personal de RRHH** 
+* Al ingresar a la vista de solicitudes, ¿puedes identificar rápidamente las solicitudes pendientes de aprobación?
+* En el flujo de aprobar/rechazar una solicitud: ¿Tienes a la mano toda la información necesaria para tomar la decisión?
+* ¿Qué tan fácil es navegar por el registro de asistencia de todos los colaboradores de un área específica?
+* ¿El orden o la distribución de las secciones te pareció lógico?
+* ¿Hubo algo en la navegación que te pareció innecesario o difícil de entender? ¿Por qué?
+* ¿Te resultó cómodo leer los textos (tamaño, color, contraste)? ¿Por qué?
+* ¿Crees que los íconos, botones o gráficos se entienden fácilmente sin necesidad de explicaciones?
+* ¿Consideras que cualquier persona, incluso alguien con poca experiencia tecnológica, podría usar esta web sin dificultad?
+* ¿Crees que el diseño es accesible para personas con alguna dificultad visual o motora?
+* ¿Sientes que esta herramienta te ahorraría tiempo operativo en tu gestión diaria de personal?
+* ¿Consideras que la interfaz está lo suficientemente limpia como para no abrumarte con tantos datos de distintos empleados?
+
+**Preguntas de Cierre**
+* Si pudieras agregar, quitar o cambiar una sola cosa de la plataforma, ¿qué sería?
+* ¿Qué fue lo que más te gustó de la experiencia navegando por el sistema?
+* ¿Te sentiste seguro interactuando con información sensible (como tus pagos o asistencias) en esta interfaz?
+* ¿Recomendarías implementar este sistema en tu lugar de trabajo actual? ¿Por qué?
+
+### 5.3.3. Evaluaciones según heurísticas.
+
+**UX Heuristics & Principles Evaluation
+Usability – Inclusive Design – Information Architecture**
+
+**CARRERA** : Ingeniería de Software
+**CURSO** : Aplicaciones Web
+**SECCIÓN** : 12158
+**PROFESORES** : Oscar Ivan Villafuerte Bazan
+**AUDITOR** : Diego Alonso Diaz Villalba
+**CLIENTE(S)** : Performily
+
+**SITE o APP A EVALUAR:**
+Flowboard WebApp
+
+**TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+* Inicio de sesión en la plataforma
+* Navegación por el Dashboard o sección de Inicio
+* Consulta de la información laboral del colaborador
+* Consulta del directorio de colaboradores
+* Seguimiento de solicitudes
+* Consulta del registro de asistencias
+* Visualización de tardanzas mediante los accesos rápidos del Dashboard
+* Consulta de la información de vacaciones y demás opciones de la sección Gestión
+* Visualización y descarga de boletas de pago en formato PDF
+* Navegación entre las diferentes secciones de la aplicación
+* Uso de botones de acceso rápido y elementos de navegación
+* Revisar la sección de creación de usuarios o colaboradores
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+* Creación de usuarios o colaboradores
+* Creación de solicitudes
+* Cambio del estado de un colaborador
+* Validación del funcionamiento de filtros y búsquedas
+* Verificación de la consistencia de datos entre diferentes endpoints
+* Evaluación de la persistencia de datos en la aplicación
+* Evaluación de procesos internos del backend y reglas de negocio
+* Evaluación del proceso de autenticación desde el punto de vista de seguridad
+* Pruebas de rendimiento, tiempos de respuesta y carga del sistema
+
+**ESCALA DE SEVERIDAD:**
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+| Nivel | Descripción |
+| :--- | :--- |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| :--- | :--- | :--- | :--- |
+| 1 | El resumen del dashboard no especifica el intervalo de tiempo al que corresponde la información mostrada. | 2 | Information Architecture: Is it Clear? / Usability: Visibilidad del estado del sistema |
+| 2 | Uso del término "Trámites pendientes", el cual no corresponde al lenguaje ubicuo definido para la aplicación. | 2 | Usability: Consistencia y estándares / Information Architecture: Is it Clear? |
+| 3 | El color del texto de los botones en estado hover pierde contraste con el fondo, dificultando su lectura. | 2 | Inclusive Design: Proporciona experiencias legibles / Usability: Consistencia y estándares |
+| 4 | El acceso rápido "Tardanzas registradas" redirige al registro de asistencias sin aplicar automáticamente el filtro correspondiente, obligando al usuario a buscar manualmente la información. | 3 | Usability: Flexibilidad y eficiencia de uso / Information Architecture: Is it Usable? |
+| 5 | El botón "Ver perfil personal" redirige al directorio de colaboradores en lugar del perfil del colaborador autenticado. | 4 | Usability: Consistencia y estándares / Usability: Relación entre el sistema y el mundo real |
+| 6 | La sección Información laboral no proporciona un acceso directo al Directorio de colaboradores. | 2 | Information Architecture: Is it Findable? / Information Architecture: Is it Usable? |
+| 7 | La sección Información de solicitudes no presenta una opción para regresar al menú anterior, a diferencia del resto de secciones. | 4 | Usability: Libertad y control del usuario / Information Architecture: Is it Controllable? / Inclusive Design: Permite recuperar acciones |
+| 8 | La sección Vacaciones presenta una cantidad excesiva de información en una sola pantalla, dificultando su comprensión. | 3 | Usability: Diseño estético y minimalista / Information Architecture: Is it Learnable? |
+| 9 | El botón principal de la sección Pagos utiliza un tamaño significativamente mayor al estándar del resto de la aplicación, generando inconsistencia visual. | 2 | Usability: Consistencia y estándares / Usability: Diseño estético y minimalista |
+| 10 | Los botones de las distintas secciones no mantienen un tamaño uniforme, afectando la consistencia de la interfaz. | 2 | Usability: Consistencia y estándares |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** El resumen del Dashboard no especifica el intervalo de tiempo de la información presentada
+
+Severidad: 2
+
+Heurística violada: Information Architecture – Is it Clear? / Usabilidad – Visibilidad del estado del sistema
+
+Problema:
+En la sección Inicio/Dashboard, el subtítulo indica "Este es el resumen de tu empresa al día de hoy"; sin embargo, no especifica el intervalo de tiempo al que corresponde la información mostrada en los indicadores. Esta falta de contexto puede generar dudas sobre el período considerado para los datos, dificultando su correcta interpretación por parte del usuario.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Especificar claramente el período de tiempo al que pertenecen los datos del Dashboard, por ejemplo: "Resumen correspondiente del 01/06/2026 al 20/06/2026" o "Información actualizada al día de hoy", según corresponda.
+
+**PROBLEMA #2:** Uso de terminología que no corresponde al lenguaje utilizado en la aplicación
+
+Severidad: 2
+
+Heurística violada: Usabilidad – Consistencia y estándares / Information Architecture – Is it Clear?
+
+Problema:
+En el Dashboard existe una sección denominada "Trámites pendientes". El término "trámite" no corresponde al lenguaje utilizado en el resto de la aplicación, donde se emplean conceptos relacionados con solicitudes y procesos internos. Esta inconsistencia puede generar confusión sobre el propósito de la sección.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Utilizar una terminología consistente con el dominio de la aplicación, reemplazando el término por uno alineado al lenguaje empleado en el resto del sistema.
+
+**PROBLEMA #3:** El texto de los botones pierde legibilidad al colocar el cursor sobre ellos
+
+Severidad: 2
+
+Heurística violada: Diseño Inclusivo – Proporciona experiencias legibles / Usabilidad – Consistencia y estándares
+
+Problema:
+En la sección de accesos rápidos del Dashboard, al colocar el cursor sobre algunos botones, el fondo cambia a un color oscuro mientras el texto mantiene un color que reduce significativamente el contraste. Esto dificulta la lectura del contenido del botón.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Modificar los colores del estado hover para garantizar un contraste adecuado entre el fondo y el texto, asegurando la legibilidad del contenido.
+
+**PROBLEMA #4:** El acceso rápido de tardanzas no aplica automáticamente el filtro correspondiente
+
+Severidad: 3
+
+Heurística violada: Usabilidad – Flexibilidad y eficiencia de uso / Information Architecture – Is it Usable?
+
+Problema:
+Al seleccionar el acceso rápido "Tardanzas registradas", el sistema redirige al módulo de asistencias, pero no aplica automáticamente un filtro que muestre únicamente las tardanzas correspondientes. Como consecuencia, el usuario debe realizar la búsqueda manualmente, incrementando el tiempo y esfuerzo necesarios para completar la tarea.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Aplicar automáticamente el filtro correspondiente al acceder desde el Dashboard, mostrando directamente la información relacionada con las tardanzas del período esperado.
+
+**PROBLEMA #5:** El botón "Ver perfil personal" redirige a una sección incorrecta
+
+Severidad: 4
+
+Heurística violada: Usabilidad – Consistencia y estándares / Usabilidad – Relación entre el sistema y el mundo real
+
+Problema:
+En la sección Información laboral, el botón "Ver perfil personal" redirige al Directorio de colaboradores, en lugar de mostrar el perfil personal del usuario autenticado. Este comportamiento contradice la funcionalidad esperada y puede impedir que el usuario acceda rápidamente a su información personal.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Modificar la navegación del botón para que redirija al perfil personal del colaborador que ha iniciado sesión.
+
+**PROBLEMA #6:** No existe un acceso directo al Directorio de colaboradores
+
+Severidad: 2
+
+Heurística violada: Information Architecture – Is it Findable? / Is it Usable?
+
+Problema:
+La sección Información laboral no ofrece un acceso directo al Directorio de colaboradores, dificultando que los usuarios encuentren esta funcionalidad de forma rápida.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Incorporar un botón o enlace claramente identificado que permita acceder directamente al Directorio de colaboradores.
+
+**PROBLEMA #7:** La sección de Solicitudes no permite regresar a la pantalla anterior
+
+Severidad: 4
+
+Heurística violada: Usabilidad – Libertad y control del usuario / Information Architecture – Is it Controllable? / Diseño Inclusivo – Permite recuperar acciones
+
+Problema:
+A diferencia del resto de módulos, la sección Solicitudes no presenta un botón de retroceso que permita regresar fácilmente a la pantalla anterior. Esto limita el control del usuario sobre la navegación y puede dificultar la exploración de la aplicación.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Agregar un botón de retroceso consistente con el utilizado en las demás secciones para mantener una navegación uniforme.
+
+**PROBLEMA #8:** Exceso de información presentada en la sección Vacaciones
+
+Severidad: 3
+
+Heurística violada: Usabilidad – Diseño estético y minimalista / Information Architecture – Is it Learnable?
+
+Problema:
+La sección Vacaciones presenta una gran cantidad de información en una única pantalla, lo que dificulta su lectura y comprensión. Esta sobrecarga visual puede aumentar el tiempo requerido para localizar la información relevante.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Reorganizar el contenido utilizando agrupaciones, pestañas, tarjetas o secciones desplegables que permitan mostrar únicamente la información necesaria en cada momento.
+
+**PROBLEMA #9:** El botón principal de la sección Pagos no mantiene el tamaño estándar de la interfaz
+
+Severidad: 2
+
+Heurística violada: Usabilidad – Consistencia y estándares / Diseño estético y minimalista
+
+Problema:
+En la sección Pagos, el botón principal presenta un tamaño considerablemente mayor al utilizado en el resto de la aplicación. Esta diferencia rompe la consistencia visual de la interfaz y puede generar una percepción de desbalance en el diseño.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Uniformizar el tamaño del botón de acuerdo con la guía visual utilizada en el resto de módulos.
+
+**PROBLEMA #10:** Inconsistencia en el tamaño de los botones entre las distintas secciones
+
+Severidad: 2
+
+Heurística violada: Usabilidad – Consistencia y estándares
+
+Problema:
+Los botones presentes en las diferentes secciones de la aplicación no mantienen dimensiones uniformes. Esta inconsistencia afecta la apariencia general de la interfaz y puede reducir la percepción de coherencia del sistema.
+
+![Heuristica](assets\img\imagen.png)
+
+Recomendación:
+Definir y aplicar un sistema de diseño que establezca tamaños, espaciados y estilos uniformes para todos los botones de la aplicación.
+
+
+
+
 
 
 ---
