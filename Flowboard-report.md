@@ -3869,3 +3869,52 @@ Web Application: https://flowboard-app-three.vercel.app/
 Web Service: https://flowboard-api-zmju.onrender.com
 
 Web Application video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQAAcqWfPkZRSrsN9G6DTdx9Afysi-nq0ZrEs-k7PXigzW8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qgeV8K
+
+### 5.2.3.3. Sprint Backlog 3.
+
+**Sprint #** Sprint 3
+
+| Work-Item / Task User Story ID | Id | Description | Estimation (Hours) | Assigned To | Status (To-do / InProcess / To-Review / Done) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| US01 | T1 | Definir la entidad Employee, sus propiedades y Value Objects (DocumentNumber, EmailAddress) en la capa de Domain. | 2 | Oscar | Done |
+| US01 | T2 | Configurar la persistencia de Employee en el AppDbContext e implementar el EmployeeRepository en Infrastructure. | 3 | Oscar | Done |
+| US01 | T3 | Desarrollar el comando CreateEmployeeCommand y su EmployeeCommandService para gestionar la lógica de registro. | 3 | Oscar | Done |
+| US01 | T4 | Implementar el endpoint POST en EmployeesController con sus respectivos Resources y Transformadores (Assemblers). | 2 | Oscar | Done |
+| US04 | T5 | Desarrollar las consultas GetEmployeeByIdQuery y EmployeeQueryService para la lectura de datos en Application. | 2 | Oscar | Done |
+| US04 | T6 | Implementar los endpoints GET (lista completa y búsqueda por ID) en EmployeesController para mostrar la información. | 2 | Oscar | Done |
+| US05 | T7 | Crear el comando UpdateEmployeeCommand y la lógica de actualización de datos dentro de la entidad Employee. | 3 | Oscar | Done |
+| US05 | T8 | Implementar el endpoint PUT en EmployeesController para recibir y procesar las modificaciones del empleado. | 2 | Oscar | Done |
+| US06 | T9 | Desarrollar la lógica para el cese de empleado creando el comando TerminateEmployeeCommand (cambio de estado). | 2 | Oscar | Done |
+| US06 | T10 | Crear el endpoint PATCH o DELETE lógico en EmployeesController para dar de baja al colaborador en la base de datos. | 2 | Oscar | Done |
+| US13 | T11 | Definir la entidad AttendanceRecord y sus Value Objects (BiometricId, EAttendanceStatus) en la capa de Domain. | 2 | Diego | Done |
+| US13 | T12 | Programar el comportamiento del dominio DetermineAttendanceStatus para calcular si una marcación es a tiempo (OnTime) o tardanza (Tardy) en base a la hora de entrada (09:00) y 10 minutos de tolerancia. | 2 | Diego | Done |
+| US13 | T13 | Configurar la persistencia de datos mediante Entity Framework en ModelBuilderExtensions e implementar el AttendanceRecordRepository con el método FindByEmployeeIdAsync. | 3 | Diego | Done |
+| US13 | T14 | Crear los servicios de aplicación AttendanceCommandService y AttendanceQueryService para manejar la creación y búsqueda de registros utilizando el patrón CQRS. | 3 | Diego | Done |
+| US13 | T15 | Desarrollar el AttendanceController exponiendo los endpoints REST: un POST para registrar la asistencia y un GET (/{attendanceId}) para consultar un registro específico. | 2 | Diego | Done |
+| US13 | T16 | Implementar los recursos (AttendanceRecordResource, CreateAttendanceRecordResource) y ensambladores (Assemblers) para la transformación de datos en la capa de Interfaces (REST). | 2 | Diego | Done |
+| US03 | T17 | Definir el Agregado Raíz User y sus propiedades en la capa de Domain, incluyendo el constructor protegido para persistencia y el operador de perdón de nulos. | 2 | Dario | Done |
+| US03 | T18 | Configurar la persistencia de User mediante Fluent API en ModelBuilderExtensions, resolviendo las claves duplicadas del Value Object EmailAddress alineado a la convención Snake Case. | 3 | Dario | Done |
+| US03 | T19 | Implementar la clase de infraestructura UserRepository conectada al AppDbContext compartido para habilitar la búsqueda por ID mediante reflexión en MySQL. | 2 | Dario | Done |
+| US03 | T20 | Desarrollar el comando SignInCommand y el servicio de aplicación AuthenticationCommandService para gestionar la lógica de verificación criptográfica de credenciales. | 3 | Dario | Done |
+| US03 | T21 | Implementar la consulta GetUserByIdQuery y el servicio de lectura UserQueryService en la capa de Application para recuperar perfiles de usuario. | 2 | Dario | Done |
+| US03 | T22 | Desarrollar el AuthenticationController exponiendo un endpoint POST para el inicio de sesión y un GET para consultar la información del usuario. | 3 | Dario | Done |
+| US03 | T23 | Implementar los recursos de transferencia segura (SignInResource, UserResource) y su respectivo UserResourceFromEntityAssembler para no exponer datos sensibles en las respuestas JSON. | 2 | Dario | Done |
+| US17 | T24 | Definir la entidad RequestRecord, sus Value Objects (RequestPeriod, Justification, Evidence) y orquestar el caso de uso de creación en RequestCommandService. | 2 | Salym | Done |
+| US46 | T25 | Configurar la persistencia de RequestRecord en Entity Framework, crear RequestRecordRepository y desarrollar el endpoint POST /api/v1/request. | 3 | Salym | Done |
+| US09 | T26 | Implementar los métodos de dominio Approve() y Reject(), y exponer los endpoints POST correspondientes en el controlador REST. | 4 | Salym | Done |
+| US42 | T27 | Desarrollar el flujo de cancelación de solicitudes en el dominio, validando estrictamente que la transición solo ocurra desde el estado "Pendiente". | 2 | Salym | Done |
+| US08 | T28 | Implementar consultas en el repositorio y endpoints GET para recuperar la lista de solicitudes filtradas por el ID del empleado en sesión. | 3 | Salym | Done |
+| US18 | T29 | Crear el comando de actualización de solicitudes y exponer el endpoint PUT, incorporando validaciones de negocio sobre la superposición de fechas. | 4 | Salym | Done |
+| US40 | T30 | Diseñar consultas de lectura para listar el historial cronológico de los trámites personales hacia la interfaz del usuario. | 2 | Salym | Done |
+| US38 | T31 | Construir endpoints de reporte administrativo en el controlador que permitan filtrar el historial masivo de solicitudes por rango temporal y estado. | 4 | Salym | Done |
+| US28 | T32 | Ampliar la lógica de validación para requerir la carga obligatoria de documentos de respaldo (EvidenceUrl) al justificar inasistencias o descansos médicos. | 3 | Salym | Done |
+| US29 | T33 | Programar la emisión de eventos de dominio (Domain Events) ante cambios de estado en las solicitudes para disparar las notificaciones automáticas en el sistema. | 5 | Salym | Done |
+| US14 | T34 | Definir el Aggregate Root PayrollRecord (Planilla), sus Value Objects (ingresos, descuentos, estado) y configurar su persistencia en el AppDbContext. | 3 | Josué | Done |
+| US48 | T35 | Implementar un servicio de dominio para ejecutar la validación técnica de los datos de la planilla y detectar inconsistencias previas a su generación. | 4 | Josué | Done |
+| US36 | T36 | Desarrollar los métodos de dominio y los comandos necesarios para transicionar la planilla de un estado de previsualización ("Borrador") a oficial ("Definitiva"). | 3 | Josué | Done |
+| US14 | T37 | Construir endpoints REST (GET) para que Recursos Humanos pueda consultar y filtrar las planillas utilizando parámetros de periodo y estado. | 3 | Josué | Done |
+| US32 | T38 | Implementar consultas en el repositorio y el endpoint GET para listar el historial de boletas de pago asociadas exclusivamente al colaborador autenticado. | 2 | Josué | Done |
+| US49 | T39 | Integrar un servicio en la capa de infraestructura capaz de transformar los datos de PayrollRecord y generar la boleta de pago en formato de archivo PDF. | 5 | Josué | Done |
+| US32 | T40 | Implementar validaciones de seguridad (reglas de autorización) en el controlador para asegurar que un colaborador no pueda descargar o consultar boletas que pertenecen a otros. | 2 | Josué | Done |
+
+**Enlace de Trello:** [https://trello.com/invite/b/6a36e0b328be3ea087004ae8/ATTI49749d11c2c3854c7f29697bc138747254CDE72C/flowboard-sprint-3](https://trello.com/invite/b/6a36e0b328be3ea087004ae8/ATTI49749d11c2c3854c7f29697bc138747254CDE72C/flowboard-sprint-3)
