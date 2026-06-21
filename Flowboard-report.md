@@ -161,7 +161,19 @@
     * 5.2.2.6. Services Documentation Evidence for Sprint Review
     * 5.2.2.7. Software Deployment Evidence for Sprint Review
     * 5.2.2.8. Team Collaboration Insights during Sprint
-
+  * 5.2.3. Sprint 3
+    * 5.2.3.1. Sprint Planning 3
+    * 5.2.3.2. Aspect Leaders and Collaborators
+    * 5.2.3.3. Sprint Backlog 3
+    * 5.2.3.4. Development Evidence for Sprint Review
+    * 5.2.3.5. Execution Evidence for Sprint Review
+    * 5.2.3.6. Services Documentation Evidence for Sprint Review
+    * 5.2.3.7. Software Deployment Evidence for Sprint Review
+    * 5.2.3.8. Team Collaboration Insights during Sprint
+* **5.3. Validation Interviews**
+  * 5.3.1. Diseño de Entrevistas.
+  * 5.3.2. Registro de Entrevistas.
+  * 5.3.3. Evaluaciones según heurísticas.
 
 
 
@@ -3464,17 +3476,17 @@ Durante el desarrollo de este Sprint, el equipo concentró sus esfuerzos en la e
 #### 5.2.3.5. Execution Evidence for Sprint Review.
 Durante este tercer Sprint, el equipo consolidó la arquitectura y la infraestructura del lado del servidor (Web Services) de Flowboard mediante la implementación de los servicios web reales y su lógica de persistencia relacional. El objetivo central fue transformar el diseño conceptual en un backend robusto que centraliza las operaciones del sistema y asegura la integridad de los datos laborales. Se adoptó una arquitectura limpia basada en el patrón de diseño guiado por el dominio (Domain-Driven Design) y la segregación de responsabilidades de consultas y comandos (CQRS), lo que permitió separar estrictamente la lógica táctica de las entidades de la infraestructura de base de datos. Se realizó con el framework ASP.NET Core y Entity Framework Core, lo que permite el mapeo e incrustación exitosa de los aggregates y value Objects de los diferentes módulos del negocio, tales como control de asistencia, nóminas, solicitudes de permisos e identidades.
 
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
-![API](assets\img\imagen.png)
+![API](assets\img\mardown0.JPG)
+![API](assets\img\mardown1.JPG)
+![API](assets\img\mardown2.JPG)
+![API](assets\img\mardownAttendance.JPG)
+![API](assets\img\mardownEmployee.JPG)
+![API](assets\img\mardownIAM.JPG)
+![API](assets\img\mardownPaysilps.JPG)
+![API](assets\img\mardownRequest.JPG)
 
 
-#### 5.2.3.6.Services Documentation Evidence for Sprint Review.
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
 Durante el presente Sprint 3, se lograron avances significativos en la evolución de nuestra arquitectura, reemplazando el entorno de pruebas (Fake API) por el diseño, implementación y despliegue de servicios web reales mediante una API RESTful construida en .NET (C#) con Entity Framework. Se logró consolidar y documentar la estructura de comunicación para los módulos clave del sistema de "Flowboard / Performily": Gestión de Identidades y Accesos (IAM), Gestión de Colaboradores (Workspace), Registro de Asistencias (Attendance), Solicitudes (Requests) y Planillas (Payroll). Al tratarse del entorno de desarrollo local, la URL base de despliegue se ha unificado bajo el prefijo http://localhost:5046/api/v1, con su respectiva interfaz de documentación interactiva en Swagger.
 
