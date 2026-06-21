@@ -3448,6 +3448,20 @@ Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante
 
 ### 5.2.3. Sprint 3
 
+#### 5.2.3.1. Sprint Planning 3.
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 3 |
+| **Date** | 2026-06-01 |
+| **Time** | 09:00 PM |
+| **Location** | Discord (Virtual) |
+| **Prepared By** | Diaz Villalba, Diego Alonso |
+| **Attendees** | Vasquez Llave, Oscar Lizandro / Galvez Meza, Salym Pool / Diaz Villalba, Diego Alonso / Ávila De La Cruz, Darío Fabián / Carpio Peña, Josué Francisco |
+| **Sprint Goal** | **Our focus is on:** ela construcción y estabilización de toda la arquitectura del backend de Flowboard mediante la implementación del Diseño Guiado por el Dominio (DDD), la configuración de la base de datos relacional y el desarrollo de las APIs RESTful para todos los módulos clave (IAM, Empleados, Asistencia, Planillas y Solicitudes).<br><br>**We believe it delivers:** una infraestructura robusta, segura y centralizada que garantiza la integridad de los datos empresariales y proporciona el motor tecnológico necesario para que cualquier interfaz (frontend) pueda procesar y gestionar la información de recursos humanos sin interrupciones.<br><br>**This will be confirmed when:** la base de datos se genere correctamente integrando el trabajo de todo el equipo sin conflictos, y todos los endpoints de la API estén unificados, documentados en Swagger y respondan exitosamente a las peticiones de creación, lectura y actualización (HTTP 200 y 201). |
+| **Sprint Velocity** | 82 |
+| **Sum of Story Points** | 142 |
+
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 | Team Member (Last Name, First Name) | GitHub Username | Features Leader (L) / Collaborator (C) | Styles Leader (L) / Collaborator (C) |
@@ -3509,6 +3523,8 @@ Durante el presente Sprint 3, se lograron avances significativos en la evolució
 | Solicitudes | /request/{id}/reject | POST | Path: id de la solicitud a rechazar. | 200 OK: Acción de flujo de trabajo (Workflow) que cambia el estado de la solicitud a "Rechazada". |
 | Asistencia | /attendance | POST | Body: JSON con registro biométrico o timestamp. | 201 Created: Registra una nueva marca de asistencia (ingreso/salida) de un colaborador. |
 | Asistencia | /attendance/{attendanceId} | GET | Path: attendanceId | 200 OK: Devuelve el registro de asistencia específico consultado. |
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
 ## 5.3. Validation Interviews.
 
