@@ -204,6 +204,11 @@
 | v2.2 | 14/05/2026 | Salym Pool Galvez Meza | Development Evidence for Sprint Review |
 | v2.2 | 15/05/2026 | Diego Alonso Diaz Villalba | Software Deployment Evidence for Sprint Review, Web Application Deployment |
 | v2.2 | 15/05/2026 | Darío Fabián Ávila De La Cruz | Execution Evidence for Sprint Review |
+| v2.3 | 21/06/2026 | Oscar Lizandro Vasquez Llave | Services Documentation Evidence for Sprint Review. Spring Planning 3. |
+| v2.3 | 21/06/2026 | Salym Pool Galvez Meza | Services Documentation Evidence for Sprint Review. |
+| v2.3 | 21/06/2026 | Darío Fabián Ávila De La Cruz | Development Evidence for Sprint Review. Execution Evidence for Sprint Review. Registro de Entrevistas. |
+| v2.3 | 21/06/2026 | Diego Alonso Diaz Villalba | Software Deployment Evidence for Sprint Review. Diseño de Entrevistas. Evaluaciones según heurísticas. Aspect Leaders and Collaborators. |
+| v2.3 | 21/06/2026 | Josué Francisco Carpio Peña | Sprint Backlog 3. |
 
 
 <div style="page-break-before: always;"></div>
