@@ -3446,7 +3446,17 @@ Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante
 
 ![Contributors](assets\img\commits.png)
 
-### 5.2.3.3. Sprint Backlog 3.
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Features Leader (L) / Collaborator (C) | Styles Leader (L) / Collaborator (C) |
+| :--- | :--- | :--- | :--- |
+| Avila, Dario | Darioout | C | C |
+| Carpio, Josue | josf17 | C | C |
+| Diaz, Diego | Niomsk | L | L |
+| Galvez, Salym | SalymGalvez21 | C | C |
+| Vasquez, Oscar | oscarlizandro | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3.
 
 
 | Work-Item / Task User Story ID | Id | Description | Estimation (Hours) | Assigned To | Status (To-do / InProcess / To-Review / Done) |
@@ -3494,15 +3504,6 @@ Integración sin conflictos: Usar el gestor de estados Pinia y trabajar mediante
 
 **Enlace de Trello:** [https://trello.com/invite/b/6a36e0b328be3ea087004ae8/ATTI49749d11c2c3854c7f29697bc138747254CDE72C/flowboard-sprint-3](https://trello.com/invite/b/6a36e0b328be3ea087004ae8/ATTI49749d11c2c3854c7f29697bc138747254CDE72C/flowboard-sprint-3)
 
-#### 5.2.3.2. Aspect Leaders and Collaborators
-
-| Team Member (Last Name, First Name) | GitHub Username | Features Leader (L) / Collaborator (C) | Styles Leader (L) / Collaborator (C) |
-| :--- | :--- | :--- | :--- |
-| Avila, Dario | Darioout | C | C |
-| Carpio, Josue | josf17 | C | C |
-| Diaz, Diego | Niomsk | L | L |
-| Galvez, Salym | SalymGalvez21 | C | C |
-| Vasquez, Oscar | oscarlizandro | C | C |
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
