@@ -239,7 +239,7 @@ Todo el flujo de trabajo, las integraciones de cada sección y las actualizacion
 
 Para la elaboración de este tercer avance (Sprint 3), la colaboración del equipo se centró en la estructuración e implementación de la arquitectura del lado del servidor (Backend y Web Services). Partiendo de una planificación rigurosa en el Sprint Backlog, las responsabilidades técnicas se dividieron según los módulos principales del dominio de negocio de la plataforma (IAM, Gestión, Asistencia, Solicitudes y Planillas). De esta forma, cada integrante asumió el desarrollo de su respectiva API RESTful, aplicando los principios de Diseño Guiado por el Dominio (DDD) y configurando la persistencia en la base de datos relacional. Al momento de redactar y consolidar el presente reporte, la documentación se construyó directamente sobre estos avances reales en el código. Cada miembro del equipo se encargó de detallar el diseño de su arquitectura, las evidencias de implementación local y la documentación interactiva de sus endpoints unificados a través de Swagger. Este enfoque garantizó que todos participaran equitativa y activamente tanto en la programación como en el informe, logrando un documento que refleja con fidelidad el esfuerzo colaborativo y la evolución tecnológica alcanzada en esta etapa del proyecto.
 
-![Contribuidores de Reporte](assets\img\contributors-report.png)
+![Contribuidores de Reporte](assets\img\contributors-report3.png)
 
 
 <div style="page-break-before: always;"></div>
