@@ -3939,10 +3939,11 @@ Los botones presentes en las diferentes secciones de la aplicación no mantienen
 Recomendación:
 Definir y aplicar un sistema de diseño que establezca tamaños, espaciados y estilos uniformes para todos los botones de la aplicación.
 
+## 5.4. Video About-the-Product.
 
+En esta sección se presenta el video About the Product, elaborado con un enfoque promocional para mostrar la propuesta de valor de la solución desarrollada. El video resume el modelo de negocio, las principales características y beneficios del producto, e incluye demostraciones de su funcionamiento mediante escenas de interacción con la aplicación. 
 
-
-
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQANBanb_uDFSZV-hnlqCF8nASN0WlsIUubAGsAH9QPbB7I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=k7YLoI
 
 ---
 
@@ -3975,6 +3976,13 @@ En relación con el roadmap del producto, se propone iniciar con el desarrollo d
 
 Finalmente, se recomienda continuar recopilando feedback constante de los usuarios para asegurar que el producto evolucione alineado con sus necesidades reales, minimizando riesgos y asegurando la adopción de la solución en el mercado.
 
+**Video About the Team**
+
+En esta sección se presenta el video About the Team, el cual resume el proceso de trabajo desarrollado por el equipo durante el proyecto. El video incluye el testimonio de cada miembro del equipo, donde se describen sus contribuciones, los resultados alcanzados y las competencias desarrolladas a lo largo del proyecto, evidenciando el cumplimiento de los objetivos propuestos y el trabajo conjunto para la construcción de la solución.
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQANBanb_uDFSZV-hnlqCF8nASN0WlsIUubAGsAH9QPbB7I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=k7YLoI
+
+
 <div style="page-break-before: always;"></div>
 <hr>
 
@@ -4000,5 +4008,6 @@ View of analysis of the role of human resource information system (HRIS) in impr
 Repositorio del reporte: https://github.com/Performily/Flowboard
 Landing Page: https://performily.github.io/Flowboard-LandingPage/
 Web Application: https://flowboard-app-three.vercel.app/
-Web Service: https://flowboard-api-zmju.onrender.com
+Web Service (fake API): https://flowboard-api-zmju.onrender.com
+Web Service (Backend): https://flowboardwebservice.onrender.com/swagger
 Web Application video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQAAcqWfPkZRSrsN9G6DTdx9Afysi-nq0ZrEs-k7PXigzW8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qgeV8K
