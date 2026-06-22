@@ -3574,6 +3574,21 @@ Durante el presente Sprint 3, se lograron avances significativos en la evolució
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
+#### 5.2.3.8. Team Collaboration Insights during Sprint.
+Durante este Sprint, el equipo obtuvo aprendizajes clave sobre nuestra dinámica de trabajo colaborativo y la arquitectura de nuestro backend:
+
+Implementación de Arquitectura CQRS y DDD: Adoptar el patrón CQRS nos ayudó a separar estrictamente las responsabilidades de lectura (Queries) y escritura (Commands). Un aprendizaje clave como equipo fue asegurar el flujo completo de la información: comprendimos la importancia de coordinar que cada consulta creada en la capa de Dominio termine correctamente expuesta y documentada en los Controladores para evitar endpoints "fantasma".
+
+Exposición de datos y manejo de DTOs: Comprendimos que nuestra API funciona como un "embudo" de seguridad entre la base de datos y el cliente. Aprendimos a estructurar y extender correctamente nuestros Resources y Assemblers (DTOs), asegurando que el frontend reciba perfiles completos con todos los atributos necesarios (como datos de contacto y estado) sin exponer directamente las entidades de la base de datos.
+
+Mapeo de Value Objects con Entity Framework: Nos enfrentamos a desafíos técnicos al integrar Value Objects (como identificadores biométricos o números de documento) en nuestra base de datos relacional (MySQL). Descubrimos mediante trabajo colaborativo que el uso de HasConversion previene conflictos de llaves primarias y optimiza la configuración en Entity Framework Core mucho mejor que otras aproximaciones, logrando migraciones limpias.
+
+Despliegue y depuración en la nube (Cloud & Live Debugging): Durante este Sprint, logramos desplegar nuestro Web Service .NET en Render, conectado de forma exitosa a una base de datos productiva en Aiven. El uso intensivo de Swagger en el entorno de producción, combinado con el análisis de los logs en vivo de Render, nos permitió identificar y solucionar rápidamente errores HTTP (como ambigüedades de rutas o fallos 500), garantizando que nuestra API esté estable, bien documentada y disponible de forma continua.
+
+![contributors](assets\img\contributors-sprint3.png)
+
+**Enlace del Web Service:** https://flowboardwebservice.onrender.com/swagger 
+
 ## 5.3. Validation Interviews.
 
 #### 5.3.1. Diseño de Entrevistas
@@ -3910,8 +3925,8 @@ View of analysis of the role of human resource information system (HRIS) in impr
 
 ## Anexos
 
+Repositorio del reporte: https://github.com/Performily/Flowboard
 Landing Page: https://performily.github.io/Flowboard-LandingPage/
 Web Application: https://flowboard-app-three.vercel.app/
 Web Service: https://flowboard-api-zmju.onrender.com
-
 Web Application video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQAAcqWfPkZRSrsN9G6DTdx9Afysi-nq0ZrEs-k7PXigzW8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qgeV8K
