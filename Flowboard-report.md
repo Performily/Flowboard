@@ -552,9 +552,9 @@ Este segmento está conformado por los trabajadores de la organización que requ
 * **Nombre:** Juan Fernando Caicho Olorte
 * **Edad:** 53 años
 * **Distrito:** Barranca
-* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQCoaZES8xugQ6v9JM3-75MDAXZJC0dgiZrI0kE1nvJcwVM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vPsroB
-* **Timing donde inicia la entrevista:** 0:01
-* **Duración completa de la entrevista:** 47:24
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQBQedbphgUJQr-uL3aC1laxAeOgGfxRxEA1XnQDy2akw3k?e=ku878E&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+* **Timing donde inicia la entrevista:** 0:00
+* **Duración completa de la entrevista:** 37:55
 
 **Resumen de la entrevista:**
 Juan Fernando Caicho Olorte, abogado de 53 años, casado y residente en Barranca, se desempeña desde hace cuatro años como jefe de recursos humanos en una entidad estatal prestadora de servicios de saneamiento bajo la administración de OTAS. En su cargo, dirige procesos de selección, contratación, evaluación de desempeño y administración de beneficios sociales, además de supervisar el clima laboral y aplicar medidas disciplinarias según el reglamento interno. El flujo de trabajo en su área involucra a un analista, un supervisor de seguridad y salud, y un especialista laboral, aunque enfrenta limitaciones económicas institucionales que impiden cubrir planillas con apoyo externo, destinando los recursos técnicos solo a proyectos de inversión. El proceso de elaboración de la planilla es manual y se apoya en el software Avalon, el cual presenta deficiencias al no calcular automáticamente impuestos como la renta de quinta categoría. El control de asistencia se realiza mediante relojes digitales cada día 21, tras lo cual se cruza la información con papeletas de permiso y horas extras para determinar los pagos y descuentos por tardanzas superiores a los 40 minutos mensuales. Respecto a las vacaciones, el personal obrero toma 30 días continuos, mientras que el administrativo puede fraccionarlas incluso por medios días. Actualmente, la gestión documental física se encuentra en transición hacia la digitalización mediante una directiva aprobada en 2025, aunque el 15% de los empleados aún no actualiza sus legajos debido a los costos de los trámites. Caicho identifica como problemas críticos la duplicidad de funciones con las áreas de contabilidad y presupuesto, así como la falta de comunicación de los jefes inmediatos sobre las emergencias atendidas por el personal operativo, lo cual dificulta la compensación justa de horas. Su mayor frustración radica en los bajos salarios estatales que impiden atraer profesionales calificados para plazas críticas y en la mentalidad de algunos trabajadores con estabilidad laboral. Finalmente, aspira a implementar un sistema integrado en tiempo real que automatice el flujo de información desde el reloj biométrico hacia recursos humanos para mejorar la fiscalización, eliminar errores manuales y elevar la productividad institucional.
@@ -563,9 +563,9 @@ Juan Fernando Caicho Olorte, abogado de 53 años, casado y residente en Barranca
 * **Nombre:** Pool Jordi Galvez Munibe
 * **Edad:** 38 años
 * **Distrito:** Pueblo Libre
-* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQDvSNB5crLVS7wWx0_E77k6AVeKxJ8dBPX4_w5_hwy_hw0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PDEaLX
-* **Timing donde inicia la entrevista:** 0:07
-* **Duración completa de la entrevista:** 29:48
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQBQedbphgUJQr-uL3aC1laxAeOgGfxRxEA1XnQDy2akw3k?e=ku878E&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+* **Timing donde inicia la entrevista:** 37:55
+* **Duración completa de la entrevista:** 25:01
 
 **Resumen de la entrevista:**
 Pool Jordi Galvez Munibe, administrador de empresas de 38 años y residente en Pueblo Libre, ejerce como gerente de proyectos de ingeniería e infraestructura con la responsabilidad adicional de dirigir la oficina de talento y potencial humano. Sus funciones principales abarcan el reclutamiento, perfeccionamiento, capacitación y medición del desempeño, con el objetivo diario de equilibrar las metas organizacionales y el desarrollo profesional del colaborador para evitar la deserción. Para la evaluación del personal, emplea indicadores de desempeño enfocados en la eficacia misional, indicadores de compromiso que premian la disposición horaria y de capacitación, e indicadores de disciplina basados en el Reglamento Interno de Seguridad y Salud en el Trabajo (RIST). Considera fundamental contar con información actualizada de sus empleados, aunque los procesos de planilla, asistencia y licencias se encuentran delegados al área de contabilidad. El reclutamiento constituye el proceso más crítico y complejo, especialmente ante la demanda de perfiles técnicos específicos para proyectos de corta duración que no suelen exceder los seis meses. La gestión de la información se realiza de forma manual mediante herramientas como Google Drive, Excel y un reporte diario de huellero digital, mientras que las vacaciones se rigen por un esquema estándar de 30 días fijado por la empresa durante festividades nacionales. A pesar de la eficiencia del contador externo, se registran errores ocasionales por inadvertencia en los regímenes especiales de construcción civil, lo cual genera reclamos sobre bonificaciones específicas como el BUC. La mayor frustración y sobrecarga laboral del gerente provienen del proceso de reclutamiento, específicamente de la revisión manual de hojas de vida en formato PDF para verificar perfiles mínimos y experiencias profesionales. Finalmente, manifiesta su interés por automatizar la recopilación de datos de candidatos a través de formularios digitales para crear una base de datos reutilizable y reducir el impacto en horas-hombre durante la etapa de selección.
@@ -574,9 +574,9 @@ Pool Jordi Galvez Munibe, administrador de empresas de 38 años y residente en P
 * **Nombre:** Kenneth Espinosa Villalba
 * **Edad:** 31 años
 * **Distrito:** Callao
-* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQATLQigebr9SZaR0Td8NhXZAUM_XjsWvDUS9-V7WqS9OeM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bkRLQI
-* **Timing donde inicia la entrevista:** 0:06
-* **Duración completa de la entrevista:** 44:08
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQBQedbphgUJQr-uL3aC1laxAeOgGfxRxEA1XnQDy2akw3k?e=ku878E&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+* **Timing donde inicia la entrevista:** 01:02:57
+* **Duración completa de la entrevista:** 36:47
 
 **Resumen de la entrevista:**
 Kenneth Espinosa Villalba, administrador de 31 años egresado de la Universidad de Piura y residente en el Callao, ejerce como jefe de recursos humanos en el Grupo Santander desde hace dos años y medio, con una trayectoria total de siete años en el sector. En su rol actual, combina funciones estratégicas y ejecutoras especializadas en compensaciones, people analytics, nóminas y evaluación de desempeño bajo el programa My Contribution, además de supervisar analistas y practicantes bajo la guía de un líder funcional. Describe su labor como agotadora debido a la fuerte carga de trabajo y los cambios constantes del entorno global, aunque destaca que el área es una pieza clave para el negocio. Divide las responsabilidades del departamento en dos pilares: el hard, que incluye procesos operativos críticos como nóminas y reclutamiento, y el soft, orientado a la cultura, diversidad y planes de desarrollo. Su objetivo principal es velar por la satisfacción y el crecimiento de las personas a través de la formación de líderes empáticos que utilicen metodologías como el Ninebox para medir el potencial y el desempeño basado en retos. Considera fundamental el uso de una base matriz actualizada para aplicar analítica predictiva sobre la rotación y los aumentos salariales, ya que cualquier fallo en la parte operativa o de pagos desestabiliza la confianza del colaborador en la empresa. Actualmente, gestiona la información demográfica mediante formularios de Microsoft y herramientas de Office 365, lo cual automatiza el flujo de datos hacia aplicaciones como Power Apps y elimina el papeleo físico. Aunque la elaboración de la planilla está tercerizada con proveedores externos para manejar el volumen de más de 3.500 empleados, él supervisa los cálculos de ley y las bandas salariales comparativas del mercado. Las solicitudes de vacaciones y permisos se autogestionan a través de una aplicación integrada en Teams, donde el jefe inmediato actúa como el primer aprobador antes del registro final en la nómina. A pesar de contar con sistemas digitales eficientes, identifica como tareas frustrantes la desvinculación de personal por su impacto emocional y la dificultad de mantener la base de datos al día frente a los mil cambios diarios que genera una estructura de gran escala. Finalmente, aspira a la implementación de una intranet propia con una integración sólida de todos los procesos y la incorporación de un chatbot para resolver consultas frecuentes sobre nóminas y beneficios de forma inmediata.
@@ -587,8 +587,8 @@ Kenneth Espinosa Villalba, administrador de 31 años egresado de la Universidad 
 * **Nombre:** Henry Cabrera Barrantes
 * **Edad:** 51 años
 * **Distrito:** Cajamarca
-* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQAsKi64fXuhQpOhzAEu4E_jAWKCjWFtkhmuzYhtIOCR5Sk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qCHfq8
-* **Timing donde inicia la entrevista:** 0:18
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQBQedbphgUJQr-uL3aC1laxAeOgGfxRxEA1XnQDy2akw3k?e=ku878E&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+* **Timing donde inicia la entrevista:** 01:39:44
 * **Duración completa de la entrevista:** 17:40
 
 **Resumen de la entrevista:**
@@ -598,8 +598,8 @@ Henry Cabrera Barrante, de 51 años y casado, ocupa desde hace diez años el car
 * **Nombre:** María del Carmen Espichan Itán 
 * **Edad:** 24 años
 * **Distrito:** AT, Salamanca
-* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQAI1MjwjiYNSKtcGmHCmyVEAXFmeKgfhN36LyU_FBx4py8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qJ0veL
-* **Timing donde inicia la entrevista:** 0:12
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQBQedbphgUJQr-uL3aC1laxAeOgGfxRxEA1XnQDy2akw3k?e=ku878E&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+* **Timing donde inicia la entrevista:** 01:55:48
 * **Duración completa de la entrevista:** 21:00
 
 **Resumen de la entrevista:**
@@ -609,8 +609,8 @@ María del Carmen Espichan Itán, de 24 años, vive en Salamanca y trabaja como 
 * **Nombre:** Micaela Rodriguez 
 * **Edad:** 23 años
 * **Distrito:** Arequipa
-* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410478_upc_edu_pe/IQCyz5NeBB3ORoOPNJX5DtEHAS993BkAiJjb--gLqvQulT8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AvdGgl
-* **Timing donde inicia la entrevista:** 0:18
+* **Link de la entrevista:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412270_upc_edu_pe/IQBQedbphgUJQr-uL3aC1laxAeOgGfxRxEA1XnQDy2akw3k?e=ku878E&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+* **Timing donde inicia la entrevista:** 02:14:54
 * **Duración completa de la entrevista:** 13:45 
 
 **Resumen de la entrevista:**
