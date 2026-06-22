@@ -17,7 +17,7 @@
     <p style="margin: 8px 0;"><strong>Docente:</strong> Oscar Ivan Villafuerte Bazan</p>
   </div>
 
-  <h2 style="font-size: 24px; text-transform: uppercase; margin: 10px 0;">"Informe del TB1"</h2>
+  <h2 style="font-size: 24px; text-transform: uppercase; margin: 10px 0;">"Informe del AV2"</h2>
 
   <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee; width: 85%;">
     <p style="font-size: 18px; margin: 5px 0;"><strong>Nombre del Startup:</strong> Performily</p>
@@ -59,7 +59,7 @@
 
   <br>
 
-  <h3 style="color: #666;">Mayo, 2026</h3>
+  <h3 style="color: #666;">Junio, 2026</h3>
 
 </div>
 
@@ -174,7 +174,7 @@
   * 5.3.1. Diseño de Entrevistas.
   * 5.3.2. Registro de Entrevistas.
   * 5.3.3. Evaluaciones según heurísticas.
-
+* **5.4. Video About-the-Product**
 
 
 ### Conclusiones
