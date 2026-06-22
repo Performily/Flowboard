@@ -3574,6 +3574,44 @@ Durante el presente Sprint 3, se lograron avances significativos en la evolució
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
+En el primer hito, correspondiente al despliegue de la base de datos, se decidió utilizar la plataforma Aiven para alojar una instancia de MySQL en la nube. Para ello, se creó una cuenta vinculada al repositorio de GitHub del proyecto y se generó un nuevo proyecto dentro de la plataforma. Posteriormente, se seleccionó el servicio MySQL, se eligió el plan gratuito y se asignó un nombre a la instancia. Una vez creada, Aiven generó automáticamente las credenciales de acceso y la información de conexión de la base de datos.
+
+Con la base de datos desplegada, fue necesario configurar el proyecto de backend para que pudiera conectarse a ella. Para ello, se modificó el archivo appsettings.json, incorporando la cadena de conexión y las credenciales proporcionadas por Aiven. Posteriormente, desde la consola del proyecto se ejecutó el comando dotnet ef database update, el cual aplicó las migraciones existentes y creó automáticamente las tablas en la base de datos alojada en la nube.
+
+Finalmente, utilizando MySQL Workbench, se realizó la inserción de datos iniciales en las tablas, permitiendo que el backend dispusiera de información para responder a las solicitudes del frontend durante las pruebas y demostraciones del sistema.
+
+| Evidencia de Despliegue | Descripción |
+| :---: | :--- |
+| ![Archivo vercel.json](assets\img\backend1.png) | Elección del tipo de servicio. |
+| ![Creación del proyecto en Vercel](assets\img\backend2.png) | Creación automática de credenciales proporcionadas por Aiven. |
+| ![Web App desplegada](assets\img\backend3.png) | Base de datos desplegada y corriendo en la nube. |
+| ![Web App desplegada](assets\img\backend4.png) | Configuración de appsettings.json para la conexión con la base de datos desplegada. |
+| ![Web App desplegada](assets\img\backend5.png) | Ejecución del comando dotnet ef database update para la creación y migración de las tablas a la base de datos. |
+| ![Web App desplegada](assets\img\backend6.png) | Uso de MySQL Workbench para ingresar los queries para el llenado de la base de datos.|
+
+El segundo hito, correspondiente al despliegue del backend (Web Service), se realizó utilizando la plataforma Render para publicar el servicio en línea. Para ello, se ingresó a la plataforma y se seleccionó la opción New > Web Service, escogiendo el repositorio que contiene el proyecto del backend.
+
+Antes de realizar el despliegue, fue necesario crear y configurar un archivo Dockerfile dentro del proyecto, el cual permite a Render conocer la configuración necesaria para construir y ejecutar la aplicación. Asimismo, debido a motivos de compatibilidad con la plataforma, para este sprint se decidió utilizar .NET 8.0 como versión del framework.
+
+Una vez configurado el Dockerfile, se continuó con la configuración del servicio en Render. Se asignó un nombre al Web Service, se seleccionó Docker como entorno de ejecución, se indicó la rama main como fuente del despliegue y, en el campo Root Directory, se especificó la carpeta FlowboardAPI, donde se encuentran el Dockerfile y los archivos del proyecto.
+
+Adicionalmente, se configuraron las variables de entorno necesarias para almacenar la cadena de conexión y las credenciales de la base de datos proporcionadas por Aiven, evitando así incluir información sensible directamente en el código fuente. Finalizada la configuración, el despliegue del backend se realizó exitosamente, dejando el Web Service disponible para recibir solicitudes desde el frontend.
+
+| Evidencia de Despliegue | Descripción |
+| :---: | :--- |
+| ![Archivo vercel.json](assets\img\backend7.png) | Pestaña de creación de Web Service en Render. |
+| ![Creación del proyecto en Vercel](assets\img\backend8.png) | Creación y configuración del archivo Dockerfile. |
+| ![Web App desplegada](assets\img\backend9.png) | Configuración del despliegue en Render. |
+| ![Web App desplegada](assets\img\backend10.png) | Backend desplegado en Render. |
+
+Por último, en el tercer hito, se modificaron los endpoints utilizados en los Bounded Contexts de Attendance y Workspace, reemplazando las rutas locales por las correspondientes al backend desplegado en Render. Gracias a esta integración, las solicitudes realizadas desde el frontend son atendidas por el Web Service desplegado, el cual consulta la base de datos alojada en Aiven y devuelve la información correspondiente. Como resultado, los datos mostrados en las secciones de Attendance y Workspace provienen del backend y la base de datos desplegados en la nube.
+
+| Evidencia de Despliegue | Descripción |
+| :---: | :--- |
+| ![Archivo vercel.json](assets\img\backend11.png) | Cambio del endpoint en el frontend para que pueda solicitar información al backend. |
+
+
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 Durante este Sprint, el equipo obtuvo aprendizajes clave sobre nuestra dinámica de trabajo colaborativo y la arquitectura de nuestro backend:
 
